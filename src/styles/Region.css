@@ -1,7 +1,3 @@
 .region {
-  height: 100px;
-  width: 150px;
-  display: inline-block;
-  text-align: center;
-  border: 1px solid black;
+  /* width: 300px; */
 }

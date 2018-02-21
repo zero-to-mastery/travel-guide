@@ -32,7 +32,10 @@ class App extends Component {
   }
 
   findUniqRegions = (regionList) => {
-    return Array.from(new Set(regionList)).sort();
+    const newRegionList = regionList.filter(region => {
+      return region !== "";
+    });
+    return Array.from(new Set(newRegionList)).sort();
   }
 
   render() {
@@ -40,12 +43,10 @@ class App extends Component {
       <div className="tc">
         <header className="App-header">
           <img src={globe} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Travel Guide</h1>
-            <p className="App-intro">
-              Pick a region
-            </p>
+          <h1 className="App-intro code">Welcome to Travel Guide</h1>
         </header>
-        <RegionList regions={this.state.regionList} />
+        <RegionList countries={this.state.countries} regions={this.state.regionList}>
+        </RegionList>
       </div>
     );
   }
