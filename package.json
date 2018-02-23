@@ -2,13 +2,18 @@
   "name": "travel-guide-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/MarcelTawamba/travel-guide#readme",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^15.6.1",
     "react-scripts": "1.1.1",
     "tachyons": "^4.9.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -25,6 +30,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarcelTawamba/travel-guide/issues"
-  },
-  "homepage": "https://github.com/MarcelTawamba/travel-guide#readme"
+  }
 }
