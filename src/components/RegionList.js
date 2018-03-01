@@ -10,14 +10,19 @@ const RegionList = ({ countries, regions }) => {
     });
 
     return (
+     
+        
       <Region
         key = {i}
         name = {region}
         countryList = {countryList}
       />
+      
+      
+      
     );
   });
-  return (<div> {regionArray} </div>);
+  return ( <div> {regionArray} </div>);
 };
 
 export default RegionList;
