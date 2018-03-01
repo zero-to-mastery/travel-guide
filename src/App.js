@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import globe from './Globe.svg';
 import RegionList from './components/RegionList';
+import Header from './components/Header.js'
+import Footer from './components/Footer.js'
 import './App.css';
 
 class App extends Component {
@@ -41,33 +43,22 @@ class App extends Component {
   render() {
     return (
     
-      <div className="tc">
+      <div>
 
-        <header className="bg-purple white-80 tc pv4 avenir">
-        
-  
-  <h1 className="mt2 mb3 baskerville i fw1 f1">Travel Guide</h1>
-  <img src={globe} className="App-logo" alt="logo" />
-
-  
-  <nav className="bt bb tc mw8 center mt4">
-    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Africa</a>
-    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Americas</a>
-    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Asia</a>
-    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Oceana</a>
-    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Polar</a>
-  </nav>
-</header>
+       
 
 
 
-        
-        <RegionList countries={this.state.countries} regions={this.state.regionList}>
+        <Header />
+        <RegionList countries={this.state.countries} 
+          regions={this.state.regionList}>
         </RegionList>
+        <Footer />
+        
 
         
           
-     
+      
       </div>
     );
   }
