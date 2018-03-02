@@ -1,5 +1,11 @@
-/*
+body {
+  font-family: 'Lato', 'Arial', sans-serif;
+}
 
-CSS code here
+p {
+  font-size: 1.3em;
+}
 
-*/
+.jumbotron {
+  text-align: center;
+}
