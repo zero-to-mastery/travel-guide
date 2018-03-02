@@ -9,3 +9,11 @@ p {
 .jumbotron {
   text-align: center;
 }
+
+
+.nav ,.nav-link, .nav-link-active{
+	font-family: "Courgette";
+	font-size: 20px;
+}
+
+
