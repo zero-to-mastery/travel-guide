@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import globe from './Globe.svg';
-import Region from './components/Region';
-import RegionList from './components/RegionList';
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+import AppRouter from './routes/AppRouter'
+// import Region from './components/Region';
+// import RegionList from './components/RegionList';
+// import Header from './components/Header.js'
+// import Footer from './components/Footer.js'
 import './App.css';
 
 class App extends Component {
@@ -44,72 +45,7 @@ class App extends Component {
 
   render() {
     console.log(this.state.regionList);
-    return (
-      <BrowserRouter>
-        <div>
-          <Header />
-          <Switch>
-            <Route path="/" exact={true}
-              render={() => (
-                <RegionList 
-                  countries={this.state.countries} 
-                  regions={this.state.regionList}
-                />
-              )}
-            />
-            <Route path="/africa" 
-              render={() => ( 
-                <Region 
-                  region={this.state.regionList[0]} 
-                  countries={this.state.countries}
-                />
-              )}
-            />
-            <Route path="/americas" 
-              render={() => ( 
-                <Region 
-                  region={this.state.regionList[1]} 
-                  countries={this.state.countries}
-                />
-              )}
-            />
-            <Route path="/asia" 
-              render={() => ( 
-                <Region 
-                  region={this.state.regionList[2]} 
-                  countries={this.state.countries}
-                />
-              )}
-            />
-            <Route path="/europe" 
-              render={() => ( 
-                <Region 
-                  region={this.state.regionList[3]} 
-                  countries={this.state.countries}
-                />
-              )}
-            />
-            <Route path="/oceania" 
-              render={() => ( 
-                <Region 
-                  region={this.state.regionList[4]} 
-                  countries={this.state.countries}
-                />
-              )}
-            />
-            <Route path="/polar" 
-              render={() => ( 
-                <Region 
-                  region={this.state.regionList[5]} 
-                  countries={this.state.countries}
-                />
-              )}
-            />
-          </Switch>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    );
+    return <AppRouter state={this.state}/>
   }
 }
 
