@@ -11,11 +11,13 @@ export default class Header extends Component {
 
  
           <nav className="bt bb tc mw8 center mt4">
+            <NavLink to='/' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Home</NavLink>
             <NavLink to='/africa' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Africa</NavLink>
-            <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Americas</a>
-            <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Asia</a>
-            <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Oceana</a>
-            <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Polar</a>
+            <NavLink to='/americas' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Americas</NavLink>
+            <NavLink to='/asia' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Asia</NavLink>
+            <NavLink to='/europe' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Europe</NavLink>
+            <NavLink to='/oceania' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Oceania</NavLink>
+            <NavLink to='/polar' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Polar</NavLink>
           </nav>
         </header>
       )
