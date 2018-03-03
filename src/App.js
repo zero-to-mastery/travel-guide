@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import globe from './Globe.svg';
-import RegionList from './components/RegionList';
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+import AppRouter from './routes/AppRouter'
+// import Region from './components/Region';
+// import RegionList from './components/RegionList';
+// import Header from './components/Header.js'
+// import Footer from './components/Footer.js'
 import './App.css';
 
 class App extends Component {
@@ -41,26 +44,8 @@ class App extends Component {
   }
 
   render() {
-    return (
-    
-      <div>
-
-       
-
-
-
-        <Header />
-        <RegionList countries={this.state.countries} 
-          regions={this.state.regionList}>
-        </RegionList>
-        <Footer />
-        
-
-        
-          
-      
-      </div>
-    );
+    console.log(this.state.regionList);
+    return <AppRouter state={this.state}/>
   }
 }
 

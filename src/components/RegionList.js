@@ -1,5 +1,5 @@
 import React from 'react';
-import Region from './Region';
+import RegionCard from './RegionCard';
 
 const RegionList = ({ countries, regions }) => {
 
@@ -10,19 +10,14 @@ const RegionList = ({ countries, regions }) => {
     });
 
     return (
-     
-        
-      <Region
-        key = {i}
-        name = {region}
-        countryList = {countryList}
-      />
-      
-      
-      
+        <RegionCard
+          key={i}
+          name={region}
+          countryList={countryList}
+        />
     );
   });
-  return ( <div> {regionArray} </div>);
+  return (<div> {regionArray} </div>);
 };
 
 export default RegionList;
