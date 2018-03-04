@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Region from '../components/Region';
 import RegionList from '../components/RegionList';
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
+import SearchBox from '../components/SearchBox';
 
 export default ({state}) => (
    <BrowserRouter>
       <div>
          <Header />
+         <SearchBox />
          <Switch>
             <Route path="/" exact={true}
                render={() => (
