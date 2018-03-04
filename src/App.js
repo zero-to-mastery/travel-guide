@@ -3,6 +3,7 @@ import globe from './Globe.svg';
 import RegionList from './components/RegionList';
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
+import SearchBox from './components/SearchBox';
 import './App.css';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
     this.state = {
       regionList: [],
       countryList: [],
+      searchField: '',
       countries: []
     };
   }
@@ -33,6 +35,10 @@ class App extends Component {
       });
   }
 
+  onSearchChange = (event) => {
+    this.setState({ searchField: event.target.value })        
+  }
+
   findUniqRegions = (regionList) => {
     const newRegionList = regionList.filter(region => {
       return region !== "";
@@ -41,24 +47,18 @@ class App extends Component {
   }
 
   render() {
-    return (
-    
-      <div>
+    const filteredCountries = this.state.countries.filter((country, i) =>{
+      return this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase());      
+    })
 
-       
-
-
-
+    return (    
+      <div className='tc'>
         <Header />
-        <RegionList countries={this.state.countries} 
+        <SearchBox searchChange={this.onSearchChange}/>
+        <RegionList countries={filteredCountries} 
           regions={this.state.regionList}>
-        </RegionList>
-        <Footer />
-        
-
-        
-          
-      
+        </RegionList>        
+        <Footer />     
       </div>
     );
   }

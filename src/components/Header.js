@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import globe from '../Globe.svg';
 
+
 export default class Header extends Component {
     render () {
       return (<header className="bg-purple white-80 tc pv4 avenir">
@@ -16,6 +17,7 @@ export default class Header extends Component {
    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Asia</a>
    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Oceana</a>
    <a className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l" href="#">Polar</a>
+ 
  </nav>
 </header>)
     }
