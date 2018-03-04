@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import globe from './Globe.svg';
 import RegionList from './components/RegionList';
-import Region from './components/Region';
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import SearchBox from './components/SearchBox';
