@@ -6,7 +6,6 @@ const RegionList = ({ countries, regions }) => {
   const regionArray = regions.map((region, i) => {
     const countryList = countries.filter(country => {
       return country.region === region;
-	  console.log(region);
     });
 
     return (
