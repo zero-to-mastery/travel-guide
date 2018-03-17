@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-// import globe from './Globe.svg';
-// import RegionList from './components/RegionList';
-// import Header from './components/Header.js'
-// import Footer from './components/Footer.js'
-
 import AppRouter from './routes/AppRouter'
 import './App.css';
 

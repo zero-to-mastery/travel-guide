@@ -6,70 +6,70 @@ import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import SearchBox from '../components/SearchBox';
 
-export default ({state}) => (
-   <BrowserRouter>
-      <div>
-         <Header />
-         <SearchBox />
-         <Switch>
-            <Route path="/" exact={true}
-               render={() => (
-                  <RegionList
-                     countries={state.countries}
-                     regions={state.regionList}
-                  />
-               )}
+export default ({ state }) => (
+  <BrowserRouter>
+    <div>
+      <Header />
+      <SearchBox />
+      <Switch>
+        <Route path="/" exact={true}
+          render={() => (
+            <RegionList
+              countries={state.countries}
+              regions={state.regionList}
             />
-            <Route path="/africa"
-               render={() => (
-                  <Region
-                     region={state.regionList[0]}
-                     countries={state.countries}
-                  />
-               )}
+          )}
+        />
+        <Route path="/africa"
+          render={() => (
+            <Region
+              region={state.regionList[0]}
+              countries={state.countries}
             />
-            <Route path="/americas"
-               render={() => (
-                  <Region
-                     region={state.regionList[1]}
-                     countries={state.countries}
-                  />
-               )}
+          )}
+        />
+        <Route path="/americas"
+          render={() => (
+            <Region
+              region={state.regionList[1]}
+              countries={state.countries}
             />
-            <Route path="/asia"
-               render={() => (
-                  <Region
-                     region={state.regionList[2]}
-                     countries={state.countries}
-                  />
-               )}
+          )}
+        />
+        <Route path="/asia"
+          render={() => (
+            <Region
+              region={state.regionList[2]}
+              countries={state.countries}
             />
-            <Route path="/europe"
-               render={() => (
-                  <Region
-                     region={state.regionList[3]}
-                     countries={state.countries}
-                  />
-               )}
+          )}
+        />
+        <Route path="/europe"
+          render={() => (
+            <Region
+              region={state.regionList[3]}
+              countries={state.countries}
             />
-            <Route path="/oceania"
-               render={() => (
-                  <Region
-                     region={state.regionList[4]}
-                     countries={state.countries}
-                  />
-               )}
+          )}
+        />
+        <Route path="/oceania"
+          render={() => (
+            <Region
+              region={state.regionList[4]}
+              countries={state.countries}
             />
-            <Route path="/polar"
-               render={() => (
-                  <Region
-                     region={state.regionList[5]}
-                     countries={state.countries}
-                  />
-               )}
+          )}
+        />
+        <Route path="/polar"
+          render={() => (
+            <Region
+              region={state.regionList[5]}
+              countries={state.countries}
             />
-         </Switch>
-         <Footer />
-      </div>
-   </BrowserRouter>
+          )}
+        />
+      </Switch>
+      <Footer />
+    </div>
+  </BrowserRouter>
 )
