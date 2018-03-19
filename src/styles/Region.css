@@ -1,0 +1,9 @@
+.region {
+  /* width: 300px; */
+}
+
+.region-card {
+  width: 400px;
+  height: 400px;
+  list-style: none;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "travel-guide-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "tachyons": "^4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcelTawamba/travel-guide.git"
+  },
+  "author": "Marcel Tawamba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcelTawamba/travel-guide/issues"
+  },
+  "homepage": "https://github.com/MarcelTawamba/travel-guide#readme"
+}
