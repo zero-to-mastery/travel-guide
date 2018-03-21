@@ -2,6 +2,10 @@ body {
   font-family: 'Lato', 'Arial', sans-serif;
 }
 
+.display-4, .lead {
+font-family: 'Pacifico', cursive;
+}
+
 p {
   font-size: 1.3em;
 }
