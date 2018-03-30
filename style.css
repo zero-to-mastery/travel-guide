@@ -12,6 +12,11 @@ p {
 
 .jumbotron {
   text-align: center;
+  background-image:url(src/hero-pic.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
 }
 
 
