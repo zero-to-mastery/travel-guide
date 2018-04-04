@@ -16,7 +16,7 @@ const RegionList = ({ countries, regions }) => {
         />
     );
   });
-  return (<div> {regionArray} </div>);
+  return (<div class="center"> {regionArray} </div>);
 };
 
 export default RegionList;
