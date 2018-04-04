@@ -27,7 +27,7 @@
   to { transform: rotate(360deg); }
 }
 
-.center {
+.centerFlex {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
