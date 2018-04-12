@@ -8,3 +8,7 @@
   list-style: none;
   vertical-align: top;
 }
+
+.region-card h3 {
+  cursor: pointer;
+}
