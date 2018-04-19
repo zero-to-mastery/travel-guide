@@ -1,5 +1,7 @@
 body {
   font-family: 'Lato', 'Arial', sans-serif;
+  background: url(src/hero-pic.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .display-4, .lead {
@@ -12,10 +14,7 @@ p {
 
 .jumbotron {
   text-align: center;
-  background-image:url(src/hero-pic.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  
   color: #fff;
   padding-top: 25%;
 }
@@ -36,4 +35,17 @@ p {
   text-align: center; 
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.box {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #4CAF50;
+}
+
+h2 {
+  color: #ffffff
+}
