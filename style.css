@@ -38,12 +38,14 @@ p {
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .box {
-  padding: 10px;
-  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid #4CAF50;
+  border-radius: 10px;
+  padding: 0 10px;
 }
 
 h2 {
