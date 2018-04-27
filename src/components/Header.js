@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import globe from '../Globe.svg';
+
 
 
 export default class Header extends Component {
@@ -8,7 +8,7 @@ export default class Header extends Component {
       return (
         <header className="bg-purple white-80 tc pv4 avenir">
           <h1 className="mt2 mb3 baskerville i fw1 f1">Travel Guide</h1>
-          <img src={globe} className="App-logo" alt="logo" />
+         
 
           <nav className="bt bb tc mw8 center mt4">
             <NavLink to='/' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-light-purple dib pa3 ph4-l">Home</NavLink>
