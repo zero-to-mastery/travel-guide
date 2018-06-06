@@ -47,6 +47,13 @@ p {
   border-radius: 10px;
   padding: 0 10px;
 }
+.box:hover {
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid red;
+  -moz-transition: border 2s;
+  -webkit-transition: border 2s;
+  transition: border 2s;
+}
 
 h2, h1 {
   color: #ffffff
