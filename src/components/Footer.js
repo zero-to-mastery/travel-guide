@@ -16,6 +16,7 @@ export default class Header extends Component {
               className="link white-60 bg-transparent hover-purple  inline-flex items-center ma2 tc br2 pa2"
               href="https://facebook.com"
               title="Facebook"
+              target="_blank"
             >
               <svg
                 className="dib h2 w2"
@@ -57,6 +58,7 @@ export default class Header extends Component {
               className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
               href="https://instagram.com/mrmrs_"
               title="Instagram"
+              target="_blank"
             >
               <svg
                 className="dib h2 w2"
@@ -76,6 +78,7 @@ export default class Header extends Component {
               className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
               href="https://youtube.com"
               title="youtube"
+              target="_blank"
             >
               <svg
                 className="dib w2 h2"
@@ -96,6 +99,7 @@ export default class Header extends Component {
               className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
               href="https://twitter.com/mrmrs_"
               title="Twitter"
+              target="_blank"
             >
               <svg
                 className="dib h2 w2"
