@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 .region {
     /* width: 300px; */
 }
@@ -11,4 +13,9 @@
 
 .region-card h3 {
     cursor: pointer;
+}
+
+.regiontext{
+    font-family: 'Pacifico', cursive;
+
 }
