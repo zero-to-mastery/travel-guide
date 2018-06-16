@@ -19,9 +19,10 @@ class SearchBox extends Component {
             onChange = {
                 this.props.searchChange
             }
-            /> < /div >
+            /> 
+            </div>
         )
     };
 }
 
-export default SearchBox
+export default SearchBox;

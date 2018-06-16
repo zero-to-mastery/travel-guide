@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+.header{
+    background-image: url('https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2017/02/airplane-flight-sunset.jpg?itok=8iUtkHU-');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headertext{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 6em;
+}
