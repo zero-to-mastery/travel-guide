@@ -51,6 +51,7 @@ p {
   border: 1px solid #4CAF50;
   border-radius: 10px;
   padding: 0 10px;
+  text-align: center;
 }
 .box:hover {
   background-color: rgba(0, 0, 0, 1);
