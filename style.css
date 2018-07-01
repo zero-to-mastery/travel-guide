@@ -3,13 +3,14 @@ body {
   background: url(src/hero-pic.jpg) no-repeat center center fixed;
   background-size: cover;
 }
-
+/*
 .display-4, .lead {
 font-family: 'Pacifico', cursive;
 }
 
 p {
   font-size: 1.3em;
+
 }
 
 .jumbotron {
@@ -61,7 +62,7 @@ p {
   transition: border 2s;
 }
 
-h2, h1 {
+h2, h1, p {
   color: #ffffff
 }
 
