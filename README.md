@@ -9,3 +9,4 @@
   - cd travel-guide
   - run npm install
   - run npm start
+  - enter [http://localhost:3000] in your browser
