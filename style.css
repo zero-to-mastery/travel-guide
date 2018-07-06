@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   background: url(src/hero-pic.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -66,6 +66,7 @@ p {
 }
 
 h2, h1, p {
+  font-family: 'Helvetica Neue';
   color: #ffffff
 }
 
@@ -85,4 +86,7 @@ h2, h1, p {
   transform: scale(1.2, 1.2);
   background-color: rgba(0, 0, 0, 0.4);
 
+
+.intro-text {
+  font-family: 'Helvetica Neue';
 }
