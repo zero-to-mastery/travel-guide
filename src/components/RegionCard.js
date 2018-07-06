@@ -6,7 +6,7 @@ export default class RegionCard extends React.Component {
   constructor({ name, countryList }) {
     super();
     this.state = {
-      countries: countryList.map(country => <li>{country.name}</li>),
+      countries: countryList.map(country => <li key={country.name}>{country.name}</li>),
       region: name,
       path: `/${name.toLowerCase()}`
     }
