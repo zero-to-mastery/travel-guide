@@ -57,7 +57,7 @@ class App extends Component {
     //     <Footer />     
     //   </div>
     // );
-    return <AppRouter state={this.state}/>
+    return <AppRouter onSearchChange={this.onSearchChange} state={this.state}/>
   }
 }
 
