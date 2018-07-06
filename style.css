@@ -3,6 +3,9 @@ body {
   background: url(src/hero-pic.jpg) no-repeat center center fixed;
   background-size: cover;
 }
+.brand-heading{
+  font-family: 'Kaushan Script', cursive;
+}
 /*
 .display-4, .lead {
 font-family: 'Pacifico', cursive;
@@ -15,7 +18,7 @@ p {
 
 .jumbotron {
   text-align: center;
-  
+
   color: #fff;
   padding-top: 25%;
 }
@@ -28,7 +31,7 @@ p {
 	font-size: 20px; padding-left: 25%s
 }
 
- 
+
 */
 
 #map {
@@ -38,7 +41,7 @@ p {
       }
 
 .center {
-  text-align: center; 
+  text-align: center;
 }
 
 .container {
@@ -71,6 +74,18 @@ h2, h1, p {
   color: #fff;
   font-family: 'Kavivanar', cursive;
 }
+.footer_copyright{
+  text-decoration-color: black;
+  transition: 1s;
+}
+.footer_copyright:hover{
+  padding: 9px,9px,9px,9px;
+  margin: 20px 10px 20px 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 25px;
+  transform: scale(1.2, 1.2);
+  background-color: rgba(0, 0, 0, 0.4);
+
 
 .intro-text {
   font-family: 'Helvetica Neue';
