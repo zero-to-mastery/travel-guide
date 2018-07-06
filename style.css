@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   background: url(src/hero-pic.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -63,10 +63,15 @@ p {
 }
 
 h2, h1, p {
+  font-family: 'Helvetica Neue';
   color: #ffffff
 }
 
 .blanc {
   color: #fff;
   font-family: 'Kavivanar', cursive;
+}
+
+.intro-text {
+  font-family: 'Helvetica Neue';
 }
