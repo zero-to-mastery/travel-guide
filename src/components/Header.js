@@ -6,13 +6,13 @@ import '../styles/Header.css';
 export default class Header extends Component {
     render () {
       return (
-        <header className="white-80 tc pv4 header pb7 " >
+        <header className="white-80 tc pv4 header pb7 ">
 
-        {/* header text and globe */}
+        
 
           <div className="mt2 mb3  headertext"  data-aos="fade-down" data-aos-duration="5000">Travel Guide</div>
           <div data-aos="fade-up" data-aos-duration="7000"> <img src={globe} className="App-logo" alt="logo" /></div>
-        {/* navigaion bar */}
+              
 
           <nav className="bt bb tc mw8 center mt4">
             <NavLink to='/' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-orange b dib pa3 ph4-l">Home</NavLink>
