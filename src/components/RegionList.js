@@ -7,12 +7,14 @@ const RegionList = ({ countries, regions }) => {
     const countryList = countries.filter(country => {
       return country.region === region;
     });
+    
 
     return (
         <RegionCard
           key={i}
           name={region}
           countryList={countryList}
+          
         />
     );
   });

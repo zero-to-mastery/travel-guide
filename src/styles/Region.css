@@ -17,5 +17,11 @@
 
 .regiontext{
     font-family: 'Pacifico', cursive;
+    font-size: 1rem;
 
+}
+.list{
+    text-align: center;
+   /* margin: 10%;
+    font-size: 1.2rem;*/
 }
