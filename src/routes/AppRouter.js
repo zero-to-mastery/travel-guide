@@ -62,7 +62,7 @@ export default ({ state }) => (
         />
         <Route path="/polar"
           render={() => (
-            <Region
+            <Region 
               region={state.regionList[5]}
               countries={state.countries}
             />
