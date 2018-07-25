@@ -4,7 +4,7 @@
 
 ## To run this project
 
-- clone this repository
+- clone this here repository
 - run these following commands on your terminal/ cmd prompt
   - cd travel-guide
   - run npm install
