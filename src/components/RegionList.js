@@ -18,7 +18,7 @@ const RegionList = ({ countries, regions }) => {
         />
     );
   });
-  return (<div class="centerFlex"> {regionArray} </div>);
+  return (<div className="centerFlex"> {regionArray} </div>);
 };
 
 export default RegionList;
