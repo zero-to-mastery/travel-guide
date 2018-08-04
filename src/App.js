@@ -27,12 +27,15 @@ class App extends Component {
         });
         this.setState({countries: countries});
         this.setState({regionList: this.findUniqRegions(regionList)});
-        this.setState({countryList: countryList})
+        this.setState({countryList: countryList});
       });
+      
   }
 
   onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value })        
+    this.setState({ searchField: event.target.value })
+   
+    
   }
 
   findUniqRegions = (regionList) => {
@@ -43,10 +46,17 @@ class App extends Component {
   }
 
   render() {
-    // const filteredCountries = this.state.countries.filter((country, i) =>{
-    //   return this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase());      
-    // })
-
+    let filteredRegionList = [];
+    this.state.countries.forEach((country, i) =>{
+       if(this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase()) && this.state.countries[i].region !== "")
+       {
+        filteredRegionList.push(this.state.countries[i].region);
+       }     
+     });
+    
+      let filteredRegionSet = new Set( filteredRegionList );
+      let regionarr = Array.from(filteredRegionSet);
+      
     // return (    
     //   <div className='tc'>
     //     <Header />
@@ -57,7 +67,7 @@ class App extends Component {
     //     <Footer />     
     //   </div>
     // );
-    return <AppRouter onSearchChange={this.onSearchChange} state={this.state}/>
+    return <AppRouter onSearchChange={this.onSearchChange} state={this.state} regionarr = {regionarr}/>
   }
 }
 

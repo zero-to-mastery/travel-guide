@@ -28,7 +28,7 @@ export default class RegionCard extends React.Component {
         <ul className="list pl0">
           {
             this.state.countries.length < 11 ? this.state.countries :
-              this.state.countries.splice(0, 10)
+              this.state.countries.slice(0, 10)
           }
         </ul>
         

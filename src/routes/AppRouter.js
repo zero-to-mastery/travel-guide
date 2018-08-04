@@ -2,21 +2,22 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Region from '../components/Region';
 import RegionList from '../components/RegionList';
-import Header from '../components/Header.js'
-import Footer from '../components/Footer.js'
+import Header from '../components/Header.js';
+import Footer from '../components/Footer.js';
 import SearchBox from '../components/SearchBox';
 
-export default ({ state }) => (
+export default ({ onSearchChange , state , regionarr}) => (
   <BrowserRouter>
     <div>
       <Header />
-      <SearchBox />
+      <SearchBox onSearchChange={onSearchChange}/>
       <Switch>
         <Route path="/" exact={true}
           render={() => (
             <RegionList
               countries={state.countries}
               regions={state.regionList}
+              regionarr={regionarr}
             />
           )}
         />
