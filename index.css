@@ -8,3 +8,7 @@ body {
   background-size: cover;
   flex-direction: column;
 }
+
+ul {
+	list-style: none;
+}
