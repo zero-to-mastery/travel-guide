@@ -11,7 +11,7 @@ export default class Header extends Component {
           }}
           className="tc-l bg-center cover bg-purple"
         >
-          <div className="w-100 ph3 pv5 ma2 mb2 bg-black-80">
+          <div className="w-100 ph3 pv5 bg-black-80">
             <a
               className="link white-60 bg-transparent hover-purple  inline-flex items-center ma2 tc br2 pa2"
               href="https://facebook.com"

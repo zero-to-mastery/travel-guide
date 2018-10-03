@@ -14,7 +14,7 @@ export default class Header extends Component {
           <div data-aos="fade-up" data-aos-duration="7000"> <img src={globe} className="App-logo" alt="logo" /></div>
               
 
-          <nav className="bt bb tc mw8 center mt4">
+          <nav className="bt bb tc center mt4 nav">
             <NavLink to='/' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-orange b dib pa3 ph4-l">Home</NavLink>
             <NavLink to='/africa' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-orange b dib pa3 ph4-l">Africa</NavLink>
             <NavLink to='/americas' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-orange b dib pa3 ph4-l">Americas</NavLink>
