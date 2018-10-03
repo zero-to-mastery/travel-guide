@@ -12,3 +12,8 @@
     font-family: 'Abril Fatface', cursive;
     font-size: 6em;
 }
+.nav {
+    background-color: rgba(0, 0, 0, 0.705);
+    position: relative;
+    bottom: -35px;
+}
