@@ -9,6 +9,10 @@
 }
 
 .headertext{
+	background: linear-gradient(to right bottom, rgb(61, 39, 73), rgb(237, 237, 197));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-family: 'Abril Fatface', cursive;
     font-size: 6em;
+    border-bottom: 1px dotted rgb(61, 39, 73);
 }

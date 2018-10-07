@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value })        
+    this.setState({ searchField: event.target.value })
   }
 
   findUniqRegions = (regionList) => {
@@ -44,17 +44,17 @@ class App extends Component {
 
   render() {
     // const filteredCountries = this.state.countries.filter((country, i) =>{
-    //   return this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase());      
+    //   return this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase());
     // })
 
-    // return (    
+    // return (
     //   <div className='tc'>
     //     <Header />
     //     <SearchBox searchChange={this.onSearchChange}/>
-    //     <RegionList countries={filteredCountries} 
+    //     <RegionList countries={filteredCountries}
     //       regions={this.state.regionList}>
-    //     </RegionList>        
-    //     <Footer />     
+    //     </RegionList>
+    //     <Footer />
     //   </div>
     // );
     return <AppRouter onSearchChange={this.onSearchChange} state={this.state}/>
