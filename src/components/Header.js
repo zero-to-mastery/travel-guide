@@ -8,11 +8,10 @@ export default class Header extends Component {
       return (
         <header className="white-80 tc pv4 header pb7 ">
 
-        
 
-          <div className="mt2 mb3  headertext"  data-aos="fade-down" data-aos-duration="5000">Travel Guide</div>
+          <h1 className="mt2 mb3  headertext"  data-aos="fade-down" data-aos-duration="5000">Travel Guide</h1>
           <div data-aos="fade-up" data-aos-duration="7000"> <img src={globe} className="App-logo" alt="logo" /></div>
-              
+
 
           <nav className="bt bb tc center mt4 nav">
             <NavLink to='/' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-orange b dib pa3 ph4-l">Home</NavLink>
