@@ -1,16 +1,16 @@
 import React from 'react';
 import '../styles/search.css'
 
-
-const SearchBox = ({onSearchChange}) =>  {
-        return ( 
-            <div className="searchContainer">
-            <div className="searchBox pa2 ">
-                <input 
+const SearchBox = (props) => (
+    <div className="searchContainer">
+        <div className="searchBox pa2 ">
+            <form>
+                <input
+                    id="userInput" 
                     className = 'search tc bg-lightest-purple'
                     type = 'search'
-                    placeholder = 'search countries'          
-                              style = {
+                    placeholder = 'search countries...'          
+                    style = {
                         {
                             display: "block",
                             margin: "auto",
@@ -22,11 +22,11 @@ const SearchBox = ({onSearchChange}) =>  {
 
                         }
                     }
-                    onChange = {onSearchChange}
+                    value={props.search}
+                    onChange={(text) => props.onSearchChange(text)}
                 />
-            </div>
-            </div>
-        )
-}
-
+            </form>
+        </div>
+    </div>
+);
 export default SearchBox;
