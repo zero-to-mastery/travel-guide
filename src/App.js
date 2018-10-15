@@ -3,14 +3,15 @@ import AppRouter from './routes/AppRouter'
 import './App.css';
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       regionList: [],
       countryList: [],
-      searchField: '',
-      countries: []
+      countries: [],
+      searchField: ''
     };
+    this.onSearchChange = this.onSearchChange.bind(this);
   }
 
   componentDidMount(){
@@ -31,10 +32,6 @@ class App extends Component {
       });
   }
 
-  onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value })
-  }
-
   findUniqRegions = (regionList) => {
     const newRegionList = regionList.filter(region => {
       return region !== "";
@@ -42,22 +39,13 @@ class App extends Component {
     return Array.from(new Set(newRegionList)).sort();
   }
 
-  render() {
-    // const filteredCountries = this.state.countries.filter((country, i) =>{
-    //   return this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase());
-    // })
+  onSearchChange = (text) => {
+    console.log(this.state.searchField)
+    this.setState({ searchField: text })
+  }
 
-    // return (
-    //   <div className='tc'>
-    //     <Header />
-    //     <SearchBox searchChange={this.onSearchChange}/>
-    //     <RegionList countries={filteredCountries}
-    //       regions={this.state.regionList}>
-    //     </RegionList>
-    //     <Footer />
-    //   </div>
-    // );
-    return <AppRouter onSearchChange={this.onSearchChange} state={this.state}/>
+  render() {
+    return <AppRouter onSearchChange={() => this.onSearchChange()} state={this.state}/>
   }
 }
 

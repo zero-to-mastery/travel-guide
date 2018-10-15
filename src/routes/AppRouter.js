@@ -2,69 +2,79 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Region from '../components/Region';
 import RegionList from '../components/RegionList';
-import Header from '../components/Header.js'
-import Footer from '../components/Footer.js'
-import SearchBox from '../components/SearchBox';
+import Header from '../components/Header.js';
+import Footer from '../components/Footer.js';
 
-export default ({ state }) => (
+export default (props) => (
   <BrowserRouter>
     <div>
       <Header />
-      <SearchBox />
       <Switch>
         <Route path="/" exact={true}
           render={() => (
             <RegionList
-              countries={state.countries}
-              regions={state.regionList}
+              countries={props.state.countries}
+              regions={props.state.regionList}
             />
           )}
         />
         <Route path="/africa"
           render={() => (
             <Region
-              region={state.regionList[0]}
-              countries={state.countries}
+              onSearchChange={() => props.onSearchChange()}
+              search={props.state.searchField}
+              region={props.state.regionList[0]}
+              countries={props.state.countries}
             />
           )}
         />
         <Route path="/americas"
           render={() => (
             <Region
-              region={state.regionList[1]}
-              countries={state.countries}
+              onSearchChange={() => props.onSearchChange()}
+              search={props.state.searchField}
+              region={props.state.regionList[1]}
+              countries={props.state.countries}
             />
           )}
         />
         <Route path="/asia"
           render={() => (
             <Region
-              region={state.regionList[2]}
-              countries={state.countries}
+              onSearchChange={() => props.onSearchChange()}
+              search={props.state.searchField}
+              region={props.state.regionList[2]}
+              countries={props.state.countries}
             />
           )}
         />
         <Route path="/europe"
           render={() => (
             <Region
-              region={state.regionList[3]}
-              countries={state.countries}
+              onSearchChange={() => props.onSearchChange()}
+              search={props.state.searchField}
+              region={props.state.regionList[3]}
+              countries={props.state.countries}
             />
           )}
         />
         <Route path="/oceania"
           render={() => (
             <Region
-              region={state.regionList[4]}
-              countries={state.countries}
+              onSearchChange={() => props.onSearchChange()}
+              search={props.state.searchField}
+              region={props.state.regionList[4]}
+              countries={props.state.countries}
             />
           )}
         />
         <Route path="/polar"
           render={() => (
-            <Region 
-              region={state.regionList[5]}
-              countries={state.countries}
+            <Region
+              onSearchChange={() => props.onSearchChange()}
+              search={props.state.searchField} 
+              region={props.state.regionList[5]}
+              countries={props.state.countries}
             />
           )}
         />
