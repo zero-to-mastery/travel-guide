@@ -24,5 +24,4 @@ const Region = ({region, countries}) => {
   
 };
 
-
 export default Region;
