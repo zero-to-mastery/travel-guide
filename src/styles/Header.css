@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 .header{
-    background-image: url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=375f08acd511ccc0cc6ca5db9979c7b1&auto=format&fit=crop&w=1350&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                                    url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=375f08acd511ccc0cc6ca5db9979c7b1&auto=format&fit=crop&w=1350&q=80');
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -9,12 +10,12 @@
 }
 
 .headertext{
-	background: linear-gradient(to right bottom, rgb(61, 39, 73), rgb(237, 237, 197));
+    background: #fff; 
+    letter-spacing: 7px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     font-family: 'Abril Fatface', cursive;
     font-size: 6em;
-    border-bottom: 1px dotted rgb(61, 39, 73);
 }
 
 .nav {
