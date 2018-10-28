@@ -6,7 +6,7 @@ const Region = ({region, countries}) => {
   let countryNames = countryList.map(country => <li>{country.name}</li>);
 
   return(
-    <div className='tc bg-light-purple code dib br3 pa3 ma2 grow bw2 shadow-5 region'>
+    <div className='tc bg-light-purple code dib br3 pa3 ma4 grow bw2 shadow-5 region'>
       <h2>{region}</h2>
       <ul className='list'>
         {countryNames}
