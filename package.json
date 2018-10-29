@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "aos": "^2.3.0",
+    "lodash": "^4.17.10",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
     "tachyons": "^4.9.1"
@@ -12,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "",
     "eject": "react-scripts eject"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
@@ -20,12 +22,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarcelTawamba/travel-guide.git"
+    "url": "git+https://github.com/zero-to-mastery/travel-guide.git"
   },
-  "author": "Marcel Tawamba",
-  "license": "ISC",
+  "author": "ZTM",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarcelTawamba/travel-guide/issues"
+    "url": "https://github.com/zero-to-mastery/travel-guide/issues"
   },
-  "homepage": "https://github.com/MarcelTawamba/travel-guide#readme"
+  "homepage": "https://zero-to-mastery.github.io/travel-guide/"
 }

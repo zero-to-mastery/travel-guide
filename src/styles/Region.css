@@ -1,9 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+h2 {
+    font-size: 2em;
+}
+
 .region {
-  /* width: 300px; */
+    /* width: 300px; */
 }
 
 .region-card {
-  width: 400px;
-  height: 400px;
-  list-style: none;
+    width: 400px;
+    height: 400px;
+    list-style: none;
+    /* vertical-align: top; */
+}
+
+.region-card h3 {
+    cursor: pointer;
+}
+
+.regiontext{
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 1.1em;
 }

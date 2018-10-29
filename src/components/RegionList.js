@@ -7,16 +7,18 @@ const RegionList = ({ countries, regions }) => {
     const countryList = countries.filter(country => {
       return country.region === region;
     });
+    
 
     return (
         <RegionCard
           key={i}
           name={region}
           countryList={countryList}
+          
         />
     );
   });
-  return (<div> {regionArray} </div>);
+  return (<div className="centerFlex"> {regionArray} </div>);
 };
 
 export default RegionList;
