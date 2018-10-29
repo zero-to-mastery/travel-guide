@@ -16,7 +16,7 @@ const Region = ({ region, countries, onSearchChange }) => {
           {countryNames}
         </ul>
         <a className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
-          onClick={this.handleOnClick} href="history.go(-1)">BACK</a>
+          onClick={this.handleOnClick} href="/">BACK</a>
       </div>
 
     </div>
