@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
-import AppRouter from './routes/AppRouter'
-import './App.css';
+import React, { Component } from "react";
+import AppRouter from "./routes/AppRouter";
+import "./App.css";
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       regionList: [],
       countryList: [],
       countries: [],
-      searchField: ''
+      searchField: ""
     };
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
-  componentDidMount(){
-    fetch('https://restcountries.eu/rest/v2/all')
-      .then(response => {
-        return response.json();
-      })
+  componentDidMount() {
+    fetch("https://restcountries.eu/rest/v2/all")
+      .then(response => response.json())
       .then(countries => {
         let regionList = [];
         let countryList = [];
@@ -26,26 +24,31 @@ class App extends Component {
           regionList.push(country.region);
           countryList.push(country.name);
         });
-        this.setState({countries: countries});
-        this.setState({regionList: this.findUniqRegions(regionList)});
-        this.setState({countryList: countryList})
+        this.setState({ countries: countries });
+        this.setState({ regionList: this.findUniqRegions(regionList) });
+        this.setState({ countryList: countryList });
       });
   }
 
-  findUniqRegions = (regionList) => {
+  findUniqRegions = regionList => {
     const newRegionList = regionList.filter(region => {
       return region !== "";
     });
     return Array.from(new Set(newRegionList)).sort();
-  }
+  };
 
-  onSearchChange = (text) => {
-    console.log(this.state.searchField)
-    this.setState({ searchField: text })
-  }
+  onSearchChange = text => {
+    console.log(this.state.searchField);
+    this.setState({ searchField: text });
+  };
 
   render() {
-    return <AppRouter onSearchChange={() => this.onSearchChange()} state={this.state}/>
+    return (
+      <AppRouter
+        onSearchChange={() => this.onSearchChange()}
+        state={this.state}
+      />
+    );
   }
 }
 
