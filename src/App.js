@@ -45,7 +45,7 @@ class App extends Component {
   render() {
     return (
       <AppRouter
-        onSearchChange={() => this.onSearchChange()}
+        onSearchChange={this.onSearchChange}
         state={this.state}
       />
     );

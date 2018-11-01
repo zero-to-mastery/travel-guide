@@ -21,7 +21,7 @@ export default (props) => (
         <Route path="/africa"
           render={() => (
             <Region
-              onSearchChange={() => props.onSearchChange()}
+              onSearchChange={props.onSearchChange}
               search={props.state.searchField}
               region={props.state.regionList[0]}
               countries={props.state.countries}
@@ -31,7 +31,7 @@ export default (props) => (
         <Route path="/americas"
           render={() => (
             <Region
-              onSearchChange={() => props.onSearchChange()}
+              onSearchChange={props.onSearchChange}
               search={props.state.searchField}
               region={props.state.regionList[1]}
               countries={props.state.countries}
@@ -41,7 +41,7 @@ export default (props) => (
         <Route path="/asia"
           render={() => (
             <Region
-              onSearchChange={() => props.onSearchChange()}
+              onSearchChange={props.onSearchChange}
               search={props.state.searchField}
               region={props.state.regionList[2]}
               countries={props.state.countries}
@@ -51,7 +51,7 @@ export default (props) => (
         <Route path="/europe"
           render={() => (
             <Region
-              onSearchChange={() => props.onSearchChange()}
+              onSearchChange={props.onSearchChange}
               search={props.state.searchField}
               region={props.state.regionList[3]}
               countries={props.state.countries}
@@ -61,7 +61,7 @@ export default (props) => (
         <Route path="/oceania"
           render={() => (
             <Region
-              onSearchChange={() => props.onSearchChange()}
+              onSearchChange={props.onSearchChange}
               search={props.state.searchField}
               region={props.state.regionList[4]}
               countries={props.state.countries}
@@ -71,7 +71,7 @@ export default (props) => (
         <Route path="/polar"
           render={() => (
             <Region
-              onSearchChange={() => props.onSearchChange()}
+              onSearchChange={props.onSearchChange}
               search={props.state.searchField} 
               region={props.state.regionList[5]}
               countries={props.state.countries}
