@@ -4,7 +4,8 @@ import CountryCard from './CountryCard';
 import '../styles/Region.css';
 
 const Region = ({ region, countries, onSearchChange, search }) => {
-  let countryList = countries.filter(country => country.region === region);
+  let countryList = countries.filter(country => country.region === region)
+      .filter(country => country.name.toLowerCase().startsWith(search.toLowerCase()) );
   let countryNames = countryList.map(country => <CountryCard key={country.name} countryData={country} />);
 
   return (
