@@ -11,7 +11,6 @@ class App extends Component {
       countries: [],
       searchField: ""
     };
-    this.onSearchChange = this.onSearchChange.bind(this);
   }
 
   componentDidMount() {
@@ -37,15 +36,15 @@ class App extends Component {
     return Array.from(new Set(newRegionList)).sort();
   };
 
-  onSearchChange = text => {
-    console.log(this.state.searchField);
+  onSearchChange = event => {
+    const text = event.target.value.toLowerCase();
     this.setState({ searchField: text });
   };
 
   render() {
     return (
       <AppRouter
-        onSearchChange={() => this.onSearchChange()}
+        onSearchChange={this.onSearchChange}
         state={this.state}
       />
     );
