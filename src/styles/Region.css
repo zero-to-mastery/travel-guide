@@ -6,6 +6,7 @@ h2 {
 
 .region {
     /* width: 300px; */
+    width: 100%;
 }
 
 .region-card {
