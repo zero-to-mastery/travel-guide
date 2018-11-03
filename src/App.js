@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       regionList: [],
       countryList: [],
+      flagList: [],
       countries: [],
       searchField: ""
     };
@@ -19,13 +20,16 @@ class App extends Component {
       .then(countries => {
         let regionList = [];
         let countryList = [];
+        let flagList = [];
         countries.forEach(country => {
           regionList.push(country.region);
           countryList.push(country.name);
+          flagList.push(country.flag);
         });
-        this.setState({ countries: countries });
+        this.setState({ countries });
         this.setState({ regionList: this.findUniqRegions(regionList) });
-        this.setState({ countryList: countryList });
+        this.setState({ countryList });
+        // this.setState({ flagList });
       });
   }
 
@@ -43,10 +47,7 @@ class App extends Component {
 
   render() {
     return (
-      <AppRouter
-        onSearchChange={this.onSearchChange}
-        state={this.state}
-      />
+      <AppRouter onSearchChange={this.onSearchChange} state={this.state} />
     );
   }
 }
