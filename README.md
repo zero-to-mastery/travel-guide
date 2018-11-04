@@ -1,6 +1,6 @@
 # Travel Guide ![React Project](https://img.shields.io/badge/Tech-React-blue.svg?longCache=true&style=for-the-badge)
 
-- A travel guide to suggest activities you can do once you arrive to a certain destination. Or you   can just browse destinations and check out the different available activities.
+- A travel guide to suggest activities you can do once you arrive to a certain destination. Or you can just browse destinations and check out the different available activities.
 
 ## To run this project
 
