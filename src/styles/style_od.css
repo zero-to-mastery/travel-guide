@@ -1,0 +1,40 @@
+body{
+  color: #ccc;
+}
+
+header{
+  width: 100%;
+  height: 60%;
+  border-radius: 1px solid #000;
+  /* margin: 20px; */
+  padding: 20px;
+  background: #eee;
+  padding-top: 0;
+  margin-top: -19px;
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
+.upper h1,p{
+    text-align: center;
+    color: #68b2d4;
+    font-size: 29px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul{
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+
+nav li{
+  float: left;
+  margin-left: 10px;
+}
+
+nav li > a{
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+}

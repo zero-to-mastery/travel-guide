@@ -1,63 +1,54 @@
-import React, { Component } from 'react';
-import AppRouter from './routes/AppRouter'
-import './App.css';
+import React, { Component } from "react";
+import AppRouter from "./routes/AppRouter";
+import "./App.css";
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       regionList: [],
       countryList: [],
-      searchField: '',
-      countries: []
+      flagList: [],
+      countries: [],
+      searchField: ""
     };
   }
 
-  componentDidMount(){
-    fetch('https://restcountries.eu/rest/v2/all')
-      .then(response => {
-        return response.json();
-      })
+  componentDidMount() {
+    fetch("https://restcountries.eu/rest/v2/all")
+      .then(response => response.json())
       .then(countries => {
         let regionList = [];
         let countryList = [];
+        let flagList = [];
         countries.forEach(country => {
           regionList.push(country.region);
           countryList.push(country.name);
+          flagList.push(country.flag);
         });
-        this.setState({countries: countries});
-        this.setState({regionList: this.findUniqRegions(regionList)});
-        this.setState({countryList: countryList})
+        this.setState({ countries });
+        this.setState({ regionList: this.findUniqRegions(regionList) });
+        this.setState({ countryList });
+        // this.setState({ flagList });
       });
   }
 
-  onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value })        
-  }
-
-  findUniqRegions = (regionList) => {
+  findUniqRegions = regionList => {
     const newRegionList = regionList.filter(region => {
       return region !== "";
     });
     return Array.from(new Set(newRegionList)).sort();
-  }
+  };
+
+  onSearchChange = event => {
+    const text = event.target.value.toLowerCase();
+    this.setState({ searchField: text });
+  };
 
   render() {
-    // const filteredCountries = this.state.countries.filter((country, i) =>{
-    //   return this.state.countries[i].name.toLowerCase().includes(this.state.searchField.toLowerCase());      
-    // })
-
-    // return (    
-    //   <div className='tc'>
-    //     <Header />
-    //     <SearchBox searchChange={this.onSearchChange}/>
-    //     <RegionList countries={filteredCountries} 
-    //       regions={this.state.regionList}>
-    //     </RegionList>        
-    //     <Footer />     
-    //   </div>
-    // );
-    return <AppRouter state={this.state}/>
+    return (
+      <AppRouter onSearchChange={this.onSearchChange} state={this.state} />
+    );
   }
 }
 

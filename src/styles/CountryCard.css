@@ -1,0 +1,47 @@
+.card {
+    height: 25vh;
+    width: 100vw;
+    background-color: rgb(221, 98, 0);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    hyphens: auto;
+    transition: all 1s;
+    font-size: 1.2em;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 480px) {
+    .card {
+        height: 25vh;
+        width: 40vw;
+        border-radius: 10px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .card {
+        height: 25vw;
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .card {
+        height: 25vw;
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .card {
+        height: 15vw;
+        width: 15vw;
+    }
+}
