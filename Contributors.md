@@ -4,4 +4,5 @@
 - [ngodi](https://github.com/ngodi)
 - [Pierre Khoury](https://github.com/PierreDeveloper18)
 - [mynaur](https://github.com/mynaur)
+- [richkmtb](https://github.com/richkmtb)
 
