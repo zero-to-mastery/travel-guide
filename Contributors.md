@@ -7,3 +7,4 @@
 - [akashkann](https://github.com/akashkann)
 - [gabipfeffer](https://github.com/gabipfeffer)
 - [BLiTz3R](https://github.com/BLiTz3R)
+- [umanghans](hhttps://github.com/umanghans)
