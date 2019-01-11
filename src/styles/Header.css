@@ -16,6 +16,7 @@
   -webkit-text-fill-color: transparent;
     font-family: 'Abril Fatface', cursive;
     font-size: 6em;
+    text-transform: uppercase;
 }
 
 .nav {
