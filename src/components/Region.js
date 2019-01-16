@@ -20,7 +20,6 @@ const Region = ({ region, countries, search, onSearchChange, flagList }) => {
         <ul className="list">{countryNames}</ul>
         <a
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
-          onClick={this.handleOnClick}
           href="/"
         >
           BACK
