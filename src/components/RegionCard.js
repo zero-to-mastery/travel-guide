@@ -33,8 +33,10 @@ export default class RegionCard extends React.Component {
   handleOnClick = () => {
     this.setState({ redirect: true });
   };
+
   render() {
     if (this.state.redirect) {
+      console.log(`in render redirect to ${this.state.path}`)
       return <Redirect push to={this.state.path} />;
     }
     console.log(this.state.region);
