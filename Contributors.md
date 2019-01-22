@@ -11,3 +11,4 @@
 - [dark-wonder](hhttps://github.com/dark-wonder)
 - [jawlee](https://github.com/jawlee)
 - [siklinb01](https://github.com/siklinb01)
+- [xFinality](https://github.com/xFinality)
