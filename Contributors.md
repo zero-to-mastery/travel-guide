@@ -10,3 +10,4 @@
 - [umanghans](hhttps://github.com/umanghans)
 - [dark-wonder](hhttps://github.com/dark-wonder)
 - [jawlee](https://github.com/jawlee)
+- [xFinality](https://github.com/xFinality)
