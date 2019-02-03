@@ -9,7 +9,8 @@
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.3",
-    "tachyons": "^4.11.1"
+    "tachyons": "^4.11.1",
+    "terser": "^3.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,9 +22,6 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
-  "devDependencies": {
-    "terser": "^3.14.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zero-to-mastery/travel-guide.git"
