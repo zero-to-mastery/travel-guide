@@ -6,7 +6,9 @@ const CountryCard = props => {
     backgroundImage: `url(${props.countryData.flag})`,
     backgroundSize: "200px 200px",
     backgroundRepeat: "no-repeat",
-    backgroundColor: "white"
+    backgroundPosition: "center",
+    backgroundColor: "white",
+    cursor: "pointer"
   };
   return <div style={bcg} className="card" />;
 };
