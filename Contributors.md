@@ -14,3 +14,4 @@
 - [xFinality](https://github.com/xFinality)
 - [@SuperSafie](https://github.com/SuperSafie)
 - [@Veene](https://github.com/Veene)
+- [@jckonewalik](https://github.com/jckonewalik)
