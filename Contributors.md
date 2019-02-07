@@ -15,3 +15,5 @@
 - [@SuperSafie](https://github.com/SuperSafie)
 - [@Veene](https://github.com/Veene)
 - [@jckonewalik](https://github.com/jckonewalik)
+- [Lordberbeross](https://github.com/lordberbeross)
+
