@@ -1,0 +1,19 @@
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+img:hover {
+    transform:scale(1.1);
+    
+}
