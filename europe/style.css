@@ -42,3 +42,28 @@ body {
   font-size: 16px;
 
 }
+
+h1{
+	text-align: center;
+}
+
+.intro {
+	color:#008000;
+	font-size: 17px;
+	text-align: center;
+}
+
+.pics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.myimage {
+	width: 350px;
+	height: 250px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	margin-right: 5px;
+	margin-left: 5px;
+}
