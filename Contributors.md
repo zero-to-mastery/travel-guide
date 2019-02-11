@@ -17,4 +17,9 @@
 - [@jckonewalik](https://github.com/jckonewalik)
 - [Lordberbeross](https://github.com/lordberbeross)
 - [@DanielMarcano](https://github.com/DanielMarcano)
+
+- [@sidebone](https://github.com/sidebone)
+
+
 - [@ytrkptl](https://github.com/ytrkptl)
+
