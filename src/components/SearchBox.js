@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/search.css'
 
 const SearchBox = (props) => (
-    <div className="searchContainer">
-        <div className="searchBox pa2 ">
+    <div>
+        <div className="searchBox pa2">
             <form>
                 <input
                     id="userInput" 

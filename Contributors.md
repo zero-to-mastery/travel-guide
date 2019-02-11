@@ -16,4 +16,5 @@
 - [@Veene](https://github.com/Veene)
 - [@jckonewalik](https://github.com/jckonewalik)
 - [Lordberbeross](https://github.com/lordberbeross)
+- [@DanielMarcano](https://github.com/DanielMarcano)
 
