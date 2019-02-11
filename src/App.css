@@ -33,10 +33,9 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f46732+0,fcb46f+100&1+12,0.4+100 */
-  background: -moz-linear-gradient(top, rgba(244,103,50,1) 0%, rgba(245,112,57,1) 12%, rgba(252,180,111,0.4) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(244,103,50,1) 0%,rgba(245,112,57,1) 12%,rgba(252,180,111,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(244,103,50,1) 0%,rgba(245,112,57,1) 12%,rgba(252,180,111,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, rgb(69, 178, 230) 0%,rgb(8, 7, 6) 50%, rgb(226, 74, 186) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgb(69, 178, 230) 0%,rgb(8, 7, 6) 50%, rgb(226, 74, 186) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgb(69, 178, 230) 0%,rgb(8, 7, 6) 50%, rgb(226, 74, 186) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f46732', endColorstr='#66fcb46f',GradientType=0 ); /* IE6-9 */
 }
 

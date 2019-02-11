@@ -16,4 +16,13 @@
     font-size: large;
     text-transform: capitalize;
     color: #fff;
+    transition: all .3s;
+}
+
+.search::placeholder {
+    transition: all .3s;
+}
+
+.search:focus::placeholder {
+    opacity: 0;
 }
