@@ -13,3 +13,13 @@
 - [siklinb01](https://github.com/siklinb01)
 - [xFinality](https://github.com/xFinality)
 - [@SuperSafie](https://github.com/SuperSafie)
+- [@Veene](https://github.com/Veene)
+- [@jckonewalik](https://github.com/jckonewalik)
+- [Lordberbeross](https://github.com/lordberbeross)
+- [@DanielMarcano](https://github.com/DanielMarcano)
+
+- [@sidebone](https://github.com/sidebone)
+
+
+- [@ytrkptl](https://github.com/ytrkptl)
+

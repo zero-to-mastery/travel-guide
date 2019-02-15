@@ -14,11 +14,12 @@
 .card:hover {
     transform: scale(1.05);
     opacity: 0.8;
+    transition: all 1s;
 }
 
 @media screen and (min-width: 480px) {
     .card {
-        height: 25vh;
+        height: 26vh;
         width: 40vw;
         border-radius: 10px;
         font-size: 1.5em;

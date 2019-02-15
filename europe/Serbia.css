@@ -1,0 +1,65 @@
+body {
+    margin:0px auto;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+nav {
+    display:inline;
+    
+    
+}
+
+nav > .container {
+    background-color:skyblue;
+    
+    }
+
+nav > .container > #nav-content {
+    position:relative;
+    left:250px;
+    
+}
+
+nav > .container > #nav-content > a {
+    color:black;
+    position:relative;
+    top:-15px;
+    font-size:20px;
+    text-decoration:none;
+    padding-left:15px;
+    padding-right:15px;
+
+}
+
+nav > .container > #nav-content > a:hover {
+    color:red;
+
+}
+#logo {
+    width:50px;
+    height:50px;
+    padding-right:15px;
+}
+
+.dropdown-content {
+    display:none;
+}
+
+.gallery > img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+img:hover {
+    transform:scale(1.1);
+    
+}
