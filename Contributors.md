@@ -17,7 +17,7 @@
 - [@jckonewalik](https://github.com/jckonewalik)
 - [Lordberbeross](https://github.com/lordberbeross)
 - [@DanielMarcano](https://github.com/DanielMarcano)
-
+- [AlexanderKruk](https://github.com/AlexanderKruk)
 - [@sidebone](https://github.com/sidebone)
 
 
