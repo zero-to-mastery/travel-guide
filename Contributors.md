@@ -19,7 +19,6 @@
 - [@DanielMarcano](https://github.com/DanielMarcano)
 - [AlexanderKruk](https://github.com/AlexanderKruk)
 - [@sidebone](https://github.com/sidebone)
-
-
 - [@ytrkptl](https://github.com/ytrkptl)
+- [@rezzco](https://github.com/rezzco)
 
