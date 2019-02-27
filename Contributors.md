@@ -1,4 +1,4 @@
-- [Furkan Kursun](https://github.com/soyu1234)
+ - [Furkan Kursun](https://github.com/soyu1234)
 - [ido-netaneli](https://github.com/ido-netaneli)
 - [rpaltayev](https://github.com/rpaltayev)
 - [ngodi](https://github.com/ngodi)
@@ -21,4 +21,5 @@
 - [@sidebone](https://github.com/sidebone)
 - [@ytrkptl](https://github.com/ytrkptl)
 - [@rezzco](https://github.com/rezzco)
+- [@liissaar](https://github.com/liissaar)
 
