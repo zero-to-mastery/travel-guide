@@ -23,4 +23,5 @@
 - [@rezzco](https://github.com/rezzco)
 - [@liissaar](https://github.com/liissaar)
 - [@Arsen4ik](https://github.com/Arsen4ik)
+- [@AmujoDotun](https://github.com/AmujoDotun)
 
