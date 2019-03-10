@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>West Africa</title>
+</head>
+
+<style>
+	ul{
+		text-decoration: red;
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+  .navbar {
+  overflow: hidden;
+  background-color:gold;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a blue background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 13px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: grey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+	</style>
+
+<body>
+	<h1>Let's Tour West Africa</h1>
+	<ul>
+		<li><b><a href="https://en.wikipedia.org/wiki/Benin">Benin</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Burkina_Faso">Burkina Faso</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Cape_Verde">Cape Verde</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ivory_Coast">Ivory Coast</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/The_Gambia">The Gambia</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ghana">Ghana</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Guinea">Guinea</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Guinea-Bissau">Guinea-Bissau</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Liberia">Liberia</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Mali">Mali</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Mauritania">Mauritania</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Niger">Niger</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Nigeria">Nigeria</a></b></li>
+		<div class="NigerianCities">
+  <div class="dropdown">
+    <button class="dropbtn">Major Nigerian Cities by Size 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="content">
+      <li><b><a href="https://en.wikipedia.org/wiki/Lagos">Lagos</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Kano">Kano</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ibadan">Ibadan</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Benin">Benin City</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/PortHarcourt">Port Harcourt</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Jos">Jos</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ilorin">Ilorin</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Abuja">Abuja</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Kaduna">Kaduna</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Enugu">Enugu</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Zaria">Zaria</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Warri">Warri</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Maiduguri">Maiduguri</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ife">Ife</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Aba">Aba</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Bauchi">Bauchi</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Akure">Akure</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Abeokuta">Abeokuta</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Uyo">Uyo</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Onitsha">Onitsha</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Sokoto">Sokoto</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Oshogbo">Oshogbo</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Yola">Yola</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Owerri">Owerri</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Calabar">Calabar</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Umuahia">Umuahia</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ondo">Ondo</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Minna">Minna</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Lafia">Lafia</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Okenne">Okenne</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Kastina">Kastina</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Nsuka">Nsuka</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Ado-Ekiti">Ado Ekiti</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Akwa">Akwa</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Ogbomoso">Ogbomoso</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Iseyin">Iseyin</a></b></li>
+		<b><a href="https://en.wikipedia.org/wiki/Mubi">Mubi</a></b></li>
+		
+    </div>
+  </div> 
+</div>
+		<li><b><a href="https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha">Saint Helena, Ascension and Tristan da Cunha (United Kingdom Overseas Territory) </a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Senegal">Senegal</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Sierra_Leone">Sierra Leone</a></b></li>
+		<li><b><a href="https://en.wikipedia.org/wiki/Togo">Togo</a></b></li>
+	</ul>
+
+</body>
+</html>
