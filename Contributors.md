@@ -27,3 +27,4 @@
 - [@Jrejoire](https://github.com/Jrejoire)
 - [@Kingbee1](https://github.com/Kingbee1)
 - [@mishhubc](https://github.com/mishhubc)
+- [@cruzex100](https://github.com/cruzex100)
