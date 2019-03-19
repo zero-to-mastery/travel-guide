@@ -43,23 +43,30 @@ body {
 
 }
 
-h1{
+/*Ireland CSS*/
+
+.ireland-header{
 	text-align: center;
 }
 
-.intro {
+.ireland-text {
 	color:#008000;
 	font-size: 17px;
 	text-align: center;
 }
 
-.pics {
+.ireland-pics-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.myimage {
+.ireland-body{
+	font-family: 'Arima Madurai';
+	font-size: 22px;
+}
+
+.ireland-images {
 	width: 350px;
 	height: 250px;
 	transition: .5s ease;
