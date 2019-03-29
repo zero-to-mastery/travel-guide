@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AppRouter from "./routes/AppRouter";
 import "./App.css";
+import 'tachyons';
 
 class App extends Component {
   constructor(props) {
@@ -21,28 +22,28 @@ class App extends Component {
         let regionList = [];
         let countryList = [];
         let flagList = [];
-        countries.forEach(country => {
-          regionList.push(country.region);
-          countryList.push(country.name);
-          flagList.push(country.flag);
-        });
-        this.setState({ countries });
+        countries.map((list, i) => {
+          const { region, name, flag } = list
+          return (
+            regionList.push(region),
+            countryList.push(name),
+            flagList.push(flag)
+          );
+        }); 
+        this.setState({ countries: countries });
         this.setState({ regionList: this.findUniqRegions(regionList) });
         this.setState({ countryList });
-        // this.setState({ flagList });
+        this.setState({ flagList });
       });
+
   }
 
-  findUniqRegions = regionList => {
-    const newRegionList = regionList.filter(region => {
-      return region !== "";
-    });
-    return Array.from(new Set(newRegionList)).sort();
-  };
+ findUniqRegions = (regionList) => { 
+     return Array.from(new Set(regionList.filter(region => region !== "").sort()));
+   }
 
-  onSearchChange = event => {
-    const text = event.target.value.toLowerCase();
-    this.setState({ searchField: text });
+  onSearchChange = (event) => {
+    this.setState({ searchField: event.target.value.toLowerCase() });
   };
 
   render() {
