@@ -10,7 +10,7 @@ const CountryCard = props => {
     backgroundColor: "white",
     cursor: "pointer"
   };
-  return <div style={bcg} className="card" />;
+  return <div style={bcg} className="card v-top">{props.countryData.name}</div>;
 };
 
 export default CountryCard;

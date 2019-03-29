@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AppRouter from "./routes/AppRouter";
 import "./App.css";
+import 'tachyons';
 
 class App extends Component {
   constructor(props) {

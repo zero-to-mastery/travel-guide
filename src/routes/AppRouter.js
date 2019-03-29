@@ -26,6 +26,7 @@ export default props => {
             region={props.state.regionList[index]}
             countries={props.state.countries}
             flags={props.state.flagList}
+            names={props.state.contryList}
           />
         )}
       />
