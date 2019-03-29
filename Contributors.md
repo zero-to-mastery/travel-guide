@@ -7,6 +7,7 @@
 - [akashkann](https://github.com/akashkann)
 - [gabipfeffer](https://github.com/gabipfeffer)
 - [BLiTz3R](https://github.com/BLiTz3R)
+- [peterson oaikhenah](https://github.com/nextwebb)
 - [umanghans](hhttps://github.com/umanghans)
 - [dark-wonder](hhttps://github.com/dark-wonder)
 - [jawlee](https://github.com/jawlee)
