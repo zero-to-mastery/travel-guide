@@ -31,4 +31,5 @@
 - [@cruzex100](https://github.com/cruzex100)
 - [@2neyadets](https://github.com/2neyadets)
 - [@ergonometry](https://github.com/ergonometry)
+- [@stefhangibson](https://github.com/stefhangibson)
 - [@Zeafromar](https://github.com/Zeafromar)
