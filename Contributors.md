@@ -33,3 +33,4 @@
 - [@ergonometry](https://github.com/ergonometry)
 - [@stefhangibson](https://github.com/stefhangibson)
 - [@Zeafromar](https://github.com/Zeafromar)
+- [@toughguyas](https://github.com/toughguyas)
