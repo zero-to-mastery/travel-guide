@@ -34,3 +34,4 @@
 - [@stefhangibson](https://github.com/stefhangibson)
 - [@Zeafromar](https://github.com/Zeafromar)
 - [@nsadev](https://github.com/nsadev)
+- [@dykrupp](https://github.com/dykrupp)
