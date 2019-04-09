@@ -1,5 +1,6 @@
  - [Furkan Kursun](https://github.com/soyu1234)
 - [ido-netaneli](https://github.com/ido-netaneli)
+- [sandipguchait](https://github.com/sandipguchait)
 - [rpaltayev](https://github.com/rpaltayev)
 - [ngodi](https://github.com/ngodi)
 - [Pierre Khoury](https://github.com/PierreDeveloper18)
