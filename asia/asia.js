@@ -4,7 +4,7 @@ import './style.css';
 const Asia = () => {
   return (
     <div>
-        <h1><strong>Asia</strong></h1>
+        <h1>Asia</h1>
         <h1 style={{ alignItems: 'center'}}>China</h1>
           <select>
             <option>
@@ -58,7 +58,7 @@ const Asia = () => {
                 <h1 id="h1-jeju-island">Jeju-Island</h1>
                 <div id="jeju-picture"><img id="jeju-picture-inside" src="./image/jeju_island.jpg" /></div>
                 <p id="jeju-description">	Jeju Island is an island in Jeju Province, South Korea. The island lies in the Korea Strait, south of South Jeolla Province. The island contains the natural World Heritage Site Jeju Volcanic Island and Lava Tubes.[1] Jejudo has a moderate climate; even in winter, the temperature rarely falls below 0 °C (32 °F). Jeju is a popular holiday destination and a sizable portion of the economy relies on tourism and economic activity from its civil/naval base.</p>
-              </div>	
+            </div>	
     </div>
   );
 };
