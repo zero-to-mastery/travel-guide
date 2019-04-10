@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Region.css";
 
 const initialProps = {
@@ -35,11 +35,6 @@ export default class RegionCard extends React.Component {
   };
 
   render() {
-    if (this.state.redirect) {
-      console.log(`in render redirect to ${this.state.path}`)
-      return <Redirect push to={this.state.path} />;
-    }
-    console.log(this.state.region);
     return (
       <div
         className="tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
@@ -57,12 +52,12 @@ export default class RegionCard extends React.Component {
             : this.state.countries.splice(0, 10)}
         </ul>
 
-        <a
+        <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
-          href="#0"
+          to={`${this.state.path}`}
         >
           View More
-        </a>
+        </Link>
       </div>
     );
   }
