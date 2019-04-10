@@ -42,6 +42,21 @@ const Asia = () => {
               <option>Sumba</option>
             </select>
 
+        <h1 style={{ alignItems: 'center' }}>Japan</h1>
+          <h3>9 Provinces of Japan</h3>
+            <select name="Provinces">
+                <option value="Hokkaido">Hokkaido</option>
+                <option value="Tohoku">Tohoku</option>
+                <option value="Kanto" selected>Kanto</option>
+                <option value="Chubu">Chubu</option>
+                <option value="Kansai">Kansai</option>
+                <option value="Chugoku">Chugoku</option>
+                <option value="Kyushu">Kyushu</option>
+                <option value="Shikoku">Shikoku</option>
+                <option value="Okinawa">Okinawa</option>
+            </select>
+          <br>	
+
         <h1 style={{ alignItems: 'center' }}>South Korea</h1>
           <h3>Four major cities in South Korea</h3>
             <select name="cities">
