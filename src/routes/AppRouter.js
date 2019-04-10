@@ -4,6 +4,7 @@ import Region from "../components/Region";
 import RegionList from "../components/RegionList";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
+import Detail from '../components/CountryDetails/Detail';
 
 export default props => {
   const regions = [
@@ -49,6 +50,13 @@ export default props => {
             )}
           />
           {routes}
+          <Route  exact path="/detail/:id" render={() => (
+              <Detail 
+                  flags={props.state.flagList}
+                  countries={props.state.countries}
+                />
+               )}
+              />
         </Switch>
         <Footer />
       </div>
