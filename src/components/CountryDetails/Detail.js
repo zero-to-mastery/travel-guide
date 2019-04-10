@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Region.css';
+import Loader from '../utils/Loader';
 import { withRouter } from 'react-router-dom'
 import axios from 'axios';
 
@@ -22,7 +23,7 @@ class Detail extends React.Component {
      const { details } = this.state;
 
      if( !details ) {
-         return <div>Loading.....</div>
+         return <Loader/>
      } 
      return (
          <div>
