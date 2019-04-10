@@ -22,6 +22,7 @@ class App extends Component {
         let regionList = [];
         let countryList = [];
         let flagList = [];
+
         countries.map((list, i) => {
           const { region, name, flag } = list
           return (
