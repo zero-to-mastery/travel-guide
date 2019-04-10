@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.18.0",
     "lodash": "^4.17.11",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.8",
+    "react-spinners": "^0.5.4",
     "tachyons": "^4.11.1"
   },
   "devDependencies": {
