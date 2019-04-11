@@ -37,7 +37,7 @@ class Detail extends React.Component {
              <h3><strong>TimeZone</strong>: {details.timezones}</h3>
              <Link
                 className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
-                to="/"
+                to="/travel-guide"
             >
                 BACK
             </Link>
