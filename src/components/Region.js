@@ -10,7 +10,7 @@ const Region = ({ region, countries, search, onSearchChange, flagList }) => {
       country.region === region && country.name.toLowerCase().includes(search)
   );
   let countryNames = countryList.map(country => (
-    <Link to={`/detail/${country.name}`}>
+    <Link to={`/travel-guide/detail/${country.name}`}>
       <CountryCard key={country.name} countryData={country} />
     </Link>
   ));
@@ -23,7 +23,7 @@ const Region = ({ region, countries, search, onSearchChange, flagList }) => {
         <ul className="list" >{countryNames}</ul>
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
-          to="/"
+          to="/travel-guide"
         >
           BACK
         </Link>
