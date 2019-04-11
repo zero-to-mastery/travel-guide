@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Region.css';
 import Loader from '../utils/Loader';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import axios from 'axios';
 
 
@@ -35,6 +35,12 @@ class Detail extends React.Component {
              <h3><strong>Region</strong>: {details.region}</h3>
              <h3><strong>Native</strong>: {details.demonym}</h3>
              <h3><strong>TimeZone</strong>: {details.timezones}</h3>
+             <Link
+                className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
+                to="/travel-guide"
+            >
+                BACK
+            </Link>
          </div>
      )
    }

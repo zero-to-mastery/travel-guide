@@ -8,12 +8,12 @@ import Detail from '../components/CountryDetails/Detail';
 
 export default props => {
   const regions = [
-    "/africa",
-    "/americas",
-    "/asia",
-    "/europe",
-    "/oceania",
-    "/polar"
+    "/travel-guide/africa",
+    "/travel-guide/americas",
+    "/travel-guide/asia",
+    "/travel-guide/europe",
+    "/travel-guide/oceania",
+    "/travel-guide/polar"
   ];
   const routes = regions.map((region, index) => {
     return (
@@ -40,7 +40,7 @@ export default props => {
         <Header />
         <Switch>
           <Route
-            path="/"
+            path="/travel-guide"
             exact={true}
             render={() => (
               <RegionList
@@ -50,7 +50,7 @@ export default props => {
             )}
           />
           {routes}
-          <Route  exact path="/detail/:id" render={() => (
+          <Route  exact path="/travel-guide/detail/:id" render={() => (
               <Detail 
                   flags={props.state.flagList}
                   countries={props.state.countries}
