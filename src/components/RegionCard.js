@@ -26,7 +26,7 @@ export default class RegionCard extends React.Component {
         <li key={country.name}>{country.name}</li>
       )),
       region: name,
-      path: `/${name.toLowerCase()}`
+      path: `/travel-guide/${name.toLowerCase()}`
     };
   }
 
