@@ -15,7 +15,11 @@ class Detail extends React.Component {
         const { id } = this.props.match.params;
         axios.get(`https://restcountries.eu/rest/v2/name/${id}`)
             .then(response => {
-                this.setState({ details: response.data[0] })
+                if(id.toLowerCase() === "india") {
+                    this.setState({details: response.data[1]})
+                } else {
+                    this.setState({ details: response.data[0] })
+                }
             })
    }
 
