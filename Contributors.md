@@ -41,3 +41,4 @@
 - [@kweku76](https://github.com/kweku76)
 - [@Vincent-Mpenyana](https://github.com/Vincent-Mpenyana)
 - [@Pourush1](https://github.com/Pourush1)
+- [@jgulbickyte](https://github.com/jgulbickyte)
