@@ -39,6 +39,7 @@ class Detail extends React.Component {
              <h3><strong>Region</strong>: {details.region}</h3>
              <h3><strong>Native</strong>: {details.demonym}</h3>
              <h3><strong>TimeZone</strong>: {details.timezones}</h3>
+             <h3><strong>Temperature</strong>:{details.temperature}</h3>
              <Link
                 className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
                 to="/travel-guide"
