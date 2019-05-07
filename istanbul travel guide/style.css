@@ -51,7 +51,7 @@ body{
   }
 
 .colorGridContainer{
-	background: #041D37; /* Old browsers */
+	background: #4A6B8A; /* Old browsers */
     background: -moz-linear-gradient(top,  #4A6B8A 0%,  #4A6B8A 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4A6B8A), color-stop(100%, #4A6B8A)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #4A6B8A 0%,#4A6B8A 100%); /* Chrome10+,Safari5.1+ */
@@ -72,7 +72,7 @@ body{
 }
 
 .colorG{
-	background: blue; /* Old browsers */
+	background: #758AA8; /* Old browsers */
     background: -moz-linear-gradient(top, #758AA8 0%, #758AA8 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#758AA8), color-stop(100%,#758AA8)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #758AA8 0%,#758AA8 100%);  /* Chrome10+,Safari5.1+ */
