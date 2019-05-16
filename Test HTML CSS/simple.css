@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Thasadith', sans-serif;
+	color: white;
+	background-color: black;
+}
+
+.nav{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	font-size: 1.7em;
+	margin:0;
+}
+
+li{
+	padding: 0px 20px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.picture{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 2em;
+}
+
+.individual{
+	margin:20px;
+}
+
+footer{
+    text-align: center;
+}
