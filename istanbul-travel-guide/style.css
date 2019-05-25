@@ -1,0 +1,140 @@
+body{
+	margin: auto 0; 
+	font-family: Arial;
+}
+
+  .titleMain{
+  	text-align:center;
+  	margin-top: 50px;
+  	font-size:70px;
+  	color:white; 
+  	font-weight:bold; 
+  	text-shadow: 3px 3px black;
+  }
+
+.zone{
+	color:#FFF;
+    font-size :2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+	}
+.zone:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.box:hover{
+	-webkit-transform: rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	height: 500px;
+
+}
+
+.imgCover{
+		background-position: center;
+      background-image: url("istCover.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;color:white; font-weight:bold; text-shadow: 3px 3px black
+      height: 100%; 
+
+  }
+
+.colorGridContainer{
+	background: #4A6B8A; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4A6B8A 0%,  #4A6B8A 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4A6B8A), color-stop(100%, #4A6B8A)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4A6B8A 0%,#4A6B8A 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4A6B8A 0%, #4A6B8A 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4A6B8A 0%, #4A6B8A 100%); /* IE10+ */
+    background: linear-gradient(top,  #4A6B8A 0%, #4A6B8A 100%); /* W3C */
+}
+
+.grid{
+	display: grid;
+	width:80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	grid-template-columns: repeat(auto-fill,minmax(200px,1fr));	
+	grid-template-rows: 1fr ;
+	grid-gap: 20px;
+	justify-items: center;
+}
+
+.colorG{
+	background: #758AA8; /* Old browsers */
+    background: -moz-linear-gradient(top, #758AA8 0%, #758AA8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#758AA8), color-stop(100%,#758AA8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #758AA8 0%,#758AA8 100%);  /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #758AA8 0%,#758AA8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #758AA8 0%,#758AA8 100%); /* IE10+ */
+    background: linear-gradient(top, #758AA8 0%,#758AA8 100%); /* W3C */
+}		
+.box{
+	text-align: center;
+  	top:0px;
+	background-color: #4A6B8A;
+    display: grid;
+    align-items: stretch; 
+    margin-top:15px;
+    margin-bottom: 15px;
+
+}
+
+.box img {/*select all img elements where the parent is a box element*/
+    margin: 0; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 220px;
+	width: 100%;
+	margin-bottom: 10px;
+   }
+
+  
+.textBox{
+     font-size: 20px;
+     font-weight:bold; 
+  	 text-shadow: 1px 1px black;
+	 color:white; 
+	 width: 90%;
+	
+}
+.btn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.foot{
+	
+	font-weight:bold; 
+  	text-shadow: 1px 1px black;
+	color:white;
+	height: 100%;
+	text-align: center;
+	 font-size: 16px;
+}
+.footColour{
+	background: #4A6B8A; /* Old browsers */
+    background: -moz-linear-gradient(top, #4A6B8A 0%, #4A6B8A 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A6B8A), color-stop(100%,#4A6B8A)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4A6B8A 0%,#4A6B8A 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #4A6B8A 0%,#4A6B8A 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #4A6B8A 0%,#4A6B8A 100%); /* IE10+ */
+    background: linear-gradient(top, #4A6B8A 0%,#4A6B8A 100%); /* W3C */
+}
+.textF{
+	 font-size: 20px;
+	 }
+
