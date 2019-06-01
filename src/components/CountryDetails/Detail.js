@@ -33,7 +33,7 @@ class Detail extends React.Component {
          <div>
              <img alt={details.region} src={details.flag} height="100" width="200"/>
              <h1>{this.props.match.params.id}</h1>
-             <h3>Population: {details.population}</h3>
+             <h3>Population: {details.population.toLocaleString()}</h3>
              <h3><strong>Capital</strong>: {details.capital}</h3>
              <h3><strong>Call Code</strong>: {details.callingCodes}</h3>
              <h3><strong>Region</strong>: {details.region}</h3>
