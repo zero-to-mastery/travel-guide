@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 class Detail extends React.Component {
-    
+
     state = {
         details: null
     }
@@ -28,7 +28,7 @@ class Detail extends React.Component {
 
      if( !details ) {
          return <Loader/>
-     } 
+     }
      return (
          <div>
              <img alt={details.region} src={details.flag} height="100" width="200"/>
