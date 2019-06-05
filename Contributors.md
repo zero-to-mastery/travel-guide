@@ -50,3 +50,4 @@
 - [@pedromzgrc](http://github.com/pedromzgrc)
 - [@kostispodaras](https://github.com/kostisPodaras)
 - [@sarizzuz](https://github.com/sarizzuz)
+- [@mariyanyanakiev](https://github.com/mariyanyanakiev)
