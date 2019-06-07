@@ -50,5 +50,6 @@
 - [@pedromzgrc](http://github.com/pedromzgrc)
 - [@kostispodaras](https://github.com/kostisPodaras)
 - [@sarizzuz](https://github.com/sarizzuz)
+- [@SimplyToCreate](https://github.com/SimplyToCreate)
 - [@mariyanyanakiev](https://github.com/mariyanyanakiev)
 - [@aditya1906](https://github.com/aditya1906)
