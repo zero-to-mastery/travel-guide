@@ -39,6 +39,7 @@
 - [@Gajhendran](https://github.com/Gajhendran)
 - [@01Clarian](https://github.com/01Clarian)
 - [@kweku76](https://github.com/kweku76)
+- [@mrzahidjabbar](https://github.com/mrzahidjabbar)
 - [@Vincent-Mpenyana](https://github.com/Vincent-Mpenyana)
 - [@Pourush1](https://github.com/Pourush1)
 - [@jgulbickyte](https://github.com/jgulbickyte)
@@ -54,3 +55,4 @@
 - [@mariyanyanakiev](https://github.com/mariyanyanakiev)
 - [@aditya1906](https://github.com/aditya1906)
 - [@clintonwuks](https://github.com/clintonwuks)
+
