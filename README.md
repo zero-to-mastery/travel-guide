@@ -7,6 +7,6 @@
 - Clone(fork) this repository
 - Run these following commands on your terminal/ cmd prompt:
   - cd travel-guide
-  - run npm install
-  - run npm start
+  - npm run install
+  - npm run start
   - enter [http://localhost:3000] in your browser
