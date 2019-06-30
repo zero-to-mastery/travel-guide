@@ -55,9 +55,10 @@
 - [@mariyanyanakiev](https://github.com/mariyanyanakiev)
 - [@aditya1906](https://github.com/aditya1906)
 - [@clintonwuks](https://github.com/clintonwuks)
--[@connectthapa](https://github.com/ThapaRahul)
--[@naftalib](https://github.com/naftalib)
--[@BATMANGOO](https://github.com/BATMANGOO)
--[@Pvanloon1983](https://github.com/Pvanloon1983)
+- [@SudeepaGo](https://github.com/SudeepaGo)
+- [@connectthapa](https://github.com/ThapaRahul)
+- [@naftalib](https://github.com/naftalib)
+- [@BATMANGOO](https://github.com/BATMANGOO)
+- [@Pvanloon1983](https://github.com/Pvanloon1983)
 
 
