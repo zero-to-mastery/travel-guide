@@ -22,9 +22,11 @@ export default class RegionCard extends React.Component {
   constructor({ name, countryList }) {
     super();
     this.state = {
-      countries: countryList.map(country => (
-        <li key={country.name}>{country.name}</li>
-      )),
+      countries: countryList.sort((a,b) => {
+        return b.population - a.population;
+      }).map(country => {
+        return country.name
+      }),
       region: name,
       path: `/travel-guide/${name.toLowerCase()}`
     };
@@ -34,7 +36,17 @@ export default class RegionCard extends React.Component {
     this.setState({ redirect: true });
   };
 
+  displayCountries = () => {
+    let countriesToDisplay = [];
+    let y = (this.state.countries.length > 10 ? 10 : this.state.countries.length)
+    for (var x = 0; x < y; x++) {
+      countriesToDisplay.push(this.state.countries[x]);
+    }
+    return countriesToDisplay;
+  }
+
   render() {
+    console.log(this.state.countries);
     return (
       <div
         className="tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
@@ -46,11 +58,9 @@ export default class RegionCard extends React.Component {
           alt=""
         />
         <h2>{this.state.region}</h2>
-        <ul className="list pl0">
-          {this.state.countries.length < 11
-            ? this.state.countries
-            : this.state.countries.splice(0, 10)}
-        </ul>
+        <div className="ph4 mb3">
+          {this.displayCountries().join(', ')}
+        </div>
 
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
