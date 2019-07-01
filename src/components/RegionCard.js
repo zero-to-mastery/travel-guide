@@ -38,7 +38,7 @@ export default class RegionCard extends React.Component {
 
   displayCountries = () => {
     let countriesToDisplay = [];
-    let y = (this.state.countries.length > 10 ? 10 : this.state.countries.length)
+    let y = (this.state.countries.length > 10 ? 10 : this.state.countries.length);
     for (var x = 0; x < y; x++) {
       countriesToDisplay.push(this.state.countries[x]);
     }
@@ -46,7 +46,6 @@ export default class RegionCard extends React.Component {
   }
 
   render() {
-    console.log(this.state.countries);
     return (
       <div
         className="tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
