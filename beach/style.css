@@ -1,0 +1,112 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  height: 100%;
+  width: 100%;
+  transition: all s;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
+  
+  
+  box-shadow: inset 0 0 20px black;
+  background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.2), rgba(18, 10, 20, 0.0)),url('beach.jpg');
+  /* animation: gogo 8s infinite; */
+  
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+h1{
+  color: white;
+  font-family:'Montserrat';
+  margin-top: 20px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  border-radius:47% 46% 29% 69% / 11% 21% 41% 37%   ;
+  box-shadow: 10px 10px 10px black;
+  background: linear-gradient(to right, #ffe000, #799f0c);  
+  height: 70px;
+ 
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* @keyframes gogo {
+  0%{background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('aerial-backdrop-background-1437870.jpg');}
+
+  50% {background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('aerial-backdrop-background-1437870.jpg')}
+
+  100%{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('beach.jpg');
+  }
+
+} */
+
+.btn{
+   border: 1px solid white;
+  background-color: transparent;
+  height: 40px;
+  cursor: pointer;
+  color: rgb(27, 26, 26);
+  background: linear-gradient(to right, #ffe000, #799f0c);
+}
+
+ 
+ 
+.contain{
+  color: rgb(236, 223, 223);
+   display: flex;
+   flex-direction: column;
+  position: relative;
+  top: 30%;
+  align-items:center;
+  
+     text-shadow: 4px 4px 5px black;
+}
+.bb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+input[type="email"]{
+  border-radius: 50px  0px 0px 50px;
+  width: 300px;
+  height: 35px;
+border: none;
+outline: none;
+ 
+}
+
+input[type="submit"]{
+
+  background: linear-gradient(to right, #ffe000, #799f0c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0px  50px 50px 0px;
+   margin-left: -10px;
+  width: 80px;
+  height: 36px;
+  font-family:'Montserrat';
+color: rgb(49, 46, 46);
+font-weight: bolder;
+font-size: 1.1em;
+border: none;
+cursor: pointer;
+}
+
