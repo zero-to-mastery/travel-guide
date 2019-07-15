@@ -2,6 +2,11 @@
 
 h2 {
     font-size: 2em;
+    color: white;
+}
+
+.h2black {
+    color: black;
 }
 
 .region {

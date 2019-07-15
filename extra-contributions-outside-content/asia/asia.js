@@ -55,7 +55,7 @@ const Asia = () => {
                 <option value="Shikoku">Shikoku</option>
                 <option value="Okinawa">Okinawa</option>
             </select>
-          <br>	
+          <br/>	
 
         <h1 style={{ alignItems: 'center' }}>South Korea</h1>
           <h3>Four major cities in South Korea</h3>
@@ -75,7 +75,7 @@ const Asia = () => {
                 <p id="jeju-description">	Jeju Island is an island in Jeju Province, South Korea. The island lies in the Korea Strait, south of South Jeolla Province. The island contains the natural World Heritage Site Jeju Volcanic Island and Lava Tubes.[1] Jejudo has a moderate climate; even in winter, the temperature rarely falls below 0 °C (32 °F). Jeju is a popular holiday destination and a sizable portion of the economy relies on tourism and economic activity from its civil/naval base.</p>
             </div>	
     </div>
-  );
+  )
 };
 
 export default Asia;

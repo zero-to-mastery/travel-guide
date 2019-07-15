@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(54, 54, 54);
   height: 150px;
   padding: 20px;
   color: white;
@@ -33,9 +33,14 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background: -moz-linear-gradient(top, rgb(69, 178, 230) 0%,rgb(8, 7, 6) 50%, rgb(226, 74, 186) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgb(69, 178, 230) 0%,rgb(8, 7, 6) 50%, rgb(226, 74, 186) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgb(69, 178, 230) 0%,rgb(8, 7, 6) 50%, rgb(226, 74, 186) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, rgb(8, 7, 6) 0%,rgb(8, 7, 6) 50%, rgba(0, 0, 0, 0.233) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgb(8, 7, 6) 0%,rgba(8, 7, 6, 0.247) 50%, rgb(0, 0, 0.233) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right bottom, rgba(2, 2, 2, 0.3), rgba(0, 0, 0, 0.856)), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+  background-repeat: no-repeat;
+  background-size: cover; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-position: center;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f46732', endColorstr='#66fcb46f',GradientType=0 ); /* IE6-9 */
 }
 
@@ -46,3 +51,4 @@
 .region {
   padding-top: 15px;
 }
+
