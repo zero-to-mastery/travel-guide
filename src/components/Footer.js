@@ -1,20 +1,23 @@
 import React from "react";
-
+// import "../styles/footer.css";
 const footer = () => {
   return (
     <div>
       <footer
         style={{
-          backgroundImage:
-            "url(http://demap.com.au/wp-content/uploads/2014/05/Banner.png)"
+          // backgroundImage:
+          //   "url(http://demap.com.au/wp-content/uploads/2014/05/Banner.png)"
+            backgroundColor: "black"
         }}
         className="tc-l bg-center cover bg-purple"
       >
         <div className="w-100 ph2 pv2 bg-black-80">
           <a
-            className="link white-60 bg-transparent hover-purple  inline-flex items-center ma2 tc br2 pa2"
-            href="https://facebook.com"
+            className="link white-60 bg-transparent hover-white  inline-flex items-center ma2 tc br2 pa2"
+            href="https://www.facebook.com/zerotocodemastery/"
             title="Facebook"
+            target="_blank"
+            rel='noopener noreferrer'
           >
             <svg
               className="dib h2 w2"
@@ -34,9 +37,11 @@ const footer = () => {
             <span className="f6 ml3 pr2">Facebook</span>
           </a>
           <a
-            className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
-            href="https://github.com/mrmrs"
+            className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            href="https://github.com/zero-to-mastery"
             title="GitHub"
+            target="_blank"
+            rel='noopener noreferrer'
           >
             <svg
               className="dib h2 w2"
@@ -53,9 +58,11 @@ const footer = () => {
             <span className="f6 ml3 pr2">GitHub</span>
           </a>
           <a
-            className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
-            href="https://instagram.com/mrmrs_"
+            className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            href="https://www.instagram.com/andreineagoie/"
             title="Instagram"
+            target="_blank"
+            rel='noopener noreferrer'
           >
             <svg
               className="dib h2 w2"
@@ -72,9 +79,11 @@ const footer = () => {
             <span className="f6 ml3 pr2">Instagram</span>
           </a>
           <a
-            className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
-            href="https://youtube.com"
+            className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            href="https://www.youtube.com/channel/UCt7T2EvYBqvlxNU3fbE4Y7g"
             title="youtube"
+            target="_blank"
+            rel='noopener noreferrer'
           >
             <svg
               className="dib w2 h2"
@@ -92,9 +101,11 @@ const footer = () => {
           </a>
 
           <a
-            className="link white-60 bg-transparent hover-purple inline-flex items-center ma2 tc br2 pa2"
-            href="https://twitter.com/mrmrs_"
+            className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
+            href="https://twitter.com/AndreiNeagoie"
             title="Twitter"
+            target="_blank"
+            rel='noopener noreferrer'
           >
             <svg
               className="dib h2 w2"

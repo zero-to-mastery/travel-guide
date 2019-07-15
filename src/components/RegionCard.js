@@ -56,13 +56,13 @@ export default class RegionCard extends React.Component {
           className=" h3 p0 w3 dib"
           alt=""
         />
-        <h2>{this.state.region}</h2>
+        <h2 className="h2black">{this.state.region}</h2>
         <div className="ph4 mb3">
           {this.displayCountries().join(', ')}
         </div>
 
         <Link
-          className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
+          className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-black"
           to={`${this.state.path}`}
         >
           View More

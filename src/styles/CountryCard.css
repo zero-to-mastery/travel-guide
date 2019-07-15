@@ -1,12 +1,12 @@
 .card {
     height: 30vh;
     width: 100vw;
-    background-color: rgb(221, 98, 0);
-    margin: 5px;
+    /* background-color: rgba(24, 24, 24, 0.055); */
+    margin: 8.5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    hyphens: auto;
+    /* hyphens: auto; */
     transition: all 1s;
     font-size: 1.2em;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -14,7 +14,8 @@
 
 .card:hover {
     transform: scale(1.05);
-    opacity: 0.8;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.123);
     transition: all 1s;
 }
 

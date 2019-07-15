@@ -16,13 +16,17 @@ const Region = ({ region, countries, search, onSearchChange, flagList }) => {
   ));
 
   return (
-    <div className="centerFlex">
+    <div className="centerFlex" style={{
+      backgroundImage:
+        "url(https://images.unsplash.com/photo-1498831624351-bb3e382fe091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)"
+       
+    }}>
       <SearchBox onSearchChange={onSearchChange} search={search} />
-      <div className="tc bg-white-90  code dib br3 pb1 ma3 bw2 shadow-5 region">
+      <div className="tc bg-black-60  code dib br3 pb1 ma3 bw2 shadow-5 region">
         <h2>{region}</h2>
         <ul className="list">{countryNames}</ul>
         <Link
-          className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
+          className="f6 link dim br-pill ph4 pv2 mb2 dib black bg-white"
           to="/travel-guide"
         >
           BACK

@@ -14,7 +14,7 @@ const SearchBox = ({ search, onSearchChange }) => (
                         {
                             display: "block",
                             margin: "auto",
-                            border: "2px solid #a463f2",
+                            border: "1px solid white",
                             borderRadius: "30px",
                             height: "45px",
                             outline: "none"
