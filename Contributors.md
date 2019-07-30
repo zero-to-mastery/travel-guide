@@ -65,3 +65,4 @@
 - [@Madgeniusblink](https://github.com/Madgeniusblink) 
 - [@hamzamakk1](https://github.com/hamzamakk1)
 - [@hanthienduc](https://github.com/hanthienduc)
+- [@sevydev](https://github.com/sevydev)
