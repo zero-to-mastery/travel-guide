@@ -66,4 +66,5 @@
 - [@hamzamakk1](https://github.com/hamzamakk1)
 - [@hanthienduc](https://github.com/hanthienduc)
 - [@sevydev](https://github.com/sevydev)
-[@chimachinedum](https://github.com/chimachinedum)
+- [@chimachinedum](https://github.com/chimachinedum)
+- [@gotham3](https://github.com/gotham3)
