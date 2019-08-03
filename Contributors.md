@@ -67,4 +67,4 @@
 - [@hanthienduc](https://github.com/hanthienduc)
 - [@sevydev](https://github.com/sevydev)
 - [@chimachinedum](https://github.com/chimachinedum)
-- [@gotham3](https://github.com/gotham3)
+- [@gotham3]((https://github.com/gotham3))
