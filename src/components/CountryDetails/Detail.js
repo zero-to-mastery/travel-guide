@@ -44,7 +44,7 @@ class Detail extends React.Component {
           <strong>Native</strong>: {details.demonym}
         </h3>
         <h3>
-          <strong>TimeZone</strong>: {details.timezones}
+          <strong>Time Zone(s)</strong>: {details.timezones.join(', ')}
         </h3>
         <h3>
           <strong>Temperature</strong>:{details.temperature}
