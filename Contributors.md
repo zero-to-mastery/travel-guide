@@ -7,6 +7,7 @@
 - [@mynaur](https://github.com/mynaur)
 - [@akashkann](https://github.com/akashkann)
 - [@gabipfeffer](https://github.com/gabipfeffer)
+- [@Litchstarken](https://github.com/Litchstarken)
 - [@BLiTz3R](https://github.com/BLiTz3R)
 - [@peterson oaikhenah](https://github.com/nextwebb)
 - [@umanghans](hhttps://github.com/umanghans)
