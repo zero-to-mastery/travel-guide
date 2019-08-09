@@ -1,0 +1,10 @@
+body {
+  display: flex;		
+  margin: 20;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background:url(https://source.unsplash.com/wORTURlz7jg) no-repeat center fixed;
+  background-size: cover;
+  flex-direction: column;
+}
