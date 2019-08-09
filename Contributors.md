@@ -69,3 +69,4 @@
 - [@chimachinedum](https://github.com/chimachinedum)
 - [@borason](https://github.com/borason)
 - [@Mirhatyasar](https://github.com/Mirhatyasar)
+- [@erics0n](https://github.com/erics0n)
