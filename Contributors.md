@@ -71,3 +71,5 @@
 - [@borason](https://github.com/borason)
 - [@Mirhatyasar](https://github.com/Mirhatyasar)
 - [@erics0n](https://github.com/erics0n)
+
+-[khasanovsm](https://github.com/khasanovsm)
