@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 
 h2 {
     font-size: 2em;
@@ -18,6 +18,7 @@ h2 {
     width: 400px;
     height: 400px;
     list-style: none;
+
     /* vertical-align: top; */
 }
 
@@ -25,12 +26,12 @@ h2 {
     cursor: pointer;
 }
 
-.regiontext{
+.regiontext {
     font-family: 'Pacifico', cursive;
     font-size: 1rem;
-
 }
-.list{
+
+.list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
