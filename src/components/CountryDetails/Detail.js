@@ -62,7 +62,7 @@ class Detail extends React.Component {
   render() {
     return (
       <div className="centerflex">
-        <div className="tc bg-white-90  code dib br3 pb1 ma3 bw2 shadow-5 region">
+        <div className="tc bg-white-90 code dib br3 pb1 mt3 mb3 bw2 shadow-5 region">
           {this.renderDetail()}
         </div>
       </div>
