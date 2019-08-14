@@ -44,6 +44,9 @@ class Detail extends React.Component {
           <strong>Native</strong>: {details.demonym}
         </h3>
         <h3>
+          <strong>Currencies</strong>: {details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}
+        </h3>
+        <h3>
           <strong>Time Zone(s)</strong>: {details.timezones.join(', ')}
         </h3>
         <Link
