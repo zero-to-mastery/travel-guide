@@ -44,10 +44,10 @@ class Detail extends React.Component {
           <strong>Native</strong>: {details.demonym}
         </h3>
         <h3>
-          <strong>Time Zone(s)</strong>: {details.timezones.join(', ')}
+          <strong>Currencies</strong>: {details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}
         </h3>
         <h3>
-          <strong>Temperature</strong>:{details.temperature}
+          <strong>Time Zone(s)</strong>: {details.timezones.join(', ')}
         </h3>
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
