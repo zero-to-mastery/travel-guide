@@ -46,9 +46,6 @@ class Detail extends React.Component {
         <h3>
           <strong>Time Zone(s)</strong>: {details.timezones.join(', ')}
         </h3>
-        <h3>
-          <strong>Temperature</strong>:{details.temperature}
-        </h3>
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
           to={`/travel-guide/${details.region.toLowerCase()}`}
