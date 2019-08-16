@@ -27,28 +27,24 @@ class Detail extends React.Component {
       return <Loader />;
     }
     return (
-      <div>
+      <div className="Details">
         <img alt={details.region} src={details.flag} height="100" width="200" />
         <h1>{this.props.match.params.id}</h1>
-        <h3>Population: {details.population.toLocaleString()}</h3>
-        <h3>
-          <strong>Capital</strong>: {details.capital}
-        </h3>
-        <h3>
-          <strong>Call Code</strong>: {details.callingCodes}
-        </h3>
-        <h3>
-          <strong>Region</strong>: {details.region}
-        </h3>
-        <h3>
-          <strong>Native</strong>: {details.demonym}
-        </h3>
-        <h3>
-          <strong>Currencies</strong>: {details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}
-        </h3>
-        <h3>
-          <strong>Time Zone(s)</strong>: {details.timezones.join(', ')}
-        </h3>
+        <h3>Population</h3>
+        <p>{details.population.toLocaleString()}</p>
+        <h3>Capital</h3>
+        <p>{details.capital}</p>
+        <h3>Call Code</h3>
+        <p>{details.callingCodes}</p>
+        <h3>Region</h3>
+        <p>{details.region}</p>
+        <h3>Native</h3>
+        <p>{details.demonym}</p>
+        <h3>Currencies</h3>
+        <p>{details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}</p>
+        <h3>Time Zone(s)</h3>
+        <p>{details.timezones.join(', ')}</p>
+        
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
           to={`/travel-guide/${details.region.toLowerCase()}`}
