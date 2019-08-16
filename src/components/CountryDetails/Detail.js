@@ -27,7 +27,7 @@ class Detail extends React.Component {
       return <Loader />;
     }
     return (
-      <div className="Details">
+      <div className="region-details">
         <img alt={details.region} src={details.flag} height="100" width="200" />
         <h1>{this.props.match.params.id}</h1>
         <h3>Population</h3>
