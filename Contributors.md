@@ -6,6 +6,7 @@
 - [@Pierre Khoury](https://github.com/PierreDeveloper18)
 - [@mynaur](https://github.com/mynaur)
 - [@akashkann](https://github.com/akashkann)
+- [@alexacoronel](https://github.com/alexacoronel)
 - [@gabipfeffer](https://github.com/gabipfeffer)
 - [@Litchstarken](https://github.com/Litchstarken)
 - [@BLiTz3R](https://github.com/BLiTz3R)
