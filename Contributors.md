@@ -82,3 +82,4 @@
 - [@famebyproxy](https://github.com/famebyproxy)
 - [@luis-escoto11](https://github.com/luis-escoto11)
 - [@benjohnsondev](https://github.com/benjohnsondev)
+- [@giulianocernada](https://github.com/giulianocernada)
