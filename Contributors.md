@@ -84,3 +84,4 @@
 - [@benjohnsondev](https://github.com/benjohnsondev)
 - [@giulianocernada](https://github.com/giulianocernada)
 - [@vxsunstriderxv](https://github.com/vxsunstriderxv)
+- [@jqueijo](https://github.com/jqueijo)
