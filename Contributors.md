@@ -85,3 +85,4 @@
 - [@giulianocernada](https://github.com/giulianocernada)
 - [@vxsunstriderxv](https://github.com/vxsunstriderxv)
 - [@jqueijo](https://github.com/jqueijo)
+- [@Marius1388](https://github.com/Marius1388)
