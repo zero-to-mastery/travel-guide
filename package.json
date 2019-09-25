@@ -3,21 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
-    "tachyons": "^4.9.1"
+    "aos": "^2.3.4",
+    "axios": "^0.18.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-spinners": "^0.5.4",
+    "tachyons": "^4.11.1"
+  },
+  "devDependencies": {
+    "terser": "^3.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zero-to-mastery/travel-guide.git"
@@ -27,5 +36,11 @@
   "bugs": {
     "url": "https://github.com/zero-to-mastery/travel-guide/issues"
   },
-  "homepage": "https://github.com/zero-to-mastery/travel-guide#readme"
+  "homepage": "https://zero-to-mastery.github.io/travel-guide/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

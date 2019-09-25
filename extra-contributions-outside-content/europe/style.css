@@ -1,0 +1,76 @@
+body {
+	font-family: "Verdana", Times, Serif; 
+}
+
+.container {
+	display: inline-block;
+	width: 350px;
+	height: 250px;
+	position: relative;
+}
+
+.image {
+	opacity: 1;
+	max-height: 100%;
+	max-width: 100%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.middle {
+	opacity: 0;
+	position: absolute; /*tov parent: container*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.container:hover .image {
+	opacity: 0.3;
+}
+
+.container:hover .middle {
+	opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+
+}
+
+/*Ireland CSS*/
+
+.ireland-header{
+	text-align: center;
+}
+
+.ireland-text {
+	color:#008000;
+	font-size: 17px;
+	text-align: center;
+}
+
+.ireland-pics-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ireland-body{
+	font-family: 'Arima Madurai';
+	font-size: 22px;
+}
+
+.ireland-images {
+	width: 350px;
+	height: 250px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	margin-right: 5px;
+	margin-left: 5px;
+}

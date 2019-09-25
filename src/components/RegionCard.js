@@ -1,36 +1,81 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
-import '../styles/Region.css';
+import React from "react";
+import {
+  Link
+} from "react-router-dom";
+import "../styles/Region.css";
 
+const initialProps = {
+  image: {
+    Africa: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/550px-Africa_%28orthographic_projection%29.svg.png",
+    Americas: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Americas_%28orthographic_projection%29.svg/1200px-Americas_%28orthographic_projection%29.svg.png",
+    Asia: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Asia_%28orthographic_projection%29.svg/220px-Asia_%28orthographic_projection%29.svg.png",
+    Europe: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/220px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png",
+    Oceania: "https://upload.wikimedia.org/wikipedia/commons/c/c2/BK_Oceania_%28orthographic_projection%29.png",
+    Polar: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Antarctica_%28orthographic_projection%29.svg/250px-Antarctica_%28orthographic_projection%29.svg.png"
+  }
+};
 export default class RegionCard extends React.Component {
-  constructor({ name, countryList }) {
+  constructor({
+    name,
+    countryList
+  }) {
     super();
     this.state = {
-      countries: countryList.map(country => <li>{country.name}</li>),
+      countries: countryList.sort((a, b) => {
+        return b.population - a.population;
+      }).map(country => {
+        return country.name
+      }),
       region: name,
-      path: `/${name.toLowerCase()}`
-    }
+      path: `/travel-guide/${name.toLowerCase()}`
+    };
   }
 
   handleOnClick = () => {
-    this.setState({ redirect: true });
-  }
-  render() {
-    if (this.state.redirect) {
-      return <Redirect push to={this.state.path} />;
+    this.setState({
+      redirect: true
+    });
+  };
+
+  displayCountries = () => {
+    let countriesToDisplay = [];
+    let y = (this.state.countries.length > 10 ? 10 : this.state.countries.length);
+    for (var x = 0; x < y; x++) {
+      countriesToDisplay.push(this.state.countries[x]);
     }
-    return (
-      <div className="tc bg-light-purple code dib br3 pa3 ma2 grow bw2 shadow-5 region-card"
-        onClick={this.handleOnClick}>
-        <h2>{this.state.region}</h2>
-        <ul className="list pl0">
-          {
-            this.state.countries.length < 13 ? this.state.countries :
-              this.state.countries.splice(0, 12)
-          }
-        </ul>
-        <h3>View More</h3>
-      </div>
-    )
+    return countriesToDisplay;
   }
-};
+
+  render() {
+    return ( 
+      <div 
+        className = "tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
+        onClick = {this.handleOnClick}
+      >
+        <img 
+          src = {initialProps.image[this.state.region]}
+          className = "h3 p0 w3 dib"
+          alt = ""
+        />
+        <h2 
+          className = "h2black"
+        > 
+          {this.state.region} 
+        </h2> 
+
+        <div 
+        className = "ph4 mb3" 
+        > 
+        {this.displayCountries().join(', ')} 
+        </div>
+
+        <Link 
+          className = "f6 link dim br-pill ph4 pv2 mb2 dib white bg-black"
+          to = {`${this.state.path}`} 
+        >
+        View More 
+        </Link> 
+      </div>
+    );
+  }
+}

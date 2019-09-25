@@ -1,0 +1,32 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(https://ksd-images.lt/display/aikido/store/a97035d4eaefbd10304bca753d343098.jpg?h=742&w=816) no-repeat center center fixed;
+    background-size: cover;
+}
+h1{
+	
+	font-family: Arial;
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	width: 60%;
+	padding: 30px;
+	border-bottom: 2px solid white;
+		
+}
+
+img{
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition: all 0.2s;
+    border: 2px solid white;
+
+}
+
+img:hover {
+    transform: scale(1.05);
+}

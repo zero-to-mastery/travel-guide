@@ -1,27 +1,33 @@
-import React, {
-    Component
-}
-from 'react';
+import React from 'react';
+import '../styles/search.css'
 
-class SearchBox extends Component {
-    render() {
-        return ( < div className = 'pa2' >
-            < input className = 'tc bg-lightest-purple'
-            type = 'search'
-            placeholder = 'search countries'
-            style = {
-                {
-                    display: "block",
-                    margin: "auto",
-                    border: "2px solid #a463f2"
-                }
-            }
-            onChange = {
-                this.props.searchChange
-            }
-            /> < /div >
-        )
-    };
-}
+const SearchBox = ({ search, onSearchChange }) => (
+    <div>
+        <div className="searchBox pa2">
+            <form>
+                <input
+                    id="userInput" 
+                    className = 'search tc bg-lightest-purple'
+                    type = 'search'
+                    placeholder = 'search countries...'          
+                    style = {
+                        {
+                            display: "block",
+                            margin: "auto",
+                            border: "1px solid white",
+                            borderRadius: "30px",
+                            height: "45px",
+                            outline: "none"
 
-export default SearchBox
+
+                        }
+                    }
+                    value={search}
+                    onChange={(text) => onSearchChange(text)}
+                />
+            </form>
+        </div>
+    </div>
+);
+
+export default SearchBox;

@@ -1,14 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.region-details {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+}
+
+.h2black {
+    color: black;
+}
+
 .region {
     /* width: 300px; */
+    width: 100%;
 }
 
 .region-card {
     width: 400px;
     height: 400px;
     list-style: none;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
-.region-card h3 {
+.region-card h3 { 
     cursor: pointer;
 }
+
+.regiontext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 1.1em;
+}
+
