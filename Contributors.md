@@ -87,3 +87,4 @@
 - [@jqueijo](https://github.com/jqueijo)
 - [@Marius1388](https://github.com/Marius1388)
 - [@gandho12](https://github.com/gandho12/)
+- [@pau-lo](https://github.com/pau-lo/)
