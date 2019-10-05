@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel Guide: The Americas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+	.navbar{
+		background-position: 40% 100%;
+		   background: linear-gradient(80deg,#b3ffff
+, #9f9fdf, #b3ffff , #ffcccc,#99ff66, #ffb3b3);
+		     background-size: 600% 100%;
+    animation: nav 16s linear infinite;
+    animation-direction: alternate;
+	}
+	@keyframes nav{
+		   0% {background-position: 0%}
+   			 100% {background-position: 100%}
+
+	}
+	body{
+		margin-right: 10%;
+		margin-left: 10%;
+		background-position: 40% 100%;
+		   background: linear-gradient(85deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+		     background-size: 600% 100%;
+    animation: bk 16s linear infinite;
+    animation-direction: alternate;
+
+	}
+	@keyframes bk{
+		   0% {background-position: 0%}
+   			 100% {background-position: 100%}
+
+	}
+	.list{
+
+		list-style: none;
+		text-align: center;
+		background: linear-gradient(45deg,#FC58, #E94584, #24AA , #27DBB1,#FFDC18, #FF4406);
+		     background-size: 600% 100%;
+    animation: list 16s linear infinite;
+    animation-direction: alternate;
+}		
+@keyframes list{
+		   0% {background-position: 0%}
+   			 100% {background-position: 100%}
+
+	}
+	.list li{
+		background:white; 
+		padding: 25px 13px 25px 13px;
+		word-spacing: 4px;
+		/*box-shadow:1px 1px 3px 4px rgb(118, 197, 237);*/
+		    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+		     background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+
+		border:1px solid rgba(0,0,0,0);
+		display:flex;
+		text-align: center;
+		transition: all 0.5s;
+		/*animation-name: make 1s infinite;*/
+
+	}	
+	@keyframes gradient{
+		   0% {background-position: 0%}
+   			 100% {background-position: 100%}
+
+	}
+	.list li:hover{
+		transform: scale(1.5,1.2);
+		background:linear-gradient(rgb(56, 75, 201),rgb(219, 31, 225));
+		box-shadow:1px 1px 3px 4px rgb(118, 197, 237);
+	}
+
+	#ll, #ll ol{
+		background:white; 
+		padding: 25px 13px 25px 13px;
+		word-spacing: 4px;
+		/*box-shadow:1px 1px 3px 4px rgb(118, 197, 237);*/
+		    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+		     background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+
+		border:1px solid rgba(0,0,0,0);
+		display:flex;
+		text-align: center;
+		transition: all 0.5s;
+
+	}
+	a{
+		text-decoration: none;
+		color:black;
+	}
+	#ll:hover{
+		transform: scale(1,1);
+		/*background:linear-gradient(rgb(56, 75, 201),rgb(219, 31, 225));*/
+	}
+	@keyframes gradiet{
+		   0% {background-position: 0%}
+   			 100% {background-position: 100%}
+
+	}
+
+</style>
+  </head>
+  <body>
+
+  <!-- Add Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light " id='nav'>
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1">Booking</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <h1>The Americas</h1>
+
+  <!--
+  1.Add links to webpages/country government website
+  2.Add travel pics for each destination
+ -->
+    <ul class="list border d-flex align-content-center flex-wrap shadow-lg p-3 mb-5 bg-white rounded ">
+                  <li>Anguilla</li>
+                  <li>Antigua and Barbuda</li>
+                  <li>Argentina</li>
+                  <li>Aruba</li>
+                  <li>Bahamas</li>
+                  <li>Barbados</li>
+                  <li>Belize</li>
+                  <li>Bermuda</li>
+                  <li>Bolivia</li>
+                  <li>Bonaire</li>
+                  <li>Bouvet Island</li>
+                  <li>Brazil</li>
+                  <li>British Virgin Islands</li>
+                  <li>Canada</li>
+                  <li>Cayman Islands</li>
+                  <li>Chile</li>
+                  <li>Clipperton Islands</li>
+                  <li>Colombia</li>
+                  <li>Costa Rica</li>
+                  <li>Cuba</li>
+                  <li>Curaçao</li>
+                  <li>Dominica</li>
+                  <li>Dominican Republic</li>
+                  <li>Ecuador</li>
+                  <li>El Salvador</li>
+                  <li>Falkland Islands</li>
+                  <li>French Guiana</li>
+                  <li>Greenland</li>
+                  <li>Grenada</li>
+                  <li>Guadeloupe</li>
+                  <li>Guatemala</li>
+                  <li>Guyana</li>
+                  <li>Haiti</li>
+                  <li>Honduras</li>
+                  <li>Jamaica</li>
+                  <li>Martinique</li>
+                  <li>Mexico</li>
+                  <li>Montserrat</li>
+                  <li>Navassa Island</li>
+                  <li>Nicaragua</li>
+                  <li>Panama</li>
+                  <li>Paraguay</li>
+                  <li>Peru</li>
+                  <li>Puerto Rico</li>
+                  <li>Saba</li>
+                  <li>Saint Barthelemy</li>
+                  <li>Saint Kitts and Nevis</li>
+                  <li>Saint Lucia</li>
+                  <li>Saint Martin</li>
+                  <li>Saint Pierre and Miquelon</li>
+                  <li>Saint Vincent and Grenadines</li>
+                  <li>Sint Eustatius</li>
+                  <li>South Georgia and South Sandwich Islands</li>
+                  <li>Suriname</li>
+                  <li>Trinidad and Tobago</li>
+                  <li>Turks and Caicos Islands</li>
+                  <li id='ll'><a href="https://www.usa.gov/">United States</a>
+                  	
+                    <ol class="d-flex align-content-center flex-wrap">
+                      <li>Colorado</li>
+                      <li>New York
+                        <ul>
+                          <li><a href = "https://wikitravel.org/en/Buffalo">Buffalo</a></li></ul>
+                      </li>
+                      <li>Illinois
+                        <ul class="d-flex align-content-center flex-wrap">
+                          <li>Chicago</li>
+                        </ul>
+                      </li>
+                      <li>Texas
+                        <ul class="d-flex align-content-center flex-wrap">
+                          <li><a href = "https://www.austintexas.org/">Austin</a></li>
+                          <li><a href = "https://www.visitdallas.com/">Dallas</a></li>
+                          <li><a href = "https://visitelpaso.com/">El Paso</a></li>
+                          <li><a href = "https://www.fortworth.com/">Fort Worth</a></li>
+                          <li><a href = "https://www.visithoustontexas.com/">Houston</a></li>
+                          <li><a href = "https://www.visitsanantonio.com/">San Antonio</a></li>
+                        </ul>                      
+                    </ol>
+                </div>
+                  </li>
+                  <li>U.S. Virgin Islands</li>
+                  <li>Uruguay</li>
+                  <li>Venezuela</li>
+
+        </ul>
+  </body>
+</html>
