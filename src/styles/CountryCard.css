@@ -19,10 +19,10 @@
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
     opacity: 1;
-    background-color: rgba(231, 228, 228, 0.932);
-    transition: all 1s;
+    /*background-color: rgba(231, 228, 228, 0.932);*/
+    transition: all 0.5s;
 }
 
 a {
