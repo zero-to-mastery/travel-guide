@@ -34,27 +34,27 @@ class Detail extends React.Component {
           <h3>Population</h3>
           <p>{details.population.toLocaleString()}</p>
         </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Capital</h3>
           <p>{details.capital}</p>
         </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Call Code</h3>
           <p>{details.callingCodes}</p>
         </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Region</h3>
           <p>{details.region}</p>
         </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Native</h3>
           <p>{details.demonym}</p>
         </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Currencies</h3>
           <p>{details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}</p>
         </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Time Zone(s)</h3>
           <p>{details.timezones.join(', ')}</p>
         </div>
