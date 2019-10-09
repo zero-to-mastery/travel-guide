@@ -1,0 +1,46 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#thumbnail{
+	padding: 3%;
+	text-decoration: none;
+	color: black;
+}
+
+body{
+	position: no-repeat fixed;
+	background-image: url("https://i.ytimg.com/vi/Pj7cRxjCXoU/maxresdefault.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	font-family:;
+	background-size: cover;
+	}
+
+.ethiopia{
+	position: no-repeat fixed;
+	background-image: url("https://answersafrica.com/wp-content/uploads/2015/01/1522690042-3872-Addis-Ababa-at-night-4.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	font-family: 'Satisfy', cursive;
+	background-size: cover;
+	color: white;
+	}
+h1	{
+	font-size: 80px;
+	background-color: rgba(153, 153, 153,40%);
+	padding: 10px;
+	}
+
+h2{
+	position: relative;
+	font-size: 40px;
+	background-color: rgba(153, 153, 153,40%);
+	height: 120px;
+	width: 700px;
+	text-align: center;
+	-o-table-baseline: central;
+	
+	}
+
+	#images {
+		width:320px;
+		height:214px;
+	}
