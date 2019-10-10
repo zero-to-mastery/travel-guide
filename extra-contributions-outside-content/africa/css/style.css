@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+	width:1080px;
+	margin:auto;
+}
+nav{
+	display:flex;
+	padding:10px 15px 10px 15px;
+	align-items:center;
+	background-color:#145dc2;
+}
+.header{
+	flex:1;
+	color:#ededed;
+	letter-spacing:3px;
+}
+.nav-links{
+	display:flex;
+}
+.nav-links li {
+	list-style:none
+}
+.nav-links a{
+	text-decoration:none;
+	margin:10px;
+	color:#d4d4d4;
+}
+.africa-hero{
+	height:600px;
+	background-image:url('https://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Africa-Wallpaper-11.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.africa-intro{
+	text-align:center;
+	margin:100px 0 100px 0;
+	color:#ededed;
+	
+}
+.africa-intro h2{
+	font-size:35px;
+}
+.africa-intro p{
+	font-family: 'Stylish', sans-serif;
+	font-size:20px;
+}
+.east-africa, body{
+	position: no-repeat fixed;
+	background-image: url("https://i.ytimg.com/vi/Pj7cRxjCXoU/maxresdefault.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	}
+	
+.ethiopia{
+	position: no-repeat fixed;
+	background-image: url("https://answersafrica.com/wp-content/uploads/2015/01/1522690042-3872-Addis-Ababa-at-night-4.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	font-family: 'Satisfy', cursive;
+	background-size: cover;
+	color: white;
+	}
+	
+.top-location-title{
+	text-align:center;
+	padding:30px;
+}
+
+#ethio-img{
+		width:320px;
+		height:214px;
+	}
