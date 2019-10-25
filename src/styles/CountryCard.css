@@ -23,6 +23,7 @@
     opacity: 1;
     /*background-color: rgba(231, 228, 228, 0.932);*/
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 a {
