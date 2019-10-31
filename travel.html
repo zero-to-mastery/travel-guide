@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Travel Guide</title>
+	<!-- stylesheet -->
+	<style>
+		* {
+		  	box-sizing: border-box;
+		  	padding: 0;
+		  	margin: 0;
+		}
+
+		.header-paralax {
+		  	background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdynamic.thoughtworks.com%2Fgatepages%2Fhero_banner_image-c97ed1594515d351f743b8633013b4cb.jpeg&f=1&nofb=1");
+		  	background-repeat: no-repeat;
+		  	background-size: cover;
+		  	width: 100%;
+		  	position: fixed;
+		  	height: 600px;
+		}
+
+		.header-paralax h1 {
+		  	text-align: center;
+		  	color: #ccc;
+		  	text-shadow: 2px 3px 1px #111111;
+		  	font-family: "Fira Code", sans-serif;
+		  	font-weight: 900;
+		  	letter-spacing: 0.16em;
+		  	font-size: 6em;
+		  	padding: 210px 0;
+		}
+
+		main {
+		  	background: #191919;
+		  	border-top: 2px solid #111111;
+		  	position: relative;
+		  	top: 600px;
+		  	font-family: 'Raleway', sans-serif;
+		  	color: #ccc;
+		}
+
+		.container {
+		  	padding: 50px 9%;
+		}
+
+		.container h1 {
+		  	padding: 1.2em 0 0 0;
+		  	font-size: 3.5em;
+		  	color: #212121;
+		}
+
+		.container h2 {
+		  	padding: 0 0 0.8em 0.4em;
+		  	font-size: 1.5em;
+		  	border-bottom: 2px solid rgba(255,140,0,0.6);
+		}
+
+		.container p {
+		  	font-size: 1em;
+		  	line-height: 1.2;
+		}
+
+		.flex-container {
+			display: flex;
+			margin-bottom: 30px;
+		}
+
+		.flex-container > div {
+			margin: 1%;
+			width: 35%;
+		}
+
+		a {
+			text-decoration: none;
+			color: #ccc;
+			font-size: 1em;
+		}
+
+		.flex-container img {
+			border: 1px solid #ddd;
+  			border-radius: 4px;
+  			padding: 5px;
+  			width: 100%;
+  			height: 100%;
+  			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<!-- parallax header -->
+	<header class="header-paralax">
+  		<h1>Travel Guide!</h1>
+	</header>
+	
+	<!-- main content -->
+	<main>
+  		<div class="container">    
+    		<h2>Travel Guide!</h2>
+			
+			<!-- update links to other pages -->
+    		<div class="flex-container">
+    			<div>
+    				<a href="#">London</a><br><br>
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fboyanastoeva.files.wordpress.com%2F2014%2F12%2F14_5.jpg%3Fw%3D1200&f=1&nofb=1">
+				</div>
+				<div>
+					<a href="#">New York</a><br><br>
+					<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F5d48184523c8a489ed05-91a4b8ed85c04e5358f91889505a4163.r43.cf1.rackcdn.com%2F3%2F2%2Flarge.jpg&f=1&nofb=1">
+				</div>
+				<div>
+					<a href="#">Berlin</a><br><br>
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2F1482429303%2Fgendarmenmarkt-square-berlin-germany-BERLIN1222.jpg&f=1&nofb=1">
+				</div>
+    		</div><br>
+
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		</div>
+	</main>
+
+	<!-- script -->
+	<script>
+		function scrollBanner() {
+  			var scrollPos;
+  			var headerText = document.querySelector('.header-paralax h1');
+  			scrollPos = window.scrollY;
+
+  			if (scrollPos <= 600) {
+    			headerText.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
+    			headerText.style.opacity = 1 - (scrollPos / 600);
+  			}
+		}
+		
+		window.addEventListener('scroll', scrollBanner);
+	</script>
+</body>
+</html>
