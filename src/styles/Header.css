@@ -12,6 +12,10 @@
 
 }
 
+header.header {
+    padding-top: 0;
+}
+
 @media screen and (min-width: 1300px) {
     .header {
         background-position: 10% 80%;
@@ -38,9 +42,12 @@
     font-size: 6em;
     text-transform: uppercase;
     text-shadow: 4px 3px 0px white;
+    margin-top: 0;
 }
 
-
+h1.headertext {
+    margin-top: 0;
+}
 
 .nav {
     background-color: rgba(0, 0, 0, 0.952);

@@ -47,34 +47,34 @@ export default class RegionCard extends React.Component {
   }
 
   render() {
-    return ( 
-      <div 
-        className = "tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
-        onClick = {this.handleOnClick}
+    return (
+      <div
+        className="tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
+        onClick={this.handleOnClick}
       >
-        <img 
-          src = {initialProps.image[this.state.region]}
-          className = "h3 p0 w3 dib"
-          alt = ""
+        <img
+          src={initialProps.image[this.state.region]}
+          className="h3 p0 w3 dib"
+          alt=""
         />
-        <h2 
-          className = "h2black"
-        > 
-          {this.state.region} 
-        </h2> 
+        <h2
+          className="h2black"
+        >
+          {this.state.region}
+        </h2>
 
-        <div 
-        className = "ph4 mb3" 
-        > 
-        {this.displayCountries().join(', ')} 
+        <div
+          className="ph4 mb3"
+        >
+          {this.displayCountries().join(', ')}
         </div>
 
-        <Link 
-          className = "f6 link dim br-pill ph4 pv2 mb2 dib white bg-black"
-          to = {`${this.state.path}`} 
+        <Link
+          className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-black"
+          to={`${this.state.path}`}
         >
-        View More 
-        </Link> 
+          View More
+        </Link>
       </div>
     );
   }
