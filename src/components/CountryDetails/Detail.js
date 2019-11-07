@@ -58,7 +58,7 @@ class Detail extends React.Component {
           <h3>Time Zone(s)</h3>
           <p>{details.timezones.join(', ')}</p>
         </div>
-        
+
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
           to={`/travel-guide/${details.region.toLowerCase()}`}
@@ -72,7 +72,7 @@ class Detail extends React.Component {
   render() {
     return (
       <div className="centerflex">
-        <div className="tc bg-white-90 code dib br3 pb1 mt3 mb3 bw2 shadow-5 region">
+        <div className="tc bg-white-90 detailCard code dib br3 pb1 mt3 mb3 bw2 shadow-5 region">
           {this.renderDetail()}
         </div>
       </div>
