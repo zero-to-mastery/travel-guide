@@ -402,7 +402,7 @@ class Credits extends Component {
         <h1 className="searchBox mt1">Credits</h1>
         <ul className="list">
           {contributors.map(c => (
-            <a key={c.name} href={c.link} target="_blank">
+            <a key={c.name} href={c.link} target="_blank" rel="noopener noreferrer">
               <div className="card">
                 <div className="listContributors margin_left tc bg-black-20 code dib mb2 bw2 shadow-4 regionFlagContainer">
                   <p className="contributors">{c.name}</p>
