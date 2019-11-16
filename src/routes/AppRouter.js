@@ -4,7 +4,8 @@ import Region from "../components/Region";
 import RegionList from "../components/RegionList";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-import Detail from '../components/CountryDetails/Detail';
+import Detail from "../components/CountryDetails/Detail";
+import Credits from "../components/Credits";
 
 export default props => {
   const regions = [
@@ -15,6 +16,7 @@ export default props => {
     "/travel-guide/oceania",
     "/travel-guide/polar"
   ];
+
   const routes = regions.map((region, index) => {
     return (
       <Route
@@ -50,13 +52,21 @@ export default props => {
             )}
           />
           {routes}
-          <Route  exact path="/travel-guide/detail/:id" render={() => (
-              <Detail 
-                  flags={props.state.flagList}
-                  countries={props.state.countries}
-                />
-               )}
+          <Route
+            exact
+            path="/travel-guide/detail/:id"
+            render={() => (
+              <Detail
+                flags={props.state.flagList}
+                countries={props.state.countries}
               />
+            )}
+          />
+          <Route
+            exact
+            path="/travel-guide/credits"
+            render={() => <Credits />}
+          />
         </Switch>
         <Footer />
       </div>
