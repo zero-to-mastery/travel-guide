@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 const contributors = [
   {
-    name: "@Matte0000",
-    link: "https://github.com/Matte0000"
+    name: "@paganim",
+    link: "https://github.com/paganim"
   },
   {
     name: "@Anmol270900",
