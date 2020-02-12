@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(https://images.unsplash.com/photo-1521207743865-5bd516acb26a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(./BaganMyanmar.jpg);
     background-position: 20% 85%;
 
     background-repeat: no-repeat;
