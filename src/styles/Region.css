@@ -1,35 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.region-details {
+    font-family: 'Montserrat', sans-serif;
+}
 
 h2 {
     font-size: 2em;
+    color: white;
 }
 
-.region {
-    /* width: 300px; */
-    width: 100%;
+.h2black {
+    color: black;
 }
 
 .region-card {
-    width: 400px;
     height: 400px;
     list-style: none;
-    /* vertical-align: top; */
 }
 
 .region-card h3 {
     cursor: pointer;
 }
 
-.regiontext{
-    font-family: 'Pacifico', cursive;
+.regiontext {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-
 }
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+
+.detailCard {
+    width: 100%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    grid-gap: 5rem;
     padding: 0;
     margin: 1.1em;
+}
+
+.regionFlagContainer {
+    width: calc(100% - 2rem);
+}
+
+.detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }

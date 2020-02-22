@@ -1,0 +1,26 @@
+.ryan_part{
+	border: 5px solid rgba(0,0,0,0.5);
+	border-radius: 6%;
+}
+#h1-jeju-island{
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	border-bottom: 3px solid black;
+	padding: 0;
+	margin: 0;
+}
+#jeju-picture{
+	display: flex;
+	justify-content: center;
+}
+#jeju-picture-inside{
+	margin-top: 7%;
+	width:80%;
+	height: 80%;
+	border-radius: 10%;
+}
+#jeju-description{
+	text-align: center;
+	font-size: 20px;
+}

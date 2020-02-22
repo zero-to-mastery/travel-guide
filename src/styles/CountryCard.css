@@ -1,49 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 .card {
-    height: 30vh;
-    width: 100vw;
-    background-color: rgb(221, 98, 0);
-    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+    height: 10rem;
+    margin: 8.5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    hyphens: auto;
+    /* hyphens: auto; */
     transition: all 1s;
     font-size: 1.2em;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 10px #000, 0px 0px 5px #000;
+    /* box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75); */
+    filter: drop-shadow(-5px -5px 5px #000);
+    /* color: rgba(100, 100, 100, 1); */
 }
 
 .card:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
-    transition: all 1s;
+    transform: scale(1.2);
+    opacity: 1;
+    /*background-color: rgba(231, 228, 228, 0.932);*/
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
-    .card {
-        height: 26vh;
-        width: 40vw;
-        border-radius: 10px;
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    .card {
-        height: 25vw;
-        width: 25vw;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    .card {
-        height: 25vw;
-        width: 25vw;
-    }
-}
-
-@media screen and (min-width: 920px) {
-    .card {
-        height: 15vw;
-        width: 15vw;
-    }
+a {
+    text-decoration: none;
 }

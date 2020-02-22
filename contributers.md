@@ -1,2 +1,0 @@
--[@guyharnir](https://github.com/guyharnir)
--[@boogcephas](https://github.com/boogcephas)
