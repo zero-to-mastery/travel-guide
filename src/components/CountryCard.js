@@ -8,9 +8,20 @@ const CountryCard = props => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundColor: "white",
-    cursor: "pointer"
+    cursor: "pointer",
+    color:"black"
   };
-  return <div style={bcg} className="card">{props.countryData.name}</div>
+    const stl = {
+      cursor: "pointer",
+      color:"black",
+      fontSize:15
+    };
+  return (
+            <div>
+            <h1 style={stl}>{props.countryData.name}</h1>
+            <div style={bcg} className="card"></div>
+            </div>
+            )
 };
 
 export default CountryCard;

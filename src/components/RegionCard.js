@@ -40,12 +40,13 @@ export default class RegionCard extends React.Component {
         className="tc bg-white-90  code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
         onClick={this.handleOnClick}
       >
+              <h2>{this.state.region}</h2>
+
         <img
           src={initialProps.image[this.state.region]}
           className=" h3 p0 w3 dib"
           alt=""
         />
-        <h2>{this.state.region}</h2>
         <ul className="list pl0">
           {this.state.countries.length < 11
             ? this.state.countries
