@@ -4,24 +4,26 @@ import "../styles/CountryCard.css";
 const CountryCard = props => {
   const bcg = {
     backgroundImage: `url(${props.countryData.flag})`,
-    backgroundSize: "200px auto",
+    backgroundSize: "184px auto",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-    backgroundColor: "white",
     cursor: "pointer",
-    color:"black"
+    color: "black"
   };
-    const stl = {
-      cursor: "pointer",
-      color:"black",
-      fontSize:15
-    };
+  const stl = {
+    cursor: "pointer",
+    color: "black",
+    fontSize: 15,
+    margin: 0
+  };
   return (
-            <div>
-            <h1 style={stl}>{props.countryData.name}</h1>
-            <div style={bcg} className="card"></div>
-            </div>
-            )
+    <div className="card">
+      <div class="card__title">
+        <h1 style={stl}>{props.countryData.name}</h1>
+      </div>
+      <div style={bcg} class="card__image"></div>
+    </div>
+  );
 };
 
 export default CountryCard;
