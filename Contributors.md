@@ -100,3 +100,4 @@
 - [@iphyokafor](https://github.com/iphyokafor)
 - [@frostillicus](https://github.com/frostillicus)
 - [@kevindev10](https://github.com/kevindev10)
+- [@SkyC0der](https:github.com/SkyC0der)
