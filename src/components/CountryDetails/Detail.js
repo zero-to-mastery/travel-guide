@@ -51,6 +51,10 @@ class Detail extends React.Component {
           <p>{details.demonym}</p>
         </div>
         <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
+          <h3>Languages</h3>
+          <p>{details.languages.map(language => `${language.nativeName}`).join(', ')}</p>
+        </div>
+        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
           <h3>Currencies</h3>
           <p>{details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}</p>
         </div>

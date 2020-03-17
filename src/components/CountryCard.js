@@ -18,10 +18,10 @@ const CountryCard = props => {
   };
   return (
     <div className="card">
-      <div class="card__title">
+      <div className="card__title">
         <h1 style={stl}>{props.countryData.name}</h1>
       </div>
-      <div style={bcg} class="card__image"></div>
+      <div style={bcg} className="card__image"></div>
     </div>
   );
 };
