@@ -28,43 +28,48 @@ class Detail extends React.Component {
     }
     return (
       <div className="region-details">
-        <img alt={details.region} src={details.flag} height="100" width="200" />
-        <h1>{this.props.match.params.id}</h1>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Population</h3>
-          <p>{details.population.toLocaleString()}</p>
-        </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Capital</h3>
-          <p>{details.capital}</p>
-        </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Call Code</h3>
-          <p>{details.callingCodes}</p>
-        </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Region</h3>
-          <p>{details.region}</p>
-        </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Native</h3>
-          <p>{details.demonym}</p>
-        </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Currencies</h3>
-          <p>{details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}</p>
-        </div>
-        <div className="ma3 pa4 br3 grow f4 ph3 pv2 dib shadow-5 ba tc">
-          <h3>Time Zone(s)</h3>
-          <p>{details.timezones.join(', ')}</p>
-        </div>
-
-        <Link
-          className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
+      <article className=" center bg-white mv3 ba b--black-10">
+      <div class="tc">
+      <img src={details.flag} height="300" width="500"
+      className=" dib" title="Photo of a kitty staring at you"></img>
+      <h1 class="f1">{this.props.match.params.id}</h1>
+      <hr class="mw3 bb bw1 b--black-10"></hr>
+      <article class="cf">
+  <div class="fl w-50  tc">
+  <dl class="lh-title pa4 mt0">
+  <dt class="f2 b">Population</dt>
+  <dd class="ml0 f3">{details.population.toLocaleString()}</dd>
+  <dt class="f2 b mt2">Capital</dt>
+  <dd class="ml0 f3">{details.capital}</dd>
+  <dt class="f2 b mt2">Call Code</dt>
+  <dd class="ml0 f3">{details.callingCodes}</dd>
+  <dt class="f2 b mt2">Region</dt>
+  <dd class="ml0 f3 ">{details.region}</dd>
+</dl>
+  </div>
+  <div class="fl w-50  tc">
+    <dl class="lh-title pa4 mt0">
+  <dt class="f2 b">Native</dt>
+  <dd class="ml0 f3">{details.demonym}</dd>
+  <dt class="f2 b mt2">Currencies</dt>
+  <dd class="ml0 f3">{details.currencies.map(currency => `${currency.name} (${currency.code})`).join(', ')}</dd>
+  <dt class="f2 b mt2">Time Zone(s)</dt>
+  <dd class="ml0 f3">{details.timezones.join(', ')}</dd>
+  <dt class="f2 b mt2"> 
+  <Link
+          className=" underline f2 link dim br-pill ph4 pv3 dib  "
           to={`/travel-guide/${details.region.toLowerCase()}`}
         >
           BACK
         </Link>
+
+  </dt>
+</dl>
+  </div>
+</article>
+
+      </div>
+      </article>
       </div>
     );
   };
