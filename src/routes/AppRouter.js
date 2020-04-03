@@ -6,6 +6,7 @@ import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import Detail from "../components/CountryDetails/Detail";
 import Credits from "../components/Credits";
+import { WorldMap } from "../components/MapView/MapView";
 
 export default props => {
   const regions = [
@@ -61,6 +62,11 @@ export default props => {
                 countries={props.state.countries}
               />
             )}
+          />
+          <Route
+            exact
+            path="/travel-guide/map"
+            render={() => <WorldMap countries={props.state.countries} />}
           />
           <Route
             exact

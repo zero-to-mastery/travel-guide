@@ -18,6 +18,7 @@ const header = () => {
         <NavLink to='/travel-guide/europe' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-red b dib pa3 ph4-l">Europe</NavLink>
         <NavLink to='/travel-guide/oceania' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-red b dib pa3 ph4-l">Oceania</NavLink>
         <NavLink to='/travel-guide/polar' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-red b dib pa3 ph4-l">Polar</NavLink>
+        <NavLink to='/travel-guide/map' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-red b dib pa3 ph4-l">Map</NavLink>
       </nav>
     </header>
   )
