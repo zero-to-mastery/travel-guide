@@ -12,7 +12,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^3.4.1",
     "react-spinners": "^0.5.4",
     "tachyons": "^4.11.1"
   },
