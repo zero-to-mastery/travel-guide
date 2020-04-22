@@ -18,6 +18,9 @@ class Detail extends React.Component {
       } else {
         this.setState({ details: response.data[0] });
       }
+      if(id === "Sudan"){
+        this.setState({ details: response.data[1] });
+      }
     });
   };
 
