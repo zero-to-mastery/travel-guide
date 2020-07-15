@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel guide</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+				<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.google.com/search?q=hotel+booking&rlz=1C1CHBD_enIN839IN839&oq=hotel+booking&aqs=chrome.0.0l8.2793j0j7&sourceid=chrome&ie=UTF-8">Hotels <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Spots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" onclick="v();">Vaction</a>
+          <a class="dropdown-item" href="#" onclick="e();">Education</a>
+      </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" onsubmit="search();">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="card v" id="Mumbai" style="width: 18rem;display: inline-block;">
+  <img src="https://www.holidify.com/images/bgImages/MUMBAI.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mumbai</h5>
+    <p class="card-text">Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924.</p>
+  </div>
+</div>
+<div class="card v" id="Marina"style="width: 18rem;display: inline-block;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Marina_Beach_as_seen_from_Light_house..JPG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Marina</h5>
+    <p class="card-text">Marina Beach is a natural urban beach in Chennai, Tamil Nadu, India, along the Bay of Bengal. The beach runs from near Fort St. George in the north to Foreshore Estate in the south, a distance of 6.0 km, making it the longest natural urban beach in the country.</p>
+  </div>
+</div>
+<div class="card e" id="Kanyakumari" style="width: 18rem;display: inline-block;">
+  <img src="https://www.outlookindia.com/outlooktraveller/resizer.php?src=https://www.outlookindia.com/outlooktraveller/public/uploads/articles/explore/shutterstock_1403794802.jpg&w=500&h=400" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Kanyakumari</h5>
+    <p class="card-text">Kanyakumari is a coastal town in the state of Tamil Nadu on India's southern tip. Jutting into the Laccadive Sea, the town was known as Cape Comorin during British rule and is popular for watching sunrise and sunset over the ocean.</p>
+  </div>
+</div>
+  <div class="card e" id="Mahabalipuram" style="width: 18rem;display: inline-block;">
+  <img src="https://www.tripsavvy.com/thmb/xr_UdfffyqgA0xH4NWaCfsHWUgk=/1989x1326/filters:fill(auto,1)/GettyImages-579760012-b78004a355354623924eda63842ac3a9.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Mahabalipuram</h5>
+    <p class="card-text">Mamallapuram, or Mahabalipuram, is a town on a strip of land between the Bay of Bengal and the Great Salt Lake, in the south Indian state of Tamil Nadu. It’s known for its temples and monuments built by the Pallava dynasty in the 7th and 8th centuries. The seafront Shore Temple comprises 3 ornate granite shrines. Krishna’s Butter Ball is a massive boulder balanced on a small hill near the Ganesha Ratha stone temple.</p>
+  </div>
+</div>
+  <div class="card v" style="width: 18rem;display: inline-block;">
+  <img src="https://lp-cms-production.imgix.net/2019-06/iStock_000026994380XLarge.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Goa</h5>
+    <p class="card-text">Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations</p>
+  </div>
+ </div>
+</div>
+<script type="text/javascript">
+	function v()
+	{
+$(".e").css("display","none");
+$('.v').css("display","inline-block")
+	}
+	function e()
+	{
+		$(".v").css("display","none");
+		$('.e').css("display","inline-block")
+	}
+	function search()
+	{
+		const s=$('.mr-sm-2').val();
+		$(".card").css("display","none");
+		$('#'+s).css("display","inline-block");
+	}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
