@@ -15,7 +15,6 @@ class Detail extends React.Component {
     
     axios.get(`https://restcountries.eu/rest/v2/name/${id}`).then(response => {
       if (id.toLowerCase() === "india") {
-        console.log(response)
         response.data[1].population = 1380879389
         this.setState({ details: response.data[1] });
       } else {
