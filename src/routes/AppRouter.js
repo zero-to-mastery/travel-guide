@@ -8,7 +8,7 @@ import Detail from "../components/CountryDetails/Detail";
 import Credits from "../components/Credits";
 import { WorldMap } from "../components/MapView/MapView";
 
-export default props => {
+function props({ onSearchChange, regionList, countryList, flagList, countries, searchField, userLocation }) {
   const regions = [
     "/travel-guide/africa",
     "/travel-guide/americas",
@@ -25,12 +25,12 @@ export default props => {
         path={region}
         render={() => (
           <Region
-            onSearchChange={props.onSearchChange}
-            search={props.state.searchField}
-            region={props.state.regionList[index]}
-            countries={props.state.countries}
-            flags={props.state.flagList}
-            names={props.state.contryList}
+            onSearchChange={onSearchChange}
+            search={searchField}
+            region={regionList[index]}
+            countries={countries}
+            flags={flagList}
+            names={countryList}
           />
         )}
       />
@@ -47,8 +47,8 @@ export default props => {
             exact={true}
             render={() => (
               <RegionList
-                countries={props.state.countries}
-                regions={props.state.regionList}
+                countries={countries}
+                regions={regionList}
               />
             )}
           />
@@ -58,15 +58,15 @@ export default props => {
             path="/travel-guide/detail/:id"
             render={() => (
               <Detail
-                flags={props.state.flagList}
-                countries={props.state.countries}
+                flags={flagList}
+                countries={countries}
               />
             )}
           />
           <Route
             exact
             path="/travel-guide/map"
-            render={() => <WorldMap countries={props.state.countries} />}
+            render={() => <WorldMap countries={countries} />}
           />
           <Route
             exact
@@ -79,3 +79,5 @@ export default props => {
     </BrowserRouter>
   );
 };
+
+export default props;

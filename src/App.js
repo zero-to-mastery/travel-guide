@@ -1,21 +1,17 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import AppRouter from "./routes/AppRouter";
 import "./App.css";
 import 'tachyons';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      regionList: [],
-      countryList: [],
-      flagList: [],
-      countries: [],
-      searchField: ""
-    };
-  }
+function App() {
+  const [regionList, setRegionList] = useState([]);
+  const [countryList, setCountryList] = useState([]);
+  const [flagList, setFlagList] = useState([]);
+  const [countries, setCountries] = useState([]);
+  const [searchField, setSearchField] = useState("");
+  const [userLocation, setUserLocation] = useState([]);
 
-  componentDidMount() {
+  useEffect(() => {
     fetch("https://restcountries.eu/rest/v2/all")
       .then(response => response.json())
       .then(countries => {
@@ -31,27 +27,37 @@ class App extends Component {
             flagList.push(flag)
           );
         }); 
-        this.setState({ countries: countries });
-        this.setState({ regionList: this.findUniqRegions(regionList) });
-        this.setState({ countryList });
-        this.setState({ flagList });
+        setCountries(countries);
+        setRegionList(findUniqRegions(regionList));
+        setCountryList(countryList);
+        setFlagList(flagList);
+        navigator.geolocation.getCurrentPosition(function(position) {
+          setUserLocation(position.coords);
+        });
       });
+  }, []);
 
-  }
-
- findUniqRegions = (regionList) => { 
+ const findUniqRegions = (regionList) => { 
      return Array.from(new Set(regionList.filter(region => region !== "").sort()));
    }
 
-  onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value.toLowerCase() });
+  const onSearchChange = (event) => {
+    setSearchField(event.target.value.toLowerCase());
   };
 
-  render() {
+
     return (
-      <AppRouter onSearchChange={this.onSearchChange} state={this.state} />
+      <AppRouter 
+        onSearchChange={onSearchChange} 
+        regionList={regionList}
+        countryList={countryList}
+        flagList={flagList}
+        countries={countries}
+        searchField={searchField}
+        userLocation={userLocation}
+      />
     );
-  }
+
 }
 
 export default App;
