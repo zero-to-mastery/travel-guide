@@ -23,6 +23,14 @@ class Detail extends React.Component {
       if(id === "Sudan"){
         this.setState({ details: response.data[1] });
       }
+      if(id === "United Kingdom of Great Britain and Northern Ireland") {
+        this.setState(prevState => ({
+            details: {
+                ...prevState.details,
+                timezones: ["UTC", "UTC+01:00"]
+            }
+        }))
+      }
     });
   };
 
