@@ -1,0 +1,267 @@
+<doctype! html>
+<head>
+  
+<style>
+
+
+
+
+  body {   /* with its direct children: header, main, section and footer*/
+    display: grid; 
+    grid-template-columns:70%;
+    justify-content:center;
+    width:100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top:10%;
+    background: url("https://image.freepik.com/free-photo/texture-crumpled-paper-white-background_88281-3992.jpg") no-repeat;    
+   background-size: cover; 
+}  
+
+header {  
+  z-index:1;
+  background-color: grey;
+  display:flex;  
+  flex-flow: row wrap;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:7vw;  
+  border:1px solid black;
+  overflow: hidden;
+}
+
+#header-img {
+  height:13vw;  
+  padding:0;
+  margin:0;
+  border:1px solid black;  
+  position:relative;
+  top:-20%;  
+}
+
+main {   
+  padding: 5% 0 10% 0;
+}
+
+section {
+   border:1px solid black;    
+}
+
+nav {  
+  width:70%;  
+  height:6vw;
+  margin:0;
+  padding-top:1%;  
+}
+
+nav ul {
+  display:grid;
+  grid-template-columns: 12vw 12vw 12vw 12vw;
+  font-size: 130%;
+  text-align:center;
+  padding: 0.1vw 0.1vw 0.1vw 9vw;
+ /* font-weight:bold; */
+  text-shadow: 3px 3px 5px #4E4E4E;
+}
+
+nav ul a {transition: background-color 1s, box-shadow 2s, font-size 0.5s; }
+nav ul a:hover {background-color:#ACACAC;
+box-shadow: 5px 10px 30px black;
+border-radius:5px;
+font-size: 140%;}
+
+nav li {
+  list-style-type: none;  
+  color:#3B6F1A;
+}
+
+a {text-decoration:none;}
+section article {padding:auto;}
+section article p {
+  padding:10% 0 15px 0 ;
+}
+
+#footer {
+border:1px solid black;  
+}
+
+ul.why > li  { 
+  color:green; 
+  list-style-type:none; 
+  padding:50px;
+}
+
+
+article {
+  background: url("https://ae01.alicdn.com/kf/HTB15FbPKpXXXXaoaXXXq6xXFXXXa/High-Quality-Customized-Men-T-shirt-Print-Your-Own-Design-Men-Casual-Tops-Tee-Shirts.jpg") white no-repeat fixed ;
+background-position: 20% 3%;
+  font-weight:bold;
+  max-width:100%;
+  text-align:left;
+}
+
+.about-poz {
+padding:0;
+margin:0;
+  text-align:center;
+width:40%; 
+  display:flex;
+  flex-direction: column;  
+  position:relative;
+  left:60%;
+  max-width:100%;
+}
+
+
+#form {
+  padding:7% 7% 12% 7%;   
+  background-image: linear-gradient(to bottom right,grey 1%, white 80%, grey 95%);  
+ display:flex;
+  align-items: center;
+  flex-flow: column wrap;
+} 
+
+#positioning {  
+  width:30%;  
+padding:7%;
+text-align:left;
+  line-height: 2.8;
+}
+
+#shirt-text {width:100%;}
+#submit {padding:1%;
+font-weight:bold;
+  font-family:verdana;
+width:20%;
+  border-radius:10%;
+  box-shadow: 3px 3px 9px 1px;
+  background-color:lightgrey;
+}
+#submit:hover{background-color:lightblue;}
+
+#footer {padding:auto;
+width:inherit;
+background-color: grey;
+  text-align:left;
+  display: flex;
+  justify-content: space-around;
+  padding:1%;
+}
+
+span {color:azure;
+padding:2%;
+text-align:right;}
+
+@media (max-width: 1060px) {
+  footer { font-size:80%;
+  overflow:visible; word-wrap:break-word; border: 1px solid black;}
+  nav ul {margin-top:-1%; font-size:110%;}   
+}
+
+@media (max-width: 768px) {
+  nav ul { font-size:80%;} 
+  footer {font-size:60%;}
+  ul.why > li {padding:5%; font-size:70%;}
+}
+
+#hid {opacity:0;
+position:relative;
+margin:-20px;}
+
+#hid:hover {opacity:1;}
+  
+
+
+
+</style>
+
+</head>
+
+<body>  
+<header id="header"> 
+  
+   <div>
+    <img id="header-img" src="https://thetshirtco.com.au/image/cache/The-T-Shirt-Co-Header-02-0-1-1-600x315.png" alt="company logo">      
+  </div>
+  
+     <nav id="nav-bar">
+    <ul>
+      <a href="#home" class="nav-link"><li >Home</li></a>
+      <a href="#about" class="nav-link"><li>About</li>           </a>
+      <a href="#order" class="nav-link"><li>Order</li>           </a>
+      <a href="#footer" class="nav-link"><li>Contact</li>           </a>
+       </ul>
+     </nav>  
+</header>
+  
+  
+  
+  <main>
+     <h1 id="home">Personalized T-shirts</h1>
+    <p>Your ideas come to life on our shirts</p> <br><br>
+    <media><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></media>    
+  </main>
+  
+  
+<section>  
+   <article>
+     <div class="about-poz">
+         <p id="about">Why choose us? <br>Simple, because we are:</p>
+      <ul class="why">
+       <li id="fast" >Fast</li>
+       <li id="reliable">Reliable</li>
+       <li id="quality">Quality-oriented</li>
+       <li><strong>NEVER</strong> <p id="hid">gonna give you up,<sub>
+Never gonna let you down<sub>
+Never gonna run around and <sub>desert you...</sub></sub></sub></p></li>
+       </ul>  
+   </div>
+  </article>
+  
+  
+  
+  
+  
+    
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <h3 id="order">Order yours NOW!</h3>
+    <br><br><br>
+    <div id="positioning">
+    <label for="email">Email:</label>
+    <input id="email" type="email" placeholder="your email goes here" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email"> <br>
+    
+    <label for="shirt-size">Choose your T-shirt size:</label>
+    <select id="shirt-size">
+      <option value="xs">XS</option>
+      <option value="xs">S</option>
+      <option value="xs">M</option>
+      <option value="xs">L</option>
+      <option value="xs">XL</option>
+      <option value="xs">XXL</option>
+    </select>
+    
+    <br>
+    
+    <label for="shirt-color">Choose your T-shirt`s base color:</label><br>
+    <input class="shirt-color" type="radio" name="color" value="red">Red<br>
+    <input class="shirt-color" type="radio" name="color" value="black">Black<br>
+    <input class="shirt-color" type="radio" name="color" value="white">White<br>
+    <input class="shirt-color" type="radio" name="color" value="blue">Blue<br>
+    <input class="shirt-color" type="radio" name="color" value="yellow">Yellow<br><br>
+    
+    <label for="text">Choose your T-shirt`s text:</label><br>
+    <input id="shirt-text" type="text" name="text" placeholder="anything goes"><br>
+    
+      </div>
+    
+    <br><input id="submit" type="submit" value="Submit">
+      </form>
+  
+</section>
+  
+  
+<footer id="footer"><p>Copyright &copy; The T-shirt Guys 2020</p> <span>3045 - Kyle Road, London, UK.    Email: TshirtGuys@Tshirts.com</span> </footer>
+  
+</body>
