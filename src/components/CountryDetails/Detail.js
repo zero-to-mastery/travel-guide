@@ -31,6 +31,14 @@ class Detail extends React.Component {
             }
         }))
       }
+      if(id === "Timor-Leste") {
+          this.setState(prevState => ({
+              details: {
+                  ...prevState.details,
+                  currencies: [{"code":"USD","name":"United States dollar","symbol":"$"}]
+              }
+          }))
+      }
     });
   };
 
