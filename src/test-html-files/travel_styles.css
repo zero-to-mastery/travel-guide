@@ -1,0 +1,16 @@
+body {
+  background-color: #05507A;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 300px;
+}
+
+.card {
+  margin: auto;
+  text-align: center;
+}
