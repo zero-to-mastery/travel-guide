@@ -39,6 +39,14 @@ class Detail extends React.Component {
               }
           }))
       }
+      if(id === "French Southern Territories") {
+          this.setState(prevState => ({
+              details: {
+                  ...prevState.details,
+                  callingCodes: ["262"]
+              }
+          }))
+      }
     });
   };
 
