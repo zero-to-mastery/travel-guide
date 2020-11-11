@@ -1,5 +1,5 @@
 body {
-  background-color: #05507A;
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/17796.jpg);
 }
 
 h1 {
@@ -13,4 +13,16 @@ h1 {
 .card {
   margin: auto;
   text-align: center;
+}
+
+.Hawaii {
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/16699.jpg);
+}
+
+.Mexico {
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/6472.jpg);
+}
+
+.Norway {
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/5304.jpg);
 }
