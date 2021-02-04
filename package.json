@@ -13,7 +13,7 @@
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.4.1",
-    "react-spinners": "^0.5.4",
+    "react-spinners": "^0.10.4",
     "tachyons": "^4.11.1"
   },
   "devDependencies": {
