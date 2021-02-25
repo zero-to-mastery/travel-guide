@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.0",
-    "lodash": "^4.17.10",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "lodash": "^4.17.21",
+    "react": "^17.0.1",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
+    "react-scripts": "^4.0.3",
     "tachyons": "^4.9.1"
   },
   "scripts": {
@@ -29,5 +29,17 @@
   "bugs": {
     "url": "https://github.com/zero-to-mastery/travel-guide/issues"
   },
-  "homepage": "https://zero-to-mastery.github.io/travel-guide/"
+  "homepage": "https://zero-to-mastery.github.io/travel-guide/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

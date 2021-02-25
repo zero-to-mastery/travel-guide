@@ -14,6 +14,7 @@ class App extends Component {
   }
 
   componentDidMount(){
+ try{
     fetch('https://restcountries.eu/rest/v2/all')
       .then(response => {
         return response.json();
@@ -25,10 +26,14 @@ class App extends Component {
           regionList.push(country.region);
           countryList.push(country.name);
         });
+      
         this.setState({countries: countries});
         this.setState({regionList: this.findUniqRegions(regionList)});
         this.setState({countryList: countryList})
       });
+    }catch(error){
+      console.log(error)
+    }
   }
 
   onSearchChange = (event) => {

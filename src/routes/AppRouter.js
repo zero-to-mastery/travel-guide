@@ -25,6 +25,7 @@ export default ({ state }) => (
             <Region
               region={state.regionList[0]}
               countries={state.countries}
+              state={state}
             />
           )}
         />
