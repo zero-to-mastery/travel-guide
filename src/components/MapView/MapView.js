@@ -115,7 +115,7 @@ class WorldMap extends React.Component {
         return (
             <div key={`markerDiv_${country.alpha3Code}`} 
                 className="mapLabelArea">
-    
+                
                 <Link key={country.name} to={`/travel-guide/detail/${country.name}`}>
                   <div id={`marker_${country.alpha3Code}`} 
                       className="smallMarker" 

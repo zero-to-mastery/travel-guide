@@ -1,2 +1,0 @@
-- [@megan-d](https://github.com/megan-d)
-- [@mrsindelic](https://github.com/mrsindelic)
