@@ -1,155 +1,146 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Travel Guide</title>
+	<!-- stylesheet -->
 	<style>
-	
-		.jumbotron{
-			background-image:url(image.jpg);
-			background-size: cover;
-			border-color:white;
-			text-align:center;
+		* {
+		  	box-sizing: border-box;
+		  	padding: 0;
+		  	margin: 0;
 		}
-		
-		#summaryapp{
-			text-align:center;
-			margin-bottom:50px;
+
+		.header-paralax {
+		  	background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdynamic.thoughtworks.com%2Fgatepages%2Fhero_banner_image-c97ed1594515d351f743b8633013b4cb.jpeg&f=1&nofb=1");
+		  	background-repeat: no-repeat;
+		  	background-size: cover;
+		  	width: 100%;
+		  	position: fixed;
+		  	height: 600px;
 		}
-		
-		#footer{
-			text-align:center;
-			margin-top:50px;
-			background-color:aqua;
-			padding:200px;
+
+		.header-paralax h1 {
+		  	text-align: center;
+		  	color: #ccc;
+		  	text-shadow: 2px 3px 1px #111111;
+		  	font-family: "Fira Code", sans-serif;
+		  	font-weight: 900;
+		  	letter-spacing: 0.16em;
+		  	font-size: 6em;
+		  	padding: 210px 0;
 		}
-		#appstoreicon{
-			width:180px;
+
+		main {
+		  	background: #191919;
+		  	border-top: 2px solid #111111;
+		  	position: relative;
+		  	top: 600px;
+		  	font-family: 'Raleway', sans-serif;
+		  	color: #ccc;
 		}
-		
-		body{
-			position:relative;
+
+		.container {
+		  	padding: 50px 9%;
 		}
-		
+
+		.container h1 {
+		  	padding: 1.2em 0 0 0;
+		  	font-size: 3.5em;
+		  	color: #212121;
+		}
+
+		.container h2 {
+		  	padding: 0 0 0.8em 0.4em;
+		  	font-size: 1.5em;
+		  	border-bottom: 2px solid rgba(255,140,0,0.6);
+		}
+
+		.container p {
+		  	font-size: 1em;
+		  	line-height: 1.2;
+		}
+
+		.flex-container {
+			display: flex;
+			margin-bottom: 30px;
+		}
+
+		.flex-container > div {
+			margin: 1%;
+			width: 35%;
+		}
+
+		a {
+			text-decoration: none;
+			color: #ccc;
+			font-size: 1em;
+		}
+
+		.flex-container img {
+			border: 1px solid #ddd;
+  			border-radius: 4px;
+  			padding: 5px;
+  			width: 100%;
+  			height: 100%;
+  			object-fit: cover;
+		}
 	</style>
-    <title>APP Store</title>
-  </head>
-  <body data-spy="scroll" data-target="#navbar">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-	  <a class="navbar-brand" href="#">MyApp</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="#jumbo">Home <span class="sr-only">(current)</span></a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#about">About</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#footer">Download the App</a>
-		  </li>
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-		  <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Search">
-		  
-		  <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Search">
-		  <button class="btn btn-success my-2 my-sm-0" type="submit">Log In</button>
-		</form>
-	  </div>
-	</nav>
-	<div class="jumbotron" id="jumbo">
-	  <h1 class="display-4"><span id ="ido">My Awesome APP!</span></h1>
-	  <p class="lead"><span id="ido1">This is why YOU should download this fantastic APP!</span></p>
-	  <hr class="my-4">
-	  <p id = "id2">Want to know more? Join our mailing list</p>
-	  <form>
-	  <div class="form-group row">
-		<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-		<div class="col-sm-10">
-		  <input type="text" class="form-control" id="staticEmail" placeholder="email@example.com">
-		</div>
-	  </div>
-	  <div class="form-group row">
-		<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-		<div class="col-sm-10">
-		  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-		</div>
-	  </div>
-	</form>
-	  <p class="lead">
-		<a class="btn btn-primary btn-lg" href="#" role="button">Join Now!</a>
-	  </p>
-	</div>
-	<div class = "container" id="summaryapp">
-		<h1>Why This App is Awesome</h1>
-		<p class="lead">Summary, once again, of your app's awesomeness</p>
-			
-		<div class="row" id="summaryapp">
-			
-		</div>
-	</div>	
-	<div class="row" id="about">
-		<div class="col-sm-3">
-			<div class="card" card-block style="width: 18rem;">
-			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCqbRtx2A_U0V3fPHS_sy80eRqYXQV2cUmTg&usqp=CAU" alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			  </div>
-			</div>
-		</div>	
-		<div class="col-sm-3">
-			<div class="card" card-block style="width: 18rem;">
-			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCqbRtx2A_U0V3fPHS_sy80eRqYXQV2cUmTg&usqp=CAU" alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			  </div>
-			</div>
-		</div>	
-		<div class="col-sm-3">
-			<div class="card" card-block style="width: 18rem;">
-			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCqbRtx2A_U0V3fPHS_sy80eRqYXQV2cUmTg&usqp=CAU" alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			  </div>
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="card" card-block style="width: 18rem;">
-			  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCqbRtx2A_U0V3fPHS_sy80eRqYXQV2cUmTg&usqp=CAU" alt="Card image cap">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			  </div>
-			</div>
-		</div>
-	</div>	
-	<div id="footer">
-		<div>
-			<h2>Download the APP!</h2>
-			<p>Why should I download this APP!??</p>
-			<a href=""><img id="appstoreicon" src="download.png"></img></a>
-		</div>
-	</div>	
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- parallax header -->
+	<header class="header-paralax">
+  		<h1>Travel Guide!</h1>
+	</header>
 	
-  </body>
+	<!-- main content -->
+	<main>
+  		<div class="container">    
+    		<h2>Travel Guide!</h2>
+			
+			<!-- update links to other pages -->
+    		<div class="flex-container">
+    			<div>
+    					<a href="#">London</a><br><br>
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fboyanastoeva.files.wordpress.com%2F2014%2F12%2F14_5.jpg%3Fw%3D1200&f=1&nofb=1">
+				</div>
+				<div>
+					<a href="#">New York</a><br><br>
+					<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F5d48184523c8a489ed05-91a4b8ed85c04e5358f91889505a4163.r43.cf1.rackcdn.com%2F3%2F2%2Flarge.jpg&f=1&nofb=1">
+				</div>
+				<div>
+					<a href="#">Berlin</a><br><br>
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2F1482429303%2Fgendarmenmarkt-square-berlin-germany-BERLIN1222.jpg&f=1&nofb=1">
+				</div>
+				<div>
+					<a href="#">Los Angeles</a><br><br>
+					<img src="data:image/jpeg;base64,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">
+				</div>
+    		</div><br>
+
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  		</div>
+	</main>
+
+	<!-- script -->
+	<script>
+		function scrollBanner() {
+  			var scrollPos;
+  			var headerText = document.querySelector('.header-paralax h1');
+  			scrollPos = window.scrollY;
+
+  			if (scrollPos <= 600) {
+    			headerText.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
+    			headerText.style.opacity = 1 - (scrollPos / 600);
+  			}
+		}
+		
+		window.addEventListener('scroll', scrollBanner);
+	</script>
+</body>
 </html>
