@@ -1,13 +1,75 @@
+
 ---
 layout: base
 title: "404 - File Not Found"
 permalink: /404.html
 ---
-<div class="row">
-  <div class="small-12 columns">
-     <h1>We could not Found that page</h1>
-     <article>
-     Please Check Your Link .
-     </article>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/404_error_page.css">
+    <title></title>
+  </head>
+  <style media="screen">
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin:0;
+    }
+    body{
+      min-height: 100vh;
+      /*background-image: linear-gradient(#b8e994,#0a3d62);*/
+
+    }
+    .error_page{
+      width: 100%;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      text-align: center;
+      color:#343434;
+    }
+    .error_page h1{
+      font-size: 160px;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 20px;
+      background: url(background.jpg);
+      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;
+      background-color: #d77257;
+      background-position: center;
+    }
+    .error_page p{
+      font-size: 18px;
+    }
+    .error_page a{
+      text-decoration: none;
+      background: #1e3799;
+      color: white;
+      padding: 12px 14px;
+      display: inline-block;
+      border-radius: 30px;
+      font-size: 18px;
+      text-transform: uppercase;
+      transition: 0.4s;
+        background-color: #d77257;
+      margin-top: 15px;
+      /*padding: 15px;*/
+    }
+    .error_page a:hover{
+      background: black;
+    }
+
+  </style>
+  <body>
+      <div class="error_page">
+        <h2>We could not Found that page</h2>
+        <h1>404</h1>
+        <article>
+        Please Check Your Link .
+        </article>
+      </div>
+  </body>
+</html>

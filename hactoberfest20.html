@@ -7,21 +7,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	
+
 	<style>
-	
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 		.jumbotron{
 			background-image:url(image.jpg);
 			background-size: cover;
 			border-color:white;
 			text-align:center;
 		}
-		
+
 		#summaryapp{
 			text-align:center;
 			margin-bottom:50px;
 		}
-		
+
 		#footer{
 			text-align:center;
 			margin-top:50px;
@@ -31,23 +35,36 @@
 		#appstoreicon{
 			width:180px;
 		}
-		
+    .heading{
+      padding-top: 20px;
+    }
 		body{
 			position:relative;
 		}
-		
+    @media screen and (max-width: 768px) {
+      body {
+        overflow: none;
+      }
+      #about{
+        padding-left: 50px;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+      }
+    }
 	</style>
     <title>Travel Guide</title>
   </head>
   <body data-spy="scroll" data-target="#navbar">
 	<div class = "container" id="summaryapp">
-		<h1>Travel Data</h1>
+		<h1 class="heading">Travel Data</h1>
 		<p class="lead">Gives information about tourist places</p>
-			
+
 		<div class="row" id="summaryapp">
-			
+
 		</div>
-	</div>	
+	</div>
 	<div class="row" id="about">
 		<div class="col-sm-3">
 			<div class="card" card-block style="width: 18rem;">
@@ -58,7 +75,7 @@
 				<a href="#" class="btn btn-primary">Go There</a>
 			  </div>
 			</div>
-		</div>	
+		</div>
 		<div class="col-sm-3">
 			<div class="card" card-block style="width: 18rem;">
 			  <img class="card-img-top" src="img/los.jpg" alt="Card image cap">
@@ -68,7 +85,7 @@
 				<a href="#" class="btn btn-primary">Go There</a>
 			  </div>
 			</div>
-		</div>	
+		</div>
 		<div class="col-sm-3">
 			<div class="card" card-block style="width: 18rem;">
 			  <img class="card-img-top" src="img/indonesia.jpg" alt="Card image cap">
@@ -89,11 +106,11 @@
 			  </div>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	
+
   </body>
 </html>
