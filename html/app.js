@@ -1,1 +1,0 @@
-console.log('Hello Zero To Mastery')

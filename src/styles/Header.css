@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(./BaganMyanmar.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(../img/BaganMyanmar.jpg);
     background-position: 20% 85%;
 
     background-repeat: no-repeat;
