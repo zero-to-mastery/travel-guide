@@ -15,5 +15,5 @@
    ## How to Contribute?
   Apologies for the dead files and links. The project's source code exists on the src/ folder.<br>
   Do make your contributions there and do well to fill the CONTRIBUTORS.md file.<br>
-  Cheers!
+  Cheers!!
 
