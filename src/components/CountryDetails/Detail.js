@@ -53,9 +53,7 @@ class Detail extends React.Component {
   renderDetail = () => {
     const { details } = this.state;
 
-    if (!details) {
-      return <Loader />;
-    } 
+    !details?( return <Loader />):(
     return (
       <div className="region-details">
         <img alt={details.region} src={details.flag} height="100" width="200" />
@@ -101,19 +99,22 @@ class Detail extends React.Component {
 
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib white bg-purple"
-          to={`/travel-guide/${details.region.toLowerCase()}`}
+          to={`/travel-guide/${details.region.toLowerCase();}`}
         >
           BACK
         </Link>
       </div>
     );
+    )
+
+    
   };
 
   render() {
     return (
       <div className="centerflex">
         <div className="tc bg-white-90 detailCard code dib br3 pb1 mt3 mb3 bw2 shadow-5 region">
-          {this.renderDetail()}
+          {this.renderDetail();}
         </div>
       </div>
     );
