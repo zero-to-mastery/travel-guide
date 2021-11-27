@@ -13,7 +13,7 @@ class Detail extends React.Component {
   componentDidMount = () => {
     const { id } = this.props.match.params;
     
-    axios.get(`https://restcountries.eu/rest/v2/name/${id}`).then(response => {
+    axios.get(`https://restcountries.com/v2/name/${id}`).then(response => {
       if (id.toLowerCase() === "india") {
         response.data[1].population = 1380879389
         this.setState({ details: response.data[1] });
