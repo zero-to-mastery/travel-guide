@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import AppRouter from './routes/AppRouter';
 import './App.css';
 import 'tachyons';
@@ -43,9 +43,9 @@ function App() {
     );
   };
 
-  const onSearchChange = (event) => {
+  const onSearchChange = useCallback(event => {
     setSearchField(event.target.value.toLowerCase());
-  };
+  }, []);
 
   return (
     <AppRouter
