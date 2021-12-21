@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Region from "../components/Region";
 import RegionList from "../components/RegionList";
@@ -80,4 +80,4 @@ function props({ onSearchChange, regionList, countryList, flagList, countries, s
   );
 };
 
-export default props;
+export default memo(props);
