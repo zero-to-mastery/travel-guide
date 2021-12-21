@@ -21,7 +21,7 @@ function props({ onSearchChange, regionList, countryList, flagList, countries, s
   const routes = regions.map((region, index) => {
     return (
       <Route
-        key={index}
+        key={+region.numericCode}
         path={region}
         render={() => (
           <Region
