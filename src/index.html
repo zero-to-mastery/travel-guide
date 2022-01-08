@@ -1,0 +1,308 @@
+<doctype! html>
+<head>
+  
+<style>
+
+  body { 
+    display: grid; 
+    grid-template-columns:70%;
+    justify-content:center;
+    width:100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top:10%;
+    background: url("https://images.unsplash.com/photo-1504150558240-0b4fd8946624?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80") no-repeat;    
+   background-size: cover; 
+   background-attachment: fixed;
+   background-position: center center;
+}  
+
+header {  
+  z-index:1;
+  background-color: #616161;
+  display:flex;  
+  flex-flow: row wrap;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:7vw;  
+  border:1px solid black;
+  overflow: hidden;
+}
+
+#header-img {
+  height:13vw;  
+  padding:0;
+  margin:0;
+  border:1px solid black;  
+  position:relative;
+  top:-20%;  
+}
+
+main {   
+  padding: 5% 0 10% 0;
+}
+
+section {
+   border:1px solid black;
+   padding-top: 2em;    
+}
+
+nav {  
+  width:70%;  
+  height:6vw;
+  margin:0;
+  padding-top:1%;  
+}
+
+nav ul {
+  display:grid;
+  grid-template-columns: 12vw 12vw 12vw 12vw;
+  font-size: 130%;
+  text-align:center;
+  padding: 0.1vw 0.1vw 0.1vw 9vw;
+ /* font-weight:bold; */
+  text-shadow: 3px 3px 5px #4E4E4E;
+}
+
+nav ul a {transition: background-color 1s, box-shadow 2s, font-size 0.5s; }
+nav ul a:hover {background-color:#8e8e8e;
+box-shadow: 5px 10px 30px black;
+border-radius:5px;
+font-size: 140%;}
+
+nav li {
+  list-style-type: none;  
+  color:white;
+}
+
+a {text-decoration:none;}
+section article {padding:auto;}
+section article p {
+  padding:10% 0 15px 0 ;
+}
+
+#footer {
+border:1px solid black;  
+}
+
+ul.why > li  { 
+  color:#616161; 
+  list-style-type:none; 
+  padding:50px;
+}
+
+
+article {
+  background: url("https://images.unsplash.com/photo-1512757776214-26d36777b513?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80") white no-repeat  ;
+background-position: 20% 3%;
+background-size: cover;
+  font-weight:bold;
+  max-width:100%;
+  text-align:left;
+}
+
+.about-poz {
+padding:0;
+margin:0;
+  text-align:center;
+width:40%; 
+  display:flex;
+  flex-direction: column;  
+  position:relative;
+  left:60%;
+  max-width:100%;
+}
+
+
+#form {
+  padding:7% 7% 12% 7%;   
+  background-image: linear-gradient(to bottom right,grey 1%, white 80%, grey 95%);  
+ display:flex;
+  align-items: center;
+  flex-flow: column wrap;
+} 
+
+#positioning {  
+  width:30%;  
+padding:7%;
+text-align:left;
+  line-height: 2.8;
+}
+
+#shirt-text {width:100%;}
+#submit {padding:1%;
+font-weight:bold;
+  font-family:verdana;
+width:20%;
+  border-radius:10%;
+  box-shadow: 3px 3px 9px 1px;
+  background-color:lightgrey;
+}
+#submit:hover{background-color:lightblue;}
+
+#footer {padding:auto;
+width:inherit;
+background-color: grey;
+  text-align:left;
+  display: flex;
+  justify-content: space-around;
+  padding:1%;
+}
+
+span {color:azure;
+padding:2%;
+text-align:right;}
+
+@media (max-width: 1060px) {
+  footer { font-size:80%;
+  overflow:visible; word-wrap:break-word; border: 1px solid black;}
+  nav ul {margin-top:-1%; font-size:110%;}   
+}
+
+@media (max-width: 768px) {
+  nav ul { font-size:80%;} 
+  footer {font-size:60%;}
+  ul.why > li {padding:5%; font-size:70%;}
+}
+
+#hid {opacity:0;
+position:relative;
+margin:-20px;}
+
+#hid:hover {opacity:1;}
+
+#filter {
+  background-color: #8e8e8e;
+  opacity: 0.8;
+  width:70%;
+  margin:auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.destinations-list{
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  text-align: center;
+}
+
+img.listings {
+max-width:100%;
+max-height:100%;
+}
+
+
+img{
+  height: 17em;
+    width: 17em;
+}
+
+
+</style>
+
+</head>
+
+<body>  
+<header id="header"> 
+  
+   <div>
+    <img id="header-img" src="https://images.unsplash.com/photo-1595505087886-8bd4355e49e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="company logo">      
+  </div>
+  
+     <nav id="nav-bar">
+    <ul>
+      <a href="#home" class="nav-link"><li >Home</li></a>
+      <a href="#about" class="nav-link"><li>About</li>           </a>
+      <a href="#destinations" class="nav-link"><li>Destinations</li>           </a>
+      <a href="#footer" class="nav-link"><li>Contact</li>           </a>
+       </ul>
+     </nav>  
+</header>
+  
+  
+  
+  <main>
+    <div id="filter">
+    <h1 id="home">Personalized Travel Advice</h1>
+    <p>Our info helps you decide and make a good holiday become THE best!</p>
+    </div>
+    <media><iframe width="70%" height="315" src="https://www.youtube.com/embed/MkNeIUgNPQ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="opacity: 0.8;"></iframe></media>    
+  </main>
+  
+  
+<section style="opacity: 0.8;">  
+   <article >
+     <div class="about-poz">
+         <p id="about">Why choose us? <br>Simple, because we are:</p>
+      <ul class="why">
+       <li id="fast" >Objective</li>
+       <li id="reliable">Echidistant</li>
+       <li id="quality">Quality-oriented</li>
+       <li><strong>NEVER</strong> <p id="hid">gonna give you up,<sub>
+Never gonna let you down<sub>
+Never gonna run around and <sub>desert you...</sub></sub></sub></p></li>
+       </ul>  
+   </div>
+  </article> 
+</section>
+
+<section style="opacity: 0.8;">  
+   <article>
+    <p id="destinations" style="text-align: center;">Just click on any destination on our list and get our recommendation!</p>
+
+     <div class="destinations-list">
+        <div class="listings">
+          <p>Berlin</p>
+          <img src="https://images.unsplash.com/photo-1546726747-421c6d69c929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80">
+        </div>
+        <div class="listings">
+          <p>Paris</p>
+          <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+        </div>
+        <div class="listings">
+          <p>Venice</p>
+          <img src="https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+        </div>        
+
+        <div class="listings">
+          <p>Egypt</p>
+          <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+        </div>
+        <div class="listings">
+          <p>Dublin</p>
+          <img src="https://images.unsplash.com/photo-1549918864-48ac978761a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+        </div>
+        <div class="listings">
+          <p>London</p>
+          <img src="https://images.unsplash.com/photo-1494922275507-58dc039ed337?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+        </div>
+  </div>
+
+  <div style="padding:1em; text-align: justify; ">
+        <p>Data about selected destination:</p>
+        <p id="explanatorium">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>More coming soon!</p>
+      </div>
+  
+
+
+  </article> 
+</section>
+
+
+
+
+  
+  
+<footer id="footer" style="opacity: 0.8;"><p>Copyright &copy; The Travel Guys 2020</p> <span> Email: TravelGuys@Travel-free.com</span> </footer>
+  
+</body>
