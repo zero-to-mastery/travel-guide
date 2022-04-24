@@ -8,7 +8,7 @@ const footer = () => {
         style={{
           // backgroundImage:
           //   "url(http://demap.com.au/wp-content/uploads/2014/05/Banner.png)"
-          backgroundColor: "black"
+          backgroundColor: "black",
         }}
         className="tc-l bg-center cover bg-purple"
       >
