@@ -168,13 +168,14 @@ article {
 }
 
 #footer {
+  opacity: 0.8;
   padding:auto;
   width:inherit;
   background-color: grey;
   text-align:left;
   display: flex;
   justify-content: space-around;
-  padding:1%;
+  padding:2%;
 }
 
 span { 
