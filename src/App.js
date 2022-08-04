@@ -10,11 +10,14 @@ function App() {
   const [countries, setCountries] = useState([]);
   const [searchField, setSearchField] = useState('');
   const [userLocation, setUserLocation] = useState([]);
+  const [Loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     fetch('https://restcountries.com/v2/all')
       .then((response) => response.json())
       .then((countries) => {
+        setLoading(false)
         let regionList = [];
         let countryList = [];
         let flagList = [];
@@ -42,6 +45,10 @@ function App() {
       new Set(regionList.filter((region) => region !== '').sort())
     );
   };
+
+  if (Loading) {
+    return <h1 className="f1 dark-blue b--dotted">...LOADING</h1>;
+  }
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value.toLowerCase());
