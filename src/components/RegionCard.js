@@ -52,7 +52,7 @@ export default class RegionCard extends React.Component {
   render() {
     return (
       <div
-        className="tc bg-black-90 code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
+        className="tc bg-light-100 b--dashed b--white-70 code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
         onClick={this.handleOnClick}
       >
         <h2 className="h2black">{this.state.region}</h2>
