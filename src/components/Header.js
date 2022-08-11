@@ -8,7 +8,7 @@ const header = () => {
     <header className="white-80 tc pv4 header pb7 ">
 
       <h1 className="mt2 mb3  headertext" data-aos="fade-down" data-aos-duration="5000"><Link to="/travel-guide">Travel Guide</Link></h1>
-      <div data-aos="fade-up" data-aos-duration="7000"><Link to="/travel-guide"><img src={globe} className="App-logo" alt="logo" /></Link></div>
+      <div data-aos="fade-up" data-aos-duration="7000"><Link to="/travel-guide"><div data-aos="fade-up" data-aos-duration="7000"><Link to="/travel-guide"><iframe src="https://giphy.com/embed/yo1whaKkz38ME" width="150" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></Link></div></Link></div>
 
       <nav className="bt bb tc center mt4 nav">
         <NavLink to='/travel-guide' activeClassName="is-active" className="f6 f5-l link bg-animate white-80 hover-bg-red b dib pa3 ph4-l">Home</NavLink>
