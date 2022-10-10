@@ -5,7 +5,7 @@
 
 ## To run this project👇
 
-- Clone(fork) this repository
+- Clone(fork) this repository.
 - Run these following commands on your terminal/ cmd prompt:
   - cd travel-guide
   - npm install
