@@ -4,9 +4,11 @@ import Region from "../components/Region";
 import RegionList from "../components/RegionList";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-import Detail from '../components/CountryDetails/Detail';
+import Detail from "../components/CountryDetails/Detail";
+import Credits from "../components/Credits";
+import { WorldMap } from "../components/MapView/MapView";
 
-export default props => {
+function props({ onSearchChange, regionList, countryList, flagList, countries, searchField, userLocation }) {
   const regions = [
     "/travel-guide/africa",
     "/travel-guide/americas",
@@ -15,6 +17,7 @@ export default props => {
     "/travel-guide/oceania",
     "/travel-guide/polar"
   ];
+
   const routes = regions.map((region, index) => {
     return (
       <Route
@@ -22,12 +25,12 @@ export default props => {
         path={region}
         render={() => (
           <Region
-            onSearchChange={props.onSearchChange}
-            search={props.state.searchField}
-            region={props.state.regionList[index]}
-            countries={props.state.countries}
-            flags={props.state.flagList}
-            names={props.state.contryList}
+            onSearchChange={onSearchChange}
+            search={searchField}
+            region={regionList[index]}
+            countries={countries}
+            flags={flagList}
+            names={countryList}
           />
         )}
       />
@@ -44,22 +47,37 @@ export default props => {
             exact={true}
             render={() => (
               <RegionList
-                countries={props.state.countries}
-                regions={props.state.regionList}
+                countries={countries}
+                regions={regionList}
               />
             )}
           />
           {routes}
-          <Route  exact path="/travel-guide/detail/:id" render={() => (
-              <Detail 
-                  flags={props.state.flagList}
-                  countries={props.state.countries}
-                />
-               )}
+          <Route
+            exact
+            path="/travel-guide/detail/:id"
+            render={() => (
+              <Detail
+                flags={flagList}
+                countries={countries}
               />
+            )}
+          />
+          <Route
+            exact
+            path="/travel-guide/map"
+            render={() => <WorldMap countries={countries} />}
+          />
+          <Route
+            exact
+            path="/travel-guide/credits"
+            render={() => <Credits />}
+          />
         </Switch>
         <Footer />
       </div>
     </BrowserRouter>
   );
 };
+
+export default props;
