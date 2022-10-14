@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import AppRouter from './routes/AppRouter';
-import './App.css';
-import 'tachyons';
+import React, { useState, useEffect } from "react";
+import AppRouter from "./routes/AppRouter";
+import "./App.css";
+import "tachyons";
 
 function App() {
   const [regionList, setRegionList] = useState([]);
   const [countryList, setCountryList] = useState([]);
   const [flagList, setFlagList] = useState([]);
   const [countries, setCountries] = useState([]);
-  const [searchField, setSearchField] = useState('');
+  const [searchField, setSearchField] = useState("");
   const [userLocation, setUserLocation] = useState([]);
-  const [Loading, setLoading] = useState(true)
+  const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true)
-    fetch('https://restcountries.com/v2/all')
+    setLoading(true);
+    fetch("https://restcountries.com/v2/all")
       .then((response) => response.json())
       .then((countries) => {
-        setLoading(false)
+        setLoading(false);
         let regionList = [];
         let countryList = [];
         let flagList = [];
@@ -42,7 +42,7 @@ function App() {
 
   const findUniqRegions = (regionList) => {
     return Array.from(
-      new Set(regionList.filter((region) => region !== '').sort())
+      new Set(regionList.filter((region) => region !== "").sort())
     );
   };
 
