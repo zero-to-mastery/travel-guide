@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/Region.css";
+import React from "react"
+import { Link } from "react-router-dom"
+import "../styles/Region.css"
 
 const initialProps = {
   image: {
@@ -8,46 +8,49 @@ const initialProps = {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/550px-Africa_%28orthographic_projection%29.svg.png",
     Americas:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Americas_%28orthographic_projection%29.svg/1200px-Americas_%28orthographic_projection%29.svg.png",
-    Asia:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Asia_%28orthographic_projection%29.svg/220px-Asia_%28orthographic_projection%29.svg.png",
+    Antarctic:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f2/Antarctica_%28orthographic_projection%29.svg",
+    "Antarctic Ocean":
+      "https://upload.wikimedia.org/wikipedia/commons/2/28/Location_Southern_Ocean.svg",
+    Asia: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Asia_%28orthographic_projection%29.svg/220px-Asia_%28orthographic_projection%29.svg.png",
     Europe:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/220px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png",
     Oceania:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Oceania_%28orthographic_projection%29.svg/400px-Oceania_%28orthographic_projection%29.svg.png",
     Polar:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Antarctica_%28orthographic_projection%29.svg/250px-Antarctica_%28orthographic_projection%29.svg.png"
-  }
-};
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Antarctica_%28orthographic_projection%29.svg/250px-Antarctica_%28orthographic_projection%29.svg.png",
+  },
+}
 export default class RegionCard extends React.Component {
   constructor({ name, countryList }) {
-    super();
+    super()
     this.state = {
       countries: countryList
         .sort((a, b) => {
-          return b.population - a.population;
+          return b.population - a.population
         })
-        .map(country => {
-          return country.name;
+        .map((country) => {
+          return country.name
         }),
       region: name,
-      path: `/travel-guide/${name.toLowerCase()}`
-    };
+      path: `/travel-guide/${name.replaceAll(" ", "_").toLowerCase()}`,
+    }
   }
 
   handleOnClick = () => {
     this.setState({
-      redirect: true
-    });
-  };
+      redirect: true,
+    })
+  }
 
   displayCountries = () => {
-    let countriesToDisplay = [];
-    let y = this.state.countries.length > 10 ? 10 : this.state.countries.length;
+    let countriesToDisplay = []
+    let y = this.state.countries.length > 10 ? 10 : this.state.countries.length
     for (var x = 0; x < y; x++) {
-      countriesToDisplay.push(this.state.countries[x]);
+      countriesToDisplay.push(this.state.countries[x])
     }
-    return countriesToDisplay;
-  };
+    return countriesToDisplay
+  }
 
   render() {
     return (
@@ -74,6 +77,6 @@ export default class RegionCard extends React.Component {
           View More
         </Link>
       </div>
-    );
+    )
   }
 }
