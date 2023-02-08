@@ -54,3 +54,7 @@ h1.headertext {
     position: relative;
     bottom: -40px;
 }
+
+iframe {
+    border: 0px;
+}
