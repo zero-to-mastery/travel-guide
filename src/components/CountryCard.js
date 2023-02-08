@@ -1,5 +1,4 @@
 import React from "react";
-import props from "../routes/AppRouter";
 import "../styles/CountryCard.css";
 
 const CountryCard = props => {
