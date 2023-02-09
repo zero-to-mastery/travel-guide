@@ -1,410 +1,415 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 const contributors = [
   {
-    name: "@paganim",
-    link: "https://github.com/paganim"
+    name: '@brudevtek',
+    link: 'https://github.com/brudevtek',
   },
+
   {
-    name: "@Anmol270900",
-    link: "https://github.com/Anmol270900"
+    name: '@paganim',
+    link: 'https://github.com/paganim',
   },
   {
-    name: "@Furkan Kursun",
-    link: "https://github.com/soyu1234"
+    name: '@Anmol270900',
+    link: 'https://github.com/Anmol270900',
   },
   {
-    name: "@ido-netaneli",
-    link: "https://github.com/ido-netaneli"
+    name: '@Furkan Kursun',
+    link: 'https://github.com/soyu1234',
   },
   {
-    name: "@sandipguchait",
-    link: "https://github.com/sandipguchait"
+    name: '@ido-netaneli',
+    link: 'https://github.com/ido-netaneli',
   },
   {
-    name: "@rpaltayev",
-    link: "https://github.com/rpaltayev"
+    name: '@sandipguchait',
+    link: 'https://github.com/sandipguchait',
   },
   {
-    name: "@ngodi",
-    link: "https://github.com/ngodi"
+    name: '@rpaltayev',
+    link: 'https://github.com/rpaltayev',
   },
   {
-    name: "@Pierre Khoury",
-    link: "https://github.com/PierreDeveloper18"
+    name: '@ngodi',
+    link: 'https://github.com/ngodi',
   },
   {
-    name: "@mynaur",
-    link: "https://github.com/mynaur"
+    name: '@Pierre Khoury',
+    link: 'https://github.com/PierreDeveloper18',
   },
   {
-    name: "@akashkann",
-    link: "https://github.com/akashkann"
+    name: '@mynaur',
+    link: 'https://github.com/mynaur',
   },
   {
-    name: "@alexacoronel",
-    link: "https://github.com/alexacoronel"
+    name: '@akashkann',
+    link: 'https://github.com/akashkann',
   },
   {
-    name: "@gabipfeffer",
-    link: "https://github.com/gabipfeffer"
+    name: '@alexacoronel',
+    link: 'https://github.com/alexacoronel',
   },
   {
-    name: "@Litchstarken",
-    link: "https://github.com/Litchstarken"
+    name: '@gabipfeffer',
+    link: 'https://github.com/gabipfeffer',
   },
   {
-    name: "@BLiTz3R",
-    link: "https://github.com/BLiTz3R"
+    name: '@Litchstarken',
+    link: 'https://github.com/Litchstarken',
   },
   {
-    name: "@peterson oaikhenah",
-    link: "https://github.com/nextwebb"
+    name: '@BLiTz3R',
+    link: 'https://github.com/BLiTz3R',
   },
   {
-    name: "@umanghans",
-    link: "https://github.com/umanghans"
+    name: '@peterson oaikhenah',
+    link: 'https://github.com/nextwebb',
   },
   {
-    name: "@dark-wonder",
-    link: "https://github.com/dark-wonder"
+    name: '@umanghans',
+    link: 'https://github.com/umanghans',
   },
   {
-    name: "@jawlee",
-    link: "https://github.com/jawlee"
+    name: '@dark-wonder',
+    link: 'https://github.com/dark-wonder',
   },
   {
-    name: "@siklinb01",
-    link: "https://github.com/siklinb01"
+    name: '@jawlee',
+    link: 'https://github.com/jawlee',
   },
   {
-    name: "@xFinality",
-    link: "https://github.com/xFinality"
+    name: '@siklinb01',
+    link: 'https://github.com/siklinb01',
   },
   {
-    name: "@SuperSafie",
-    link: "https://github.com/SuperSafie"
+    name: '@xFinality',
+    link: 'https://github.com/xFinality',
   },
   {
-    name: "@Veene",
-    link: "https://github.com/Veene"
+    name: '@SuperSafie',
+    link: 'https://github.com/SuperSafie',
   },
   {
-    name: "@jckonewalik",
-    link: "https://github.com/jckonewalik"
+    name: '@Veene',
+    link: 'https://github.com/Veene',
   },
   {
-    name: "@Lordberbeross",
-    link: "https://github.com/lordberbeross"
+    name: '@jckonewalik',
+    link: 'https://github.com/jckonewalik',
   },
   {
-    name: "@DanielMarcano",
-    link: "https://github.com/DanielMarcano"
+    name: '@Lordberbeross',
+    link: 'https://github.com/lordberbeross',
   },
   {
-    name: "@AlexanderKruk",
-    link: "https://github.com/AlexanderKruk"
+    name: '@DanielMarcano',
+    link: 'https://github.com/DanielMarcano',
   },
   {
-    name: "@sidebone",
-    link: "https://github.com/sidebone"
+    name: '@AlexanderKruk',
+    link: 'https://github.com/AlexanderKruk',
   },
   {
-    name: "@ytrkptl",
-    link: "https://github.com/ytrkptl"
+    name: '@sidebone',
+    link: 'https://github.com/sidebone',
   },
   {
-    name: "@rezzco",
-    link: "https://github.com/rezzco"
+    name: '@ytrkptl',
+    link: 'https://github.com/ytrkptl',
   },
   {
-    name: "@liissaar",
-    link: "https://github.com/liissaar"
+    name: '@rezzco',
+    link: 'https://github.com/rezzco',
   },
   {
-    name: "@Arsen4ik",
-    link: "https://github.com/Arsen4ik"
+    name: '@liissaar',
+    link: 'https://github.com/liissaar',
   },
   {
-    name: "@AmujoDotun",
-    link: "https://github.com/AmujoDotun"
+    name: '@Arsen4ik',
+    link: 'https://github.com/Arsen4ik',
   },
   {
-    name: "@Jrejoire",
-    link: "https://github.com/Jrejoire"
+    name: '@AmujoDotun',
+    link: 'https://github.com/AmujoDotun',
   },
   {
-    name: "@Kingbee1",
-    link: "https://github.com/Kingbee1"
+    name: '@Jrejoire',
+    link: 'https://github.com/Jrejoire',
   },
   {
-    name: "@mishhubc",
-    link: "https://github.com/mishhubc"
+    name: '@Kingbee1',
+    link: 'https://github.com/Kingbee1',
   },
   {
-    name: "@cruzex100",
-    link: "https://github.com/cruzex100"
+    name: '@mishhubc',
+    link: 'https://github.com/mishhubc',
   },
   {
-    name: "@2neyadets",
-    link: "https://github.com/2neyadets"
+    name: '@cruzex100',
+    link: 'https://github.com/cruzex100',
   },
   {
-    name: "@ergonometry",
-    link: "https://github.com/ergonometry"
+    name: '@2neyadets',
+    link: 'https://github.com/2neyadets',
   },
   {
-    name: "@stefhangibson",
-    link: "https://github.com/stefhangibson"
+    name: '@ergonometry',
+    link: 'https://github.com/ergonometry',
   },
   {
-    name: "@Zeafromar",
-    link: "https://github.com/Zeafromar"
+    name: '@stefhangibson',
+    link: 'https://github.com/stefhangibson',
   },
   {
-    name: "@nsadev",
-    link: "https://github.com/nsadev"
+    name: '@Zeafromar',
+    link: 'https://github.com/Zeafromar',
   },
   {
-    name: "@giochajon",
-    link: "https://github.com/giochajon"
+    name: '@nsadev',
+    link: 'https://github.com/nsadev',
   },
   {
-    name: "@Gajhendran",
-    link: "https://github.com/Gajhendran"
+    name: '@giochajon',
+    link: 'https://github.com/giochajon',
   },
   {
-    name: "@01Clarian",
-    link: "https://github.com/01Clarian"
+    name: '@Gajhendran',
+    link: 'https://github.com/Gajhendran',
   },
   {
-    name: "@kweku76",
-    link: "https://github.com/kweku76"
+    name: '@01Clarian',
+    link: 'https://github.com/01Clarian',
   },
   {
-    name: "@mrzahidjabbar",
-    link: "https://github.com/mrzahidjabbar"
+    name: '@kweku76',
+    link: 'https://github.com/kweku76',
   },
   {
-    name: "@Vincent-Mpenyana",
-    link: "https://github.com/Vincent-Mpenyana"
+    name: '@mrzahidjabbar',
+    link: 'https://github.com/mrzahidjabbar',
   },
   {
-    name: "@Pourush1",
-    link: "https://github.com/Pourush1"
+    name: '@Vincent-Mpenyana',
+    link: 'https://github.com/Vincent-Mpenyana',
   },
   {
-    name: "@jgulbickyte",
-    link: "https://github.com/jgulbickyte"
+    name: '@Pourush1',
+    link: 'https://github.com/Pourush1',
   },
   {
-    name: "@Ron1722",
-    link: "https://github.com/Ron1722"
+    name: '@jgulbickyte',
+    link: 'https://github.com/jgulbickyte',
   },
   {
-    name: "@billshannon",
-    link: "https://github.com/billshannon"
+    name: '@Ron1722',
+    link: 'https://github.com/Ron1722',
   },
   {
-    name: "@marathohoho",
-    link: "https://github.com/marathohoho"
+    name: '@billshannon',
+    link: 'https://github.com/billshannon',
   },
   {
-    name: "@YasenPeev",
-    link: "https://github.com/YasenPeev"
+    name: '@marathohoho',
+    link: 'https://github.com/marathohoho',
   },
   {
-    name: "@JQuien",
-    link: "https://github.com/JQuien"
+    name: '@YasenPeev',
+    link: 'https://github.com/YasenPeev',
   },
   {
-    name: "@pedromzgrc",
-    link: "http://github.com/pedromzgrc"
+    name: '@JQuien',
+    link: 'https://github.com/JQuien',
   },
   {
-    name: "@kostispodaras",
-    link: "https://github.com/kostisPodaras"
+    name: '@pedromzgrc',
+    link: 'http://github.com/pedromzgrc',
   },
   {
-    name: "@sarizzuz",
-    link: "https://github.com/sarizzuz"
+    name: '@kostispodaras',
+    link: 'https://github.com/kostisPodaras',
   },
   {
-    name: "@SimplyToCreate",
-    link: "https://github.com/SimplyToCreate"
+    name: '@sarizzuz',
+    link: 'https://github.com/sarizzuz',
   },
   {
-    name: "@mariyanyanakiev",
-    link: "https://github.com/mariyanyanakiev"
+    name: '@SimplyToCreate',
+    link: 'https://github.com/SimplyToCreate',
   },
   {
-    name: "@aditya1906",
-    link: "https://github.com/aditya1906"
+    name: '@mariyanyanakiev',
+    link: 'https://github.com/mariyanyanakiev',
   },
   {
-    name: "@clintonwuks",
-    link: "https://github.com/clintonwuks"
+    name: '@aditya1906',
+    link: 'https://github.com/aditya1906',
   },
   {
-    name: "@SudeepaGo",
-    link: "https://github.com/SudeepaGo"
+    name: '@clintonwuks',
+    link: 'https://github.com/clintonwuks',
   },
   {
-    name: "@connectthapa",
-    link: "https://github.com/ThapaRahul"
+    name: '@SudeepaGo',
+    link: 'https://github.com/SudeepaGo',
   },
   {
-    name: "@naftalib",
-    link: "https://github.com/naftalib"
+    name: '@connectthapa',
+    link: 'https://github.com/ThapaRahul',
   },
   {
-    name: "@BATMANGOO",
-    link: "https://github.com/BATMANGOO"
+    name: '@naftalib',
+    link: 'https://github.com/naftalib',
   },
   {
-    name: "@Pvanloon1983",
-    link: "https://github.com/Pvanloon1983"
+    name: '@BATMANGOO',
+    link: 'https://github.com/BATMANGOO',
   },
   {
-    name: "@rajat98dogra",
-    link: "https://github.com/rajat98dogra"
+    name: '@Pvanloon1983',
+    link: 'https://github.com/Pvanloon1983',
   },
   {
-    name: "@Satyaki233",
-    link: "https://github.com/Satyaki233"
+    name: '@rajat98dogra',
+    link: 'https://github.com/rajat98dogra',
   },
   {
-    name: "@Madgeniusblink",
-    link: "https://github.com/Madgeniusblink"
+    name: '@Satyaki233',
+    link: 'https://github.com/Satyaki233',
   },
   {
-    name: "@hamzamakk1",
-    link: "https://github.com/hamzamakk1"
+    name: '@Madgeniusblink',
+    link: 'https://github.com/Madgeniusblink',
   },
   {
-    name: "@hanthienduc",
-    link: "https://github.com/hanthienduc"
+    name: '@hamzamakk1',
+    link: 'https://github.com/hamzamakk1',
   },
   {
-    name: "@sevydev",
-    link: "https://github.com/sevydev"
+    name: '@hanthienduc',
+    link: 'https://github.com/hanthienduc',
   },
   {
-    name: "@chimachinedum",
-    link: "https://github.com/chimachinedum"
+    name: '@sevydev',
+    link: 'https://github.com/sevydev',
   },
   {
-    name: "@borason",
-    link: "https://github.com/borason"
+    name: '@chimachinedum',
+    link: 'https://github.com/chimachinedum',
   },
   {
-    name: "@Mirhatyasar",
-    link: "https://github.com/Mirhatyasar"
+    name: '@borason',
+    link: 'https://github.com/borason',
   },
   {
-    name: "@erics0n",
-    link: "https://github.com/erics0n"
+    name: '@Mirhatyasar',
+    link: 'https://github.com/Mirhatyasar',
   },
   {
-    name: "@nataschaluna",
-    link: "https://github.com/nataschaluna"
+    name: '@erics0n',
+    link: 'https://github.com/erics0n',
   },
   {
-    name: "@khasanovsm",
-    link: "https://github.com/khasanovsm"
+    name: '@nataschaluna',
+    link: 'https://github.com/nataschaluna',
   },
   {
-    name: "@Dorin-Ciora",
-    link: "https://github.com/dorin-ciora"
+    name: '@khasanovsm',
+    link: 'https://github.com/khasanovsm',
   },
   {
-    name: "@Devyani",
-    link: "https://github.com/devyaniwaghmare"
+    name: '@Dorin-Ciora',
+    link: 'https://github.com/dorin-ciora',
   },
   {
-    name: "@ruchirV",
-    link: "https://github.com/ruchirV"
+    name: '@Devyani',
+    link: 'https://github.com/devyaniwaghmare',
   },
   {
-    name: "@khurram-syed",
-    link: "https://github.com/khurram-syed"
+    name: '@ruchirV',
+    link: 'https://github.com/ruchirV',
   },
   {
-    name: "@Arjun0o",
-    link: "https://github.com/Arjun0o"
+    name: '@khurram-syed',
+    link: 'https://github.com/khurram-syed',
   },
   {
-    name: "@famebyproxy",
-    link: "https://github.com/famebyproxy"
+    name: '@Arjun0o',
+    link: 'https://github.com/Arjun0o',
   },
   {
-    name: "@luis-escoto11",
-    link: "https://github.com/luis-escoto11"
+    name: '@famebyproxy',
+    link: 'https://github.com/famebyproxy',
   },
   {
-    name: "@benjohnsondev",
-    link: "https://github.com/benjohnsondev"
+    name: '@luis-escoto11',
+    link: 'https://github.com/luis-escoto11',
   },
   {
-    name: "@giulianocernada",
-    link: "https://github.com/giulianocernada"
+    name: '@benjohnsondev',
+    link: 'https://github.com/benjohnsondev',
   },
   {
-    name: "@vxsunstriderxv",
-    link: "https://github.com/vxsunstriderxv"
+    name: '@giulianocernada',
+    link: 'https://github.com/giulianocernada',
   },
   {
-    name: "@jqueijo",
-    link: "https://github.com/jqueijo"
+    name: '@vxsunstriderxv',
+    link: 'https://github.com/vxsunstriderxv',
   },
   {
-    name: "@Marius1388",
-    link: "https://github.com/Marius1388"
+    name: '@jqueijo',
+    link: 'https://github.com/jqueijo',
   },
   {
-    name: "@gandho12",
-    link: "https://github.com/gandho12"
+    name: '@Marius1388',
+    link: 'https://github.com/Marius1388',
   },
   {
-    name: "@pau-lo",
-    link: "https://github.com/pau-lo"
+    name: '@gandho12',
+    link: 'https://github.com/gandho12',
   },
   {
-    name: "@binyaalex",
-    link: "https://github.com/binyaalex"
+    name: '@pau-lo',
+    link: 'https://github.com/pau-lo',
   },
   {
-    name: "@tew9",
-    link: "https://github.com/tew9"
+    name: '@binyaalex',
+    link: 'https://github.com/binyaalex',
   },
   {
-    name: "@sjovanovic974",
-    link: "https://github.com/sjovanovic974"
+    name: '@tew9',
+    link: 'https://github.com/tew9',
   },
   {
-    name: "@AlexGithubbb",
-    link: "https://github.com/AlexGithubbb"
+    name: '@sjovanovic974',
+    link: 'https://github.com/sjovanovic974',
   },
   {
-    name: "@mwheatfill",
-    link: "https://github.com/mwheatfill"
+    name: '@AlexGithubbb',
+    link: 'https://github.com/AlexGithubbb',
   },
   {
-    name: "@webguy83",
-    link: "https://github.com/webguy83"
+    name: '@mwheatfill',
+    link: 'https://github.com/mwheatfill',
   },
   {
-    name: "@minshinkhant",
-    link: "https://github.com/minshinkhant"
+    name: '@webguy83',
+    link: 'https://github.com/webguy83',
   },
   {
-    name: "@KarenDouglas",
-    link: "https://github.com/KarenDouglas"
+    name: '@minshinkhant',
+    link: 'https://github.com/minshinkhant',
   },
   {
-    name: "@samkcrespo",
-    link: "https://github.com/samkcrespo"
-  }
+    name: '@KarenDouglas',
+    link: 'https://github.com/KarenDouglas',
+  },
+  {
+    name: '@samkcrespo',
+    link: 'https://github.com/samkcrespo',
+  },
 ];
 
 class Credits extends Component {
@@ -413,8 +418,13 @@ class Credits extends Component {
       <div>
         <h1 className="searchBox mt1">Credits</h1>
         <ul className="list">
-          {contributors.map(c => (
-            <a key={c.name} href={c.link} target="_blank" rel="noopener noreferrer">
+          {contributors.map((c) => (
+            <a
+              key={c.name}
+              href={c.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="card">
                 <div className="listContributors margin_left tc bg-black-20 code dib mb2 bw2 shadow-4 regionFlagContainer">
                   <p className="contributors">{c.name}</p>
