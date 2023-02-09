@@ -22,7 +22,7 @@ const header = () => {
                 width="150"
                 height="100"
                 className="giphy-embed"
-                allowFullScreen
+                allowFullScreena
                 title="A GIF of planet earth spinning"
               ></iframe>
             </Link>
