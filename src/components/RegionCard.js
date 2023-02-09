@@ -55,7 +55,7 @@ export default class RegionCard extends React.Component {
   render() {
     return (
       <div
-        className="tc bg-light-100 b--dashed b--white-70 code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
+        className="tc bg-light-100 b--solid b--white-70 code dib br3 pb1 ma3 grow bw2 shadow-5 region-card"
         onClick={this.handleOnClick}
       >
         <h2 className="h2black">{this.state.region}</h2>
@@ -67,7 +67,7 @@ export default class RegionCard extends React.Component {
         />
 
         <div className="ph4 mv3 white lh-title">
-          {this.displayCountries().join(", ")}
+          {this.displayCountries().join(', ')}
         </div>
 
         <Link
@@ -77,6 +77,6 @@ export default class RegionCard extends React.Component {
           View More
         </Link>
       </div>
-    )
+    );
   }
 }
