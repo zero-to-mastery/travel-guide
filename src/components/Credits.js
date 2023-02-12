@@ -2,9 +2,14 @@ import React, { Component } from "react";
 
 const contributors = [
   {
+    name:"@eklemis",
+    link:"https://github.com/eklemis"
+  },
+  {
     name: "@paganim",
     link: "https://github.com/paganim"
   },
+  
   {
     name: "@Anmol270900",
     link: "https://github.com/Anmol270900"
@@ -410,13 +415,14 @@ const contributors = [
 class Credits extends Component {
   render() {
     return (
-      <div>
+      <div className="centerFlex">
         <h1 className="searchBox mt1">Credits</h1>
         <ul className="list">
           {contributors.map(c => (
             <a key={c.name} href={c.link} target="_blank" rel="noopener noreferrer">
               <div className="card">
-                <div className="listContributors margin_left tc bg-black-20 code dib mb2 bw2 shadow-4 regionFlagContainer">
+                <div className="listContributors shadow-4 code">
+                  <img src={c.link+".png"} alt="profile"/>
                   <p className="contributors">{c.name}</p>
                 </div>
               </div>
