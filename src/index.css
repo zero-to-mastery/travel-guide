@@ -14,7 +14,8 @@ body {
   font-size: 20px;
   text-align: center;
   padding-top:10%;
-  background: url("https://ceblog.s3.amazonaws.com/wp-content/uploads/2012/05/20172622/ce-travel.jpg") no-repeat;    
+  /* background: url("https://ceblog.s3.amazonaws.com/wp-content/uploads/2012/05/20172622/ce-travel.jpg") no-repeat; */
+  background: url("/src/img/travel-guide-background.webp");
   background-size: cover; 
   background-attachment: fixed;
   background-position: center center;
