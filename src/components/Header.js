@@ -21,9 +21,9 @@ const header = () => {
                 src="https://giphy.com/embed/yo1whaKkz38ME"
                 width="150"
                 height="100"
-                frameBorder="0"
                 className="giphy-embed"
-                allowFullScreen
+                allowFullScreena
+                title="A GIF of planet earth spinning"
               ></iframe>
             </Link>
           </div>
