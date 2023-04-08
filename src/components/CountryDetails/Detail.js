@@ -52,8 +52,20 @@ class Detail extends React.Component {
     });
   };
 
-  renderDetail = () => {
+  renderDetail() {
     const { details } = this.state;
+  
+    if (!details) {
+      return <Loader />;
+    } else {
+      return (
+        <div className="region-details">
+          // rest of the JSX code for details
+        </div>
+      );
+    }
+  }
+  
 
   !details ? (
     <Loader />
