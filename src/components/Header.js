@@ -16,16 +16,14 @@ const header = () => {
       <div data-aos="fade-up" data-aos-duration="7000">
         <Link to="/travel-guide">
           <div data-aos="fade-up" data-aos-duration="7000">
-            <Link to="/travel-guide">
-              <iframe
-                src="https://giphy.com/embed/yo1whaKkz38ME"
-                width="150"
-                height="100"
-                className="giphy-embed"
-                allowFullScreena
-                title="A GIF of planet earth spinning"
-              ></iframe>
-            </Link>
+            <iframe
+              src="https://giphy.com/embed/yo1whaKkz38ME"
+              width="150"
+              height="100"
+              className="giphy-embed"
+              allowFullScreen
+              title="A GIF of planet earth spinning"
+            ></iframe>
           </div>
         </Link>
       </div>
