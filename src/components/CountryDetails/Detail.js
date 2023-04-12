@@ -14,7 +14,6 @@ class Detail extends React.Component {
     const { id } = this.props.match.params;
 
     axios.get(`https://restcountries.com/v2/name/${id}`).then((response) => {
-      console.log(response);
       if (id.toLowerCase() === "india") {
         response.data[1].population = 1380879389;
         this.setState({ details: response.data[1] });
