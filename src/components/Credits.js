@@ -404,6 +404,10 @@ const contributors = [
   {
     name: "@samkcrespo",
     link: "https://github.com/samkcrespo"
+  },
+  {
+    name: "@aleks930819",
+    link: "https://github.com/aleks930819"
   }
 ];
 
