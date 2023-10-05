@@ -30,6 +30,11 @@ const Region = ({ region, countries, search, onSearchChange, flagList }) => {
         <Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib black bg-white"
           to="/travel-guide"
+          onClick={(e) => {
+            e.target.value = "";
+            onSearchChange(e);
+          }
+        }
         >
           BACK
         </Link>
