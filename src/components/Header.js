@@ -27,7 +27,6 @@ const Header = () => {
           </div>
         </Link>
       </div>
-
       <nav className="bt bb tc center mt4 nav">
         <NavLink
           to="/travel-guide"

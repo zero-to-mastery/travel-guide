@@ -4,10 +4,12 @@
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)),
     url(../img/BaganMyanmar.jpg);
-  background-position: 20% 85%;
+  /* background-position: 20% 85%; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-origin: content-box;
+  background-position: center;
+  /* background-origin: content-box; */
+  height: 15vh;
   /* mix-blend-mode: saturation; */
 }
 
@@ -16,9 +18,9 @@ header.header {
 }
 
 @media screen and (min-width: 1300px) {
-  .header {
+  /* .header {
     background-position: 10% 80%;
-  }
+  } */
 }
 
 /* @media screen and (min-width: 500px) {
@@ -37,7 +39,8 @@ header.header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Staatliches", cursive;
-  font-size: 6em;
+  font-size: 6rem;
+  align-self: center;
   text-transform: uppercase;
   text-shadow: 4px 3px 0px white;
   margin-top: 0;
