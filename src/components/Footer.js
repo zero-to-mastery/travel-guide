@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import "../styles/footer.css";
-const footer = () => {
+const Footer = () => {
   return (
     <div>
       <footer
         style={{
           // backgroundImage:
           //   "url(http://demap.com.au/wp-content/uploads/2014/05/Banner.png)"
-          backgroundColor: "black"
+          backgroundColor: "black",
         }}
         className="tc-l bg-center cover bg-purple"
       >
@@ -149,4 +149,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
