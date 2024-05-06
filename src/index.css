@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body { 
@@ -64,9 +64,11 @@ nav {
 }
 
 nav ul {
-  display:grid;
-  grid-template-columns: 12vw 12vw 12vw 12vw;
+ 
+  display: flex;
+  flex-direction: row;
   font-size: 130%;
+  justify-content: space-around;
   text-align:center;
   padding: 0.1vw 0.1vw 0.1vw 9vw;
   /* font-weight:bold; */
@@ -104,7 +106,6 @@ section article p {
 #footer {
   border:1px solid black;  
 }
-
 ul.why > li  { 
   color:#616161; 
   list-style-type:none; 
