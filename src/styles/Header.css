@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Staatliches&display=swap');
+
+:root {
+    --text-color: rgba(0, 0, 0, 0.952);
+    --header-background: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(../img/BaganMyanmar.jpg);
+    --header-text-color: transparent;
+    --shadow-color: white;
+}
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(../img/BaganMyanmar.jpg);
+    background-image: var(--header-background);
     background-position: 20% 85%;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: content-box;
-    /* mix-blend-mode: saturation; */
-
-}
-
-header.header {
     padding-top: 0;
 }
 
@@ -22,39 +22,25 @@ header.header {
     }
 }
 
-/* @media screen and (min-width: 500px) {
-    .header {
-        background-position: absolute;
-        margin-top: -30px;
-
-    }
-
-} */
-
-
 .headertext {
     background: rgb(0, 0, 0);
     letter-spacing: 7px;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: var(--header-text-color);
     font-family: 'Staatliches', cursive;
     font-size: 6em;
     text-transform: uppercase;
-    text-shadow: 4px 3px 0px white;
-    margin-top: 0;
-}
-
-h1.headertext {
+    text-shadow: 4px 3px 0px var(--shadow-color);
     margin-top: 0;
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.952);
+    background-color: var(--text-color);
     position: relative;
     bottom: -40px;
 }
 
 iframe {
-    border: 0px;
+    border: none;
 }
