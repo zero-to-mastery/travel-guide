@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)), url(../img/BaganMyanmar.jpg);
-    background-position: 20% 85%;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: content-box;
-    /* mix-blend-mode: saturation; */
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.849)),
+    url(../img/BaganMyanmar.jpg);
+  /* background-position: 20% 85%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-origin: content-box; */
+  height: 15vh;
+  /* mix-blend-mode: saturation; */
 }
 
 header.header {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 @media screen and (min-width: 1300px) {
-    .header {
-        background-position: 10% 80%;
-    }
+  /* .header {
+    background-position: 10% 80%;
+  } */
 }
 
 /* @media screen and (min-width: 500px) {
@@ -31,30 +32,30 @@ header.header {
 
 } */
 
-
 .headertext {
-    background: rgb(0, 0, 0);
-    letter-spacing: 7px;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Staatliches', cursive;
-    font-size: 6em;
-    text-transform: uppercase;
-    text-shadow: 4px 3px 0px white;
-    margin-top: 0;
+  background: rgb(0, 0, 0);
+  letter-spacing: 7px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Staatliches", cursive;
+  font-size: 6rem;
+  align-self: center;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 0px white;
+  margin-top: 0;
 }
 
 h1.headertext {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.952);
-    position: relative;
-    bottom: -40px;
+  background-color: rgba(0, 0, 0, 0.952);
+  position: relative;
+  bottom: -40px;
 }
 
 iframe {
-    border: 0px;
+  border: 0px;
 }

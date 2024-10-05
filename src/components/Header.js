@@ -3,11 +3,11 @@ import { NavLink, Link } from "react-router-dom";
 // import globe from "../Globe.svg";
 import "../styles/Header.css";
 
-const header = () => {
+const Header = () => {
   return (
     <header className="white-80 tc pv4 header pb7 ">
       <h1
-        className="mt2 mb3  headertext"
+        className="mt2 mb3 headertext"
         data-aos="fade-down"
         data-aos-duration="5000"
       >
@@ -27,7 +27,6 @@ const header = () => {
           </div>
         </Link>
       </div>
-
       <nav className="bt bb tc center mt4 nav">
         <NavLink
           to="/travel-guide"
@@ -90,4 +89,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
