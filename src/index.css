@@ -41,6 +41,10 @@ header {
   text-align: center;
 }
 
+.header h1 {
+  font-size: 6vh;
+}
+
 #header-img {
   height: 13vw;
   padding: 0;
