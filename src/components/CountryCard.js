@@ -3,7 +3,7 @@ import "../styles/CountryCard.css";
 
 const CountryCard = props => {
   const bcg = {
-    backgroundImage: `url(${props.countryData.flag})`,
+    backgroundImage: `url(${props.countryData.flags.svg})`,
     backgroundSize: "184px auto",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -20,7 +20,7 @@ const CountryCard = props => {
 
   const tooltipTxt = {
     header: `Population: ${props.countryData.population}`,
-    langTxt: `Primary Language: ${props.countryData.languages[0].name}`,
+    langTxt: `Primary Language: ${Object.values(props.countryData.languages)[0]}`,  // ✅
     latLng: `Lat, Lng: ${props.countryData.latlng}`,
   };
   
