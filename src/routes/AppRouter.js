@@ -63,7 +63,7 @@ function AppRouter({
           <Route
             exact
             path="/travel-guide/detail/:id"
-            render={() => <Detail flags={flagList} countries={countries} />}
+            render={(props) => <Detail {...props} flags={flagList} countries={countries} />}
           />
           <Route
             exact

@@ -14,29 +14,39 @@ function App() {
 
   useEffect(() => {
     setLoading(true)
-    fetch("https://restcountries.com/v2/all")
+    fetch("https://restcountries.com/v3.1/all?fields=name,flags,region,latlng,capital,population,currencies,languages,borders,cca3", {
+      headers: {
+        "Accept": "application/json"
+      }
+    })
       .then((response) => response.json())
-      .then((countries) => {
-        setLoading(false)
+      .then((data) => {
+  if (!Array.isArray(data)) {
+    console.log("Unexpected response:", data)
+    setLoading(false)
+    return
+  }
         let regionList = []
         let countryList = []
         let flagList = []
 
-        countries.map((list, i) => {
-          const { region, name, flag } = list
-          return (
-            regionList.push(region), countryList.push(name), flagList.push(flag)
-          )
+        data.forEach((list) => {          
+          const { region, name, flags } = list
+          regionList.push(region)         
+          countryList.push(name.common)
+          flagList.push(flags.svg)
         })
 
-        setCountries(countries)
-        setRegionList(findUniqRegions(regionList))
-        setCountryList(countryList)
-        setFlagList(flagList)
-        navigator.geolocation.getCurrentPosition(function (position) {
-          setUserLocation(position.coords)
-        })
-      })
+        setCountries(data)                // ✅ data, not countries
+  setRegionList(findUniqRegions(regionList))
+  setCountryList(countryList)
+  setFlagList(flagList)
+  setLoading(false) 
+        navigator.geolocation.getCurrentPosition(
+    (position) => setUserLocation(position.coords),
+    (err) => console.log("Geolocation error:", err)
+  )
+})
       .catch((error) => console.log(error))
   }, [])
 

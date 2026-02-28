@@ -30,8 +30,8 @@ export default class RegionCard extends React.Component {
           return b.population - a.population
         })
         .map((country) => {
-          return country.name
-        }),
+        return country.name.common
+      }),
       region: name,
       path: `/travel-guide/${name.replaceAll(" ", "_").toLowerCase()}`,
     }
@@ -70,12 +70,12 @@ export default class RegionCard extends React.Component {
           {this.displayCountries().join(", ")}
         </div>
 
-        <Link
+        {/*<Link
           className="f6 link dim br-pill ph4 pv2 mb2 dib black bg-white"
           to={`${this.state.path}`}
         >
           View More
-        </Link>
+        </Link>*/}
       </div>
     )
   }
