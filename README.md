@@ -25,24 +25,32 @@
   npm run start
   ```
 
- - Enter [http://localhost:3000/travel-guide](http://localhost:3000/travel-guide) in your browser
+- Enter [http://localhost:3000/travel-guide](http://localhost:3000/travel-guide) in your browser
 
- ## How to Contribute?
-  Apologies for the dead files and links. The project's source code exists on the src/ folder.<br>
-  Do make your contributions there and do well to fill the CONTRIBUTORS.md file.<br>
-  Cheers!
-  
- ## Code of Conduct
-  [Contributor Code of Conduct](https://github.com/zero-to-mastery/travel-guide/blob/master/CODE_OF_CONDUCT.md)
-  
- ## Links
-  [Facebook](https://www.facebook.com/zerotocodemastery/)
-  
-  [Instagram](https://www.instagram.com/andreineagoie/)
-  
-  [Youtube](https://www.youtube.com/channel/UCt7T2EvYBqvlxNU3fbE4Y7g)
-  
-  [Twitter](https://twitter.com/AndreiNeagoie)
-  
+## How to Contribute?
 
+Apologies for the dead files and links. The project's source code exists on the src/ folder.<br>
+Do make your contributions there and do well to fill the CONTRIBUTORS.md file.<br>
+Cheers!
 
+## Code of Conduct
+
+[Contributor Code of Conduct](https://github.com/zero-to-mastery/travel-guide/blob/master/CODE_OF_CONDUCT.md)
+
+## Links
+
+[Facebook](https://www.facebook.com/zerotocodemastery/)
+
+[Instagram](https://www.instagram.com/andreineagoie/)
+
+[Youtube](https://www.youtube.com/channel/UCt7T2EvYBqvlxNU3fbE4Y7g)
+
+[Twitter](https://twitter.com/AndreiNeagoie)
+
+## Improvements (1-March-2026)
+
+- Fixed the broken REST Countries API migration from v2 to v3.1
+- Debugged and fixed all the [object Object] issues across multiple components
+- Fixed the region routing mismatch in AppRouter.js
+- Upgraded from React 17 to React 18
+- Migrated from react-scripts to Vite, which eliminated all the Dependabot security alerts for React Scripts
