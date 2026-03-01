@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const Region = ({ region, countries, search, onSearchChange, flagList }) => {
   let countryList = countries.filter(
     country =>
-      country.region === region && country.name.toLowerCase().includes(search)
+      country.region === region && country.name.common.toLowerCase().includes(search)
   );
   let countryNames = countryList.map(country => (
-    <Link key={country.name} to={`/travel-guide/detail/${country.name}`}>
+    <Link key={country.name.common} to={`/travel-guide/detail/${country.name.common}`}>
       <CountryCard countryData={country} />
     </Link>
   ));
