@@ -28,7 +28,7 @@ const CountryCard = props => {
 		<div className='card'>
 				<div className='tooltip'>
         <div className='card__title'>
-				<h1 style={stl}>{props.countryData.name}</h1>
+				<h1 style={stl}>{props.countryData.name.common}</h1>
 					<div className='bottom'> 
 						{/* <img src='cssttp/css-tooltip-image.jpg' />  add an image API/collection for tooltip in the future  */}
 						<h3>{tooltipTxt.header}</h3>

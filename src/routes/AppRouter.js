@@ -29,6 +29,10 @@ function AppRouter({
   ]
 
   const routes = regions.map((region, index) => {
+    const regionName = region.replace("/travel-guide/", "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, l => l.toUpperCase())
+
     return (
       <Route
         key={index}
@@ -37,7 +41,7 @@ function AppRouter({
           <Region
             onSearchChange={onSearchChange}
             search={searchField}
-            region={regionList[index]}
+            region={regionName}
             countries={countries}
             flags={flagList}
             names={countryList}
