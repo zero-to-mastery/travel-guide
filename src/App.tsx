@@ -9,7 +9,6 @@ function App() {
   const [flagList, setFlagList] = useState([])
   const [countries, setCountries] = useState([])
   const [searchField, setSearchField] = useState("")
-  const [userLocation, setUserLocation] = useState([])
   const [Loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -42,8 +41,7 @@ function App() {
   setCountryList(countryList)
   setFlagList(flagList)
   setLoading(false) 
-        navigator.geolocation.getCurrentPosition(
-    (position) => setUserLocation(position.coords),
+    navigator.geolocation.getCurrentPosition(
     (err) => console.log("Geolocation error:", err)
   )
 })
@@ -74,7 +72,6 @@ function App() {
       flagList={flagList}
       countries={countries}
       searchField={searchField}
-      userLocation={userLocation}
     />
   )
 }

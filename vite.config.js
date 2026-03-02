@@ -6,13 +6,14 @@ export default defineConfig({
   base: '/travel-guide/',
   esbuild: {
     loader: 'jsx',
-    include: /src\/.*\.js$/,
-    exclude: [],
+    include: /src\/.*\.[jt]sx?$/,
   },
   optimizeDeps: {
     esbuildOptions: {
       loader: {
         '.js': 'jsx',
+        '.ts': 'tsx',
+        '.tsx': 'tsx',
       },
     },
   },

@@ -15,7 +15,6 @@ function AppRouter({
   flagList,
   countries,
   searchField,
-  userLocation,
 }) {
   const regions = [
     "/travel-guide/africa",
