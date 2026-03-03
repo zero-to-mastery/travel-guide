@@ -5,14 +5,15 @@ export default defineConfig({
   plugins: [react()],
   base: '/travel-guide/',
   esbuild: {
-    loader: 'jsx',
-    include: /src\/.*\.js$/,
-    exclude: [],
+    loader: 'tsx',
+    include: /src\/.*\.[jt]sx?$/,
   },
   optimizeDeps: {
     esbuildOptions: {
       loader: {
         '.js': 'jsx',
+        '.ts': 'tsx',
+        '.tsx': 'tsx',
       },
     },
   },

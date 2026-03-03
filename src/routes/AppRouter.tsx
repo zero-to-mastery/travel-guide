@@ -15,7 +15,6 @@ function AppRouter({
   flagList,
   countries,
   searchField,
-  userLocation,
 }) {
   const regions = [
     "/travel-guide/africa",
@@ -43,8 +42,6 @@ function AppRouter({
             search={searchField}
             region={regionName}
             countries={countries}
-            flags={flagList}
-            names={countryList}
           />
         )}
       />
@@ -67,7 +64,7 @@ function AppRouter({
           <Route
             exact
             path="/travel-guide/detail/:id"
-            render={(props) => <Detail {...props} flags={flagList} countries={countries} />}
+            render={() => <Detail />}
           />
           <Route
             exact

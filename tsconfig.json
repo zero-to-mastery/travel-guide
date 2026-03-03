@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "es2021"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": false,
+    "allowJs": true
+  },
+  "include": ["src"]
+}
