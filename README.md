@@ -47,6 +47,11 @@ Cheers!
 
 [Twitter](https://twitter.com/AndreiNeagoie)
 
+## Improvements (3-March-2026)
+
+- Migrated majority of the codebase from JavaScript to TypeScript
+- Refactored the codebase from class-based React to use hooks to improve readability and performance
+
 ## Improvements (1-March-2026)
 
 - Fixed the broken REST Countries API migration from v2 to v3.1
