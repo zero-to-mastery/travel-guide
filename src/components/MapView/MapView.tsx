@@ -1,139 +1,192 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
-import './MapView.css';
+import "./MapView.css";
 
-import 'ol/ol.css';
-import Map from 'ol/Map';
-import Overlay from 'ol/Overlay';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
-import { fromLonLat } from 'ol/proj';
-import OSM from 'ol/source/OSM';
+import "ol/ol.css";
+import Map from "ol/Map";
+import Overlay from "ol/Overlay";
+import View from "ol/View";
+import TileLayer from "ol/layer/Tile";
+import { fromLonLat } from "ol/proj";
+import OSM from "ol/source/OSM";
 
-class CountryMap extends React.Component {
-  componentDidMount() {
-    var view = new View({
+type CountryMapProps = {
+  countryName: string;
+  lat: number;
+  lng: number;
+};
+
+export function CountryMap({ countryName, lat, lng }: CountryMapProps) {
+  const mapElRef = useRef<HTMLDivElement | null>(null);
+  const markerElRef = useRef<HTMLDivElement | null>(null);
+  const markerTextElRef = useRef<HTMLParagraphElement | null>(null);
+
+  // Create map once
+  const mapRef = useRef<Map | null>(null);
+
+  useEffect(() => {
+    if (!mapElRef.current) return;
+
+    const view = new View({
       center: [0, 0],
       zoom: 4,
     });
 
-    var layer = new TileLayer({
+    const layer = new TileLayer({
       source: new OSM(),
     });
 
-    var map = new Map({
-      target: 'map',
+    const map = new Map({
+      target: mapElRef.current,
       layers: [layer],
-      view: view,
+      view,
     });
 
-    const { lat, lng } = this.props;
-    const lnglat = [lng, lat];
+    // Marker overlay
+    if (markerElRef.current) {
+      const marker = new Overlay({
+        positioning: "center-center",
+        element: markerElRef.current,
+        stopEvent: false,
+      });
+      map.addOverlay(marker);
+    }
 
-    var pos = fromLonLat(lnglat);
+    // Label overlay
+    if (markerTextElRef.current) {
+      const markerText = new Overlay({
+        element: markerTextElRef.current,
+      });
+      map.addOverlay(markerText);
+    }
+
+    mapRef.current = map;
+
+    return () => {
+      map.setTarget(undefined);
+      mapRef.current = null;
+    };
+  }, []);
+
+  // Update position when lat/lng changes
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    const view = map.getView();
+    const pos = fromLonLat([lng, lat]);
     view.setCenter(pos);
 
-    // Country marker
-    var marker = new Overlay({
-      position: pos,
-      positioning: 'center-center',
-      element: document.getElementById('marker'),
-      stopEvent: false,
-    });
-    map.addOverlay(marker);
+    // Update overlays (0 = marker, 1 = text) in the order we added them
+    const overlays = map.getOverlays().getArray();
+    overlays.forEach((ov) => ov.setPosition(pos));
+  }, [lat, lng]);
 
-    // Country label
-    var markerText = new Overlay({
-      position: pos,
-      element: document.getElementById('markerText'),
-    });
-    map.addOverlay(markerText);
-  }
-
-  render() {
-    const { countryName } = this.props;
-    return (
-      <div>
-        <div id='map' className='map'></div>
-        <div className='mapLabelArea'>
-          <p id='markerText' className='markerText'>
-            {countryName}
-          </p>
-          <div id='marker' className='marker' title='Marker'></div>
-        </div>
+  return (
+    <div>
+      <div ref={mapElRef} className="map" />
+      <div className="mapLabelArea">
+        <p ref={markerTextElRef} className="markerText">
+          {countryName}
+        </p>
+        <div ref={markerElRef} className="marker" title="Marker" />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-class WorldMap extends React.Component {
-  componentDidMount() {
-    var view = new View({
+/** This matches what your WorldMap code uses today */
+type WorldMapCountry = {
+  latlng: [number, number];
+  alpha3Code: string;
+  name: string;
+  population: number;
+  capital: string;
+  region: string;
+  demonym: string;
+};
+
+type WorldMapProps = {
+  countries: WorldMapCountry[];
+};
+
+export function WorldMap({ countries }: WorldMapProps) {
+  const mapElRef = useRef<HTMLDivElement | null>(null);
+  const mapRef = useRef<Map | null>(null);
+
+  // We render marker divs with ids; keep that behavior but avoid hard-coded "map" id
+  useEffect(() => {
+    if (!mapElRef.current) return;
+
+    const view = new View({
       center: [0, 0],
       zoom: 0,
     });
 
-    var layer = new TileLayer({
+    const layer = new TileLayer({
       source: new OSM(),
     });
 
-    var map = new Map({
-      target: 'map',
+    const map = new Map({
+      target: mapElRef.current,
       layers: [layer],
-      view: view,
+      view,
     });
 
-    this.mountMarkers(map);
-  }
+    mapRef.current = map;
 
-  mountMarkers = (map) => {
-    return this.props.countries.map((country) => {
-      if (!country.hasOwnProperty('latlng')) return;
+    return () => {
+      map.setTarget(undefined);
+      mapRef.current = null;
+    };
+  }, []);
 
-      const lnglat = [country.latlng[1], country.latlng[0]];
+  // Mount / re-mount overlays whenever countries change
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
 
-      var pos = fromLonLat(lnglat);
+    // Clear old overlays before adding new ones
+    map.getOverlays().clear();
 
-      // Country marker
-      var marker = new Overlay({
+    countries.forEach((country) => {
+      if (!country.latlng) return;
+
+      const pos = fromLonLat([country.latlng[1], country.latlng[0]]);
+      const el = document.getElementById(`marker_${country.alpha3Code}`);
+      if (!el) return;
+
+      const marker = new Overlay({
         position: pos,
-        positioning: 'center-center',
-        element: document.getElementById(`marker_${country.alpha3Code}`),
+        positioning: "center-center",
+        element: el,
         stopEvent: false,
       });
-      return map.addOverlay(marker);
-    });
-  };
 
-  renderMarkers = () => {
-    return this.props.countries.map((country, i) => {
-      return (
-        <div key={`markerDiv_${country.alpha3Code}`} className='mapLabelArea'>
-          <Link key={country.name} to={`/travel-guide/detail/${country.name}`}>
+      map.addOverlay(marker);
+    });
+  }, [countries]);
+
+  return (
+    <div>
+      <div ref={mapElRef} className="worldMap" />
+
+      {countries.map((country) => (
+        <div key={`markerDiv_${country.alpha3Code}`} className="mapLabelArea">
+          <Link to={`/travel-guide/detail/${country.name}`}>
             <div
               id={`marker_${country.alpha3Code}`}
-              className='smallMarker'
+              className="smallMarker"
               data-title={`Name: ${
                 country.name
               }\nPopulation: ${country.population.toLocaleString()}\nCapital: ${
                 country.capital
               }\nRegion: ${country.region}\nNative: ${country.demonym}`}
-            ></div>
+            />
           </Link>
         </div>
-      );
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <div id='map' className='worldMap'></div>
-        {this.renderMarkers()}
-      </div>
-    );
-  }
+      ))}
+    </div>
+  );
 }
-
-export { CountryMap, WorldMap };

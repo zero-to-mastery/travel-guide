@@ -5,7 +5,7 @@ import "../styles/Header.css";
 
 const header = () => {
   return (
-    <header className="white-80 tc pv4 header pb7 ">
+    <header className="white-80 tc pv4 header">
       <h1
         className="mt2 mb3  headertext"
         data-aos="fade-down"
