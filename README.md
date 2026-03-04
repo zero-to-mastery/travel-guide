@@ -33,6 +33,27 @@ Apologies for the dead files and links. The project's source code exists on the 
 Do make your contributions there and do well to fill the CONTRIBUTORS.md file.<br>
 Cheers!
 
+## Improvements
+
+### (4-March-2026)
+
+- Upgraded React Router from v5 to v6
+- Refactored the codebase to use React Router v6's new features and syntax
+- Upgraded to React 19
+
+### (3-March-2026)
+
+- Migrated majority of the codebase from JavaScript to TypeScript
+- Refactored the codebase from class-based React to use hooks to improve readability and performance
+
+### (1-March-2026)
+
+- Fixed the broken REST Countries API migration from v2 to v3.1
+- Debugged and fixed all the [object Object] issues across multiple components
+- Fixed the region routing mismatch in AppRouter.js
+- Upgraded from React 17 to React 18
+- Migrated from react-scripts to Vite, which eliminated all the Dependabot security alerts for React Scripts
+
 ## Code of Conduct
 
 [Contributor Code of Conduct](https://github.com/zero-to-mastery/travel-guide/blob/master/CODE_OF_CONDUCT.md)
@@ -46,16 +67,3 @@ Cheers!
 [Youtube](https://www.youtube.com/channel/UCt7T2EvYBqvlxNU3fbE4Y7g)
 
 [Twitter](https://twitter.com/AndreiNeagoie)
-
-## Improvements (3-March-2026)
-
-- Migrated majority of the codebase from JavaScript to TypeScript
-- Refactored the codebase from class-based React to use hooks to improve readability and performance
-
-## Improvements (1-March-2026)
-
-- Fixed the broken REST Countries API migration from v2 to v3.1
-- Debugged and fixed all the [object Object] issues across multiple components
-- Fixed the region routing mismatch in AppRouter.js
-- Upgraded from React 17 to React 18
-- Migrated from react-scripts to Vite, which eliminated all the Dependabot security alerts for React Scripts
