@@ -1,21 +1,28 @@
 import React from "react"
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Region from "../components/Region"
 import RegionList from "../components/RegionList"
-import Header from "../components/Header.js"
-import Footer from "../components/Footer.js"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 import Detail from "../components/CountryDetails/Detail"
 import Credits from "../components/Credits"
 import { WorldMap } from "../components/MapView/MapView"
 
+interface AppRouterProps {
+  onSearchChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+  regionList: string[]
+  countryList: string[]
+  flagList: string[]
+  countries: any[]
+  searchField: string
+}
+
 function AppRouter({
   onSearchChange,
   regionList,
-  countryList,
-  flagList,
   countries,
   searchField,
-}) {
+}: AppRouterProps) {
   const regions = [
     "/travel-guide/africa",
     "/travel-guide/americas",
@@ -36,14 +43,14 @@ function AppRouter({
       <Route
         key={index}
         path={region}
-        render={() => (
+        element={
           <Region
             onSearchChange={onSearchChange}
             search={searchField}
             region={regionName}
             countries={countries}
           />
-        )}
+        }
       />
     )
   })
@@ -52,31 +59,16 @@ function AppRouter({
     <BrowserRouter>
       <div>
         <Header />
-        <Switch>
+        <Routes>
           <Route
             path="/travel-guide"
-            exact={true}
-            render={() => (
-              <RegionList countries={countries} regions={regionList} />
-            )}
+            element={<RegionList countries={countries} regions={regionList} />}
           />
           {routes}
-          <Route
-            exact
-            path="/travel-guide/detail/:id"
-            render={() => <Detail />}
-          />
-          <Route
-            exact
-            path="/travel-guide/map"
-            render={() => <WorldMap countries={countries} />}
-          />
-          <Route
-            exact
-            path="/travel-guide/credits"
-            render={() => <Credits />}
-          />
-        </Switch>
+          <Route path="/travel-guide/detail/:id" element={<Detail />} />
+          <Route path="/travel-guide/map" element={<WorldMap countries={countries} />} />
+          <Route path="/travel-guide/credits" element={<Credits />} />
+        </Routes>
         <Footer />
       </div>
     </BrowserRouter>
