@@ -10,8 +10,7 @@
 - [@alexacoronel](https://github.com/alexacoronel)
 - [@gabipfeffer](https://github.com/gabipfeffer)
 - [@Litchstarken](https://github.com/Litchstarken)
-- [@BLiTz3R](https://github.com/BLiTz3R)
-- [@peterson oaikhenah](https://github.com/nextwebb)
+
 - [@umanghans](https://github.com/umanghans)
 - [@dark-wonder](https://github.com/dark-wonder)
 - [@jawlee](https://github.com/jawlee)
